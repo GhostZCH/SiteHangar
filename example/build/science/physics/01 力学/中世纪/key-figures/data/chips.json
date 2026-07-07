@@ -1,0 +1,22 @@
+[
+  {
+    "label": "布雷德沃丁",
+    "accent": true
+  },
+  {
+    "label": "海特斯伯里",
+    "accent": false
+  },
+  {
+    "label": "阿尔伯特",
+    "accent": true
+  },
+  {
+    "label": "布里丹",
+    "accent": false
+  },
+  {
+    "label": "达·芬奇",
+    "accent": true
+  }
+]

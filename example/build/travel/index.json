@@ -1,0 +1,482 @@
+{
+  "page": {
+    "title": "中国旅游",
+    "description": "探索中国各地人文景观、自然景观与休闲胜地"
+  },
+  "hero": {
+    "title": "中国旅游",
+    "brand_name": "CHINA_TRAVEL",
+    "subtitle": "发现中国之美，从山川湖海到人文古迹",
+    "tags": [
+      "旅游攻略",
+      "景点介绍",
+      "文化探索"
+    ]
+  },
+  "version": "v1",
+  "lastModified": "2026-07-06 23:32:43",
+  "generatedAt": "2026-07-06 23:32:43",
+  "modules": [
+    {
+      "id": "culture",
+      "title": "人文景观",
+      "description": "历史古迹、文化遗址、传统建筑等人文景点",
+      "image": "/api/image/travel/culture.jpg",
+      "tags": [
+        "历史",
+        "文化",
+        "古迹"
+      ],
+      "link": "/culture"
+    },
+    {
+      "id": "nature",
+      "title": "自然景观",
+      "description": "山川湖海、森林草原、地质奇观等自然风光",
+      "image": "/api/image/travel/nature.jpg",
+      "tags": [
+        "自然",
+        "风景",
+        "生态"
+      ],
+      "link": "/nature"
+    },
+    {
+      "id": "leisure",
+      "title": "休闲放松",
+      "description": "温泉度假、主题乐园、乡村旅游等休闲去处",
+      "image": "/api/image/travel/leisure.jpg",
+      "tags": [
+        "休闲",
+        "度假",
+        "放松"
+      ],
+      "link": "/leisure"
+    }
+  ],
+  "columns": {
+    "culture": {
+      "page": {
+        "title": "人文景观",
+        "description": "历史古迹、文化遗址、传统建筑等人文景点"
+      },
+      "hero": {
+        "title": "人文景观",
+        "tags": [
+          "历史",
+          "文化",
+          "古迹"
+        ]
+      },
+      "version": "v1",
+      "lastModified": "2026-07-06 23:32:43",
+      "generatedAt": "2026-07-06 23:32:43",
+      "recent": [
+        {
+          "title": "苏州古典园林",
+          "subtitle": "",
+          "desc": "苏州园林是中国古典园林的代表，以拙政园、留园、网师园等最为著名。",
+          "link": "/culture/01 华东/01 浙江省/suzhou-gardens"
+        },
+        {
+          "title": "丽江古城",
+          "subtitle": "",
+          "desc": "丽江古城位于云南省丽江市，是一座具有浓郁纳西族文化特色的历史文化名城。",
+          "link": "/culture/06 西南/01 四川省/lijiang-oldtown"
+        },
+        {
+          "title": "哈尔滨冰雪大世界",
+          "subtitle": "",
+          "desc": "哈尔滨冰雪大世界是世界上最大的冰雪主题公园，每年冬季举办。",
+          "link": "/culture/03 东北/01 吉林省/harbin-ice"
+        },
+        {
+          "title": "北京八达岭长城",
+          "subtitle": "",
+          "desc": "八达岭长城是明长城中保存最完好、最具代表性的一段，世界文化遗产。",
+          "link": "/culture/02 华北/01 安徽省/beijing-greatwall"
+        },
+        {
+          "title": "福建土楼",
+          "subtitle": "",
+          "desc": "福建土楼是客家人聚族而居的大型夯土民居建筑，被誉为\"东方古城堡\"。",
+          "link": "/culture/05 华南/01 广西壮族自治区/fujian-tulou"
+        },
+        {
+          "title": "敦煌莫高窟",
+          "subtitle": "",
+          "desc": "莫高窟是世界上现存规模最大、内容最丰富的佛教艺术圣地，被誉为\"东方卢浮宫\"。",
+          "link": "/culture/04 西北/01 青海省/dunhuang-mogao"
+        }
+      ],
+      "categories": [
+        {
+          "name": "华东",
+          "subCategories": [
+            {
+              "name": "浙江省",
+              "links": [
+                {
+                  "title": "苏州古典园林",
+                  "url": "/culture/01 华东/01 浙江省/suzhou-gardens"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "华北",
+          "subCategories": [
+            {
+              "name": "安徽省",
+              "links": [
+                {
+                  "title": "北京八达岭长城",
+                  "url": "/culture/02 华北/01 安徽省/beijing-greatwall"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "东北",
+          "subCategories": [
+            {
+              "name": "吉林省",
+              "links": [
+                {
+                  "title": "哈尔滨冰雪大世界",
+                  "url": "/culture/03 东北/01 吉林省/harbin-ice"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "西北",
+          "subCategories": [
+            {
+              "name": "青海省",
+              "links": [
+                {
+                  "title": "敦煌莫高窟",
+                  "url": "/culture/04 西北/01 青海省/dunhuang-mogao"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "华南",
+          "subCategories": [
+            {
+              "name": "广西壮族自治区",
+              "links": [
+                {
+                  "title": "福建土楼",
+                  "url": "/culture/05 华南/01 广西壮族自治区/fujian-tulou"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "西南",
+          "subCategories": [
+            {
+              "name": "四川省",
+              "links": [
+                {
+                  "title": "丽江古城",
+                  "url": "/culture/06 西南/01 四川省/lijiang-oldtown"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "leisure": {
+      "page": {
+        "title": "休闲放松",
+        "description": "温泉度假、主题乐园、乡村旅游等休闲去处"
+      },
+      "hero": {
+        "title": "休闲放松",
+        "tags": [
+          "休闲",
+          "度假",
+          "放松"
+        ]
+      },
+      "version": "v1",
+      "lastModified": "2026-07-06 23:32:43",
+      "generatedAt": "2026-07-06 23:32:43",
+      "recent": [
+        {
+          "title": "天山天池",
+          "subtitle": "",
+          "desc": "天山天池位于新疆天山博格达峰下，以高山湖泊、雪峰倒影和哈萨克民俗风情著称。",
+          "link": "/leisure/04 西北/01 新疆维吾尔自治区/xinjiang-tianshan"
+        },
+        {
+          "title": "厦门鼓浪屿",
+          "subtitle": "",
+          "desc": "鼓浪屿是一座充满文艺气息的小岛，以万国建筑、钢琴之岛和悠闲氛围著称。",
+          "link": "/leisure/01 华东/01 福建省/xiamen-gulangyu"
+        },
+        {
+          "title": "大连海滨",
+          "subtitle": "",
+          "desc": "大连拥有超过1900公里的海岸线，以洁净的海滩、浪漫的广场和欧式建筑闻名。",
+          "link": "/leisure/03 东北/01 辽宁省/dalian-beach"
+        },
+        {
+          "title": "北戴河海滨",
+          "subtitle": "",
+          "desc": "北戴河是中国著名的夏季避暑胜地，以沙软潮平、气候宜人著称。",
+          "link": "/leisure/02 华北/01 河北省/qinhuangdao-beidaihe"
+        },
+        {
+          "title": "三亚海滨",
+          "subtitle": "",
+          "desc": "三亚位于海南岛最南端，是中国最著名的热带海滨度假城市，享有\"东方夏威夷\"的美誉。",
+          "link": "/leisure/05 华南/01 海南省/sanya-beach"
+        },
+        {
+          "title": "大理洱海",
+          "subtitle": "",
+          "desc": "洱海是云南省第二大淡水湖，以\"风花雪月\"四景之一的洱海月闻名，是理想的休闲度假目的地。",
+          "link": "/leisure/06 西南/01 云南省/dali-erhai"
+        }
+      ],
+      "categories": [
+        {
+          "name": "华东",
+          "subCategories": [
+            {
+              "name": "福建省",
+              "links": [
+                {
+                  "title": "厦门鼓浪屿",
+                  "url": "/leisure/01 华东/01 福建省/xiamen-gulangyu"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "华北",
+          "subCategories": [
+            {
+              "name": "河北省",
+              "links": [
+                {
+                  "title": "北戴河海滨",
+                  "url": "/leisure/02 华北/01 河北省/qinhuangdao-beidaihe"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "东北",
+          "subCategories": [
+            {
+              "name": "辽宁省",
+              "links": [
+                {
+                  "title": "大连海滨",
+                  "url": "/leisure/03 东北/01 辽宁省/dalian-beach"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "西北",
+          "subCategories": [
+            {
+              "name": "新疆维吾尔自治区",
+              "links": [
+                {
+                  "title": "天山天池",
+                  "url": "/leisure/04 西北/01 新疆维吾尔自治区/xinjiang-tianshan"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "华南",
+          "subCategories": [
+            {
+              "name": "海南省",
+              "links": [
+                {
+                  "title": "三亚海滨",
+                  "url": "/leisure/05 华南/01 海南省/sanya-beach"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "西南",
+          "subCategories": [
+            {
+              "name": "云南省",
+              "links": [
+                {
+                  "title": "大理洱海",
+                  "url": "/leisure/06 西南/01 云南省/dali-erhai"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "nature": {
+      "page": {
+        "title": "自然景观",
+        "description": "山川湖海、森林草原、地质奇观等自然风光"
+      },
+      "hero": {
+        "title": "自然景观",
+        "tags": [
+          "自然",
+          "风景",
+          "生态"
+        ]
+      },
+      "version": "v1",
+      "lastModified": "2026-07-06 23:32:43",
+      "generatedAt": "2026-07-06 23:32:43",
+      "recent": [
+        {
+          "title": "长白山天池",
+          "subtitle": "",
+          "desc": "长白山天池是中国最大的火山湖，也是世界上最深的高山湖泊，位于中朝边境。",
+          "link": "/nature/03 东北/01 吉林省/changbaishan"
+        },
+        {
+          "title": "青海湖",
+          "subtitle": "",
+          "desc": "青海湖是中国最大的内陆咸水湖，也是国际重要湿地，以油菜花海和候鸟闻名。",
+          "link": "/nature/04 西北/01 青海省/qinghai-lake"
+        },
+        {
+          "title": "黄山风景区",
+          "subtitle": "",
+          "desc": "黄山以奇松、怪石、云海、温泉\"四绝\"闻名于世，是中国十大名山之一。",
+          "link": "/nature/02 华北/01 安徽省/huangshan"
+        },
+        {
+          "title": "九寨沟",
+          "subtitle": "",
+          "desc": "九寨沟以翠海、叠瀑、彩林、雪峰、藏情\"五绝\"闻名，被誉为\"童话世界\"。",
+          "link": "/nature/06 西南/01 四川省/jiuzhaigou"
+        },
+        {
+          "title": "桂林漓江",
+          "subtitle": "",
+          "desc": "桂林山水甲天下，漓江是桂林山水的精华所在，以喀斯特地貌闻名于世。",
+          "link": "/nature/05 华南/01 广西壮族自治区/guilin-lijiang"
+        },
+        {
+          "title": "杭州西湖",
+          "subtitle": "",
+          "desc": "西湖是中国最著名的湖泊之一，以\"淡妆浓抹总相宜\"的自然风光和深厚的文化底蕴闻名。",
+          "link": "/nature/01 华东/01 浙江省/hangzhou-westlake"
+        }
+      ],
+      "categories": [
+        {
+          "name": "华东",
+          "subCategories": [
+            {
+              "name": "浙江省",
+              "links": [
+                {
+                  "title": "杭州西湖",
+                  "url": "/nature/01 华东/01 浙江省/hangzhou-westlake"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "华北",
+          "subCategories": [
+            {
+              "name": "安徽省",
+              "links": [
+                {
+                  "title": "黄山风景区",
+                  "url": "/nature/02 华北/01 安徽省/huangshan"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "东北",
+          "subCategories": [
+            {
+              "name": "吉林省",
+              "links": [
+                {
+                  "title": "长白山天池",
+                  "url": "/nature/03 东北/01 吉林省/changbaishan"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "西北",
+          "subCategories": [
+            {
+              "name": "青海省",
+              "links": [
+                {
+                  "title": "青海湖",
+                  "url": "/nature/04 西北/01 青海省/qinghai-lake"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "华南",
+          "subCategories": [
+            {
+              "name": "广西壮族自治区",
+              "links": [
+                {
+                  "title": "桂林漓江",
+                  "url": "/nature/05 华南/01 广西壮族自治区/guilin-lijiang"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "西南",
+          "subCategories": [
+            {
+              "name": "四川省",
+              "links": [
+                {
+                  "title": "九寨沟",
+                  "url": "/nature/06 西南/01 四川省/jiuzhaigou"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

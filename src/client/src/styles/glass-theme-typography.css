@@ -1,0 +1,106 @@
+/* ===== Glass Theme Typography - Clean & Simple ===== */
+
+[data-theme="glass"] .hero-title {
+    background: linear-gradient(135deg, #ffffff 0%, #e0dcff 50%, #c8c2ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+[data-theme="glass"] .hero-content {
+    padding: 32px 40px;
+}
+
+[data-theme="glass"] .section {
+    padding: 32px 40px;
+}
+
+[data-theme="glass"] .section-num {
+    opacity: 0.6;
+    color: #a29bfe;
+    font-weight: 300;
+}
+
+[data-theme="glass"] .section-title {
+    color: rgba(255,255,255,0.95);
+    font-weight: 600;
+}
+
+[data-theme="glass"] .section-subtitle {
+    color: rgba(255,255,255,0.55);
+}
+
+[data-theme="glass"] .footer {
+    background: rgba(255,255,255,0.04);
+    border-top: 1px solid rgba(255,255,255,0.10);
+}
+
+[data-theme="glass"] .content {
+    color: rgba(255,255,255,0.85);
+}
+
+[data-theme="glass"] .on-surface {
+    color: rgba(255,255,255,0.95);
+}
+
+[data-theme="glass"] .on-surface-variant {
+    color: rgba(255,255,255,0.70);
+}
+
+[data-theme="glass"] .card-headline {
+    color: rgba(255,255,255,0.95);
+    font-weight: 600;
+}
+
+[data-theme="glass"] .card-supporting {
+    color: rgba(255,255,255,0.60);
+    line-height: 1.7;
+}
+
+[data-theme="glass"] .stat-value {
+    color: #a29bfe;
+    text-shadow: 0 0 16px rgba(162,155,254,0.40);
+    font-weight: 300;
+}
+
+[data-theme="glass"] .stat-label {
+    color: rgba(255,255,255,0.55);
+}
+
+[data-theme="glass"] .timeline-date {
+    color: #a29bfe;
+    font-weight: 500;
+}
+
+[data-theme="glass"] .timeline-title {
+    color: rgba(255,255,255,0.95);
+    font-weight: 600;
+}
+
+[data-theme="glass"] .timeline-subtitle {
+    color: rgba(255,255,255,0.55);
+}
+
+[data-theme="glass"] .timeline-desc {
+    color: rgba(255,255,255,0.65);
+    line-height: 1.7;
+}
+
+[data-theme="glass"] .list-title {
+    color: rgba(255,255,255,0.95);
+    font-weight: 500;
+}
+
+[data-theme="glass"] .list-subtitle {
+    color: rgba(255,255,255,0.55);
+}
+
+[data-theme="glass"] .banner-text {
+    color: rgba(255,255,255,0.75);
+    line-height: 1.7;
+}
+
+[data-theme="glass"] .chart-title {
+    color: rgba(255,255,255,0.95);
+    font-weight: 600;
+}

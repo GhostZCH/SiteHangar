@@ -1,0 +1,152 @@
+/* ===== Glass Theme - Simplified Single-Layer Design ===== */
+
+/* Base glass effect - only used on outer containers */
+[data-theme="glass"] .card,
+[data-theme="glass"] .table-container,
+[data-theme="glass"] .chart-card,
+[data-theme="glass"] .stat-item,
+[data-theme="glass"] .list,
+[data-theme="glass"] .timeline-content,
+[data-theme="glass"] .banner,
+[data-theme="glass"] .introduction,
+[data-theme="glass"] .branch-visualizer,
+[data-theme="glass"] .hero-content,
+[data-theme="glass"] .section,
+[data-theme="glass"] .cat-recent-card,
+[data-theme="glass"] .cat-sub-card {
+    background: rgba(255,255,255,0.04);
+    backdrop-filter: blur(40px) saturate(120%);
+    -webkit-backdrop-filter: blur(40px) saturate(120%);
+    border: 1px solid rgba(255,255,255,0.10);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    border-radius: var(--radius-lg);
+}
+
+/* Hover states */
+[data-theme="glass"] .card:hover,
+[data-theme="glass"] .table-container:hover,
+[data-theme="glass"] .chart-card:hover,
+[data-theme="glass"] .stat-item:hover,
+[data-theme="glass"] .list:hover,
+[data-theme="glass"] .timeline-content:hover,
+[data-theme="glass"] .banner:hover,
+[data-theme="glass"] .cat-recent-card:hover,
+[data-theme="glass"] .cat-sub-card:hover {
+    background: rgba(255,255,255,0.08);
+    border-color: rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+}
+
+[data-theme="glass"] .card:hover { transform: translateY(-3px); }
+[data-theme="glass"] .stat-item:hover { transform: translateY(-2px); }
+
+/* Inner elements - NO glass effect, just subtle separators */
+[data-theme="glass"] .section-header {
+    background: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0 0 20px 0;
+    margin-bottom: 24px;
+}
+
+[data-theme="glass"] .section-desc {
+    background: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.8;
+}
+
+[data-theme="glass"] .section-desc p {
+    margin-bottom: 16px;
+}
+[data-theme="glass"] .section-desc p:last-child {
+    margin-bottom: 0;
+}
+
+/* Table refinements */
+[data-theme="glass"] .table th {
+    background: rgba(255,255,255,0.06);
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+    color: rgba(255,255,255,0.55);
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+[data-theme="glass"] .table td {
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    color: rgba(255,255,255,0.85);
+}
+[data-theme="glass"] .table tbody tr:last-child td {
+    border-bottom: none;
+}
+[data-theme="glass"] .table tbody tr:hover {
+    background: rgba(255,255,255,0.04);
+}
+
+/* Chart container */
+[data-theme="glass"] .chart-container,
+[data-theme="glass"] .china-map-container {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.10);
+    border-radius: var(--radius-md);
+}
+
+/* List items */
+[data-theme="glass"] .list-item {
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+[data-theme="glass"] .list-item:last-child {
+    border-bottom: none;
+}
+[data-theme="glass"] .list-item:hover {
+    background: rgba(255,255,255,0.04);
+}
+[data-theme="glass"] .list-icon {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+}
+
+/* Chips */
+[data-theme="glass"] .chip {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+}
+[data-theme="glass"] .chip:hover {
+    background: rgba(123,140,254,0.20);
+    border-color: rgba(123,140,254,0.35);
+    color: #c7d2fe;
+}
+[data-theme="glass"] .chip-accent {
+    background: rgba(123,140,254,0.18);
+    border-color: rgba(123,140,254,0.30);
+}
+[data-theme="glass"] .chip-accent:hover {
+    background: rgba(123,140,254,0.30);
+    color: #fff;
+}
+
+/* Timeline */
+[data-theme="glass"] .timeline-content::before {
+    background: rgba(255,255,255,0.08);
+    border-left: 1px solid rgba(255,255,255,0.15);
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+[data-theme="glass"] .timeline-dot {
+    background: rgba(255,255,255,0.15);
+    border-color: rgba(255,255,255,0.25);
+    box-shadow: 0 0 0 4px rgba(255,255,255,0.06);
+}
+
+/* Detail panel */
+[data-theme="glass"] .detail-panel {
+    background: transparent;
+    border-top: 1px solid rgba(255,255,255,0.12);
+}

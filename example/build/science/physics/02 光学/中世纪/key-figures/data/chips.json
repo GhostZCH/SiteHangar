@@ -1,0 +1,22 @@
+[
+  {
+    "label": "海桑",
+    "accent": true
+  },
+  {
+    "label": "维特罗",
+    "accent": true
+  },
+  {
+    "label": "培根",
+    "accent": true
+  },
+  {
+    "label": "佩卡姆",
+    "accent": false
+  },
+  {
+    "label": "格罗斯泰斯特",
+    "accent": false
+  }
+]

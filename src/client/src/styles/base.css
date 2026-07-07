@@ -1,0 +1,29 @@
+/* ===== Base ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body, #app {
+    height: 100%;
+}
+
+body {
+    font-family: 'Noto Sans SC', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--surface);
+    color: var(--on-surface);
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+[data-theme="glass"] body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%) center center / cover no-repeat fixed;
+    position: relative;
+}
+[data-theme="glass"] body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.70) 0%, rgba(118, 75, 162, 0.65) 50%, rgba(240, 147, 251, 0.55) 100%);
+    z-index: -1;
+    pointer-events: none;
+}

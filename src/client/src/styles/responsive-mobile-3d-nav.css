@@ -1,0 +1,60 @@
+/* ===== Responsive Mobile 3D Theme Overrides — Nav ===== */
+@media (max-width: 768px) {
+    [data-theme="3d"] .mobile-nav-bar {
+        background: var(--surface);
+        border-top: 1px solid var(--outline-variant);
+        height: 52px;
+        gap: 0;
+        transition: transform 0.3s ease;
+    }
+    [data-theme="3d"] .mobile-nav-bar.mobile-hidden {
+        transform: translateY(100%);
+    }
+    [data-theme="3d"] .appbar.mobile-hidden {
+        transform: translateY(-100%);
+    }
+    [data-theme="3d"] .mobile-nav-item {
+        flex: 0 0 auto;
+        min-width: 56px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: none;
+        letter-spacing: 0;
+        font-size: 12px;
+    }
+    [data-theme="3d"] .mobile-nav-item.active {
+        color: var(--primary);
+        font-weight: 600;
+    }
+    [data-theme="3d"] .mobile-nav-item.active::after {
+        bottom: 8px;
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        width: 18px;
+        height: 3px;
+        border-radius: 2px;
+        background: var(--primary);
+        box-shadow: var(--shadow-1);
+    }
+    [data-theme="3d"] .icon-btn {
+        width: 36px;
+        height: 36px;
+        border-radius: var(--radius-sm);
+        background: var(--surface);
+        box-shadow: var(--shadow-1);
+    }
+    [data-theme="3d"] .icon-btn:active {
+        box-shadow: inset 4px 4px 8px #bec3c9, inset -4px -4px 8px #ffffff;
+    }
+    [data-theme="3d"] .theme-menu {
+        box-shadow: var(--shadow-2);
+        border: none;
+    }
+    [data-theme="3d"] .theme-option:hover,
+    [data-theme="3d"] .theme-option.active {
+        box-shadow: var(--shadow-1);
+    }
+}

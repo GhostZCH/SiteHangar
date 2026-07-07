@@ -1,0 +1,9 @@
+/* Timeline responsive overrides */
+@media (max-width: 768px) {
+    .timeline-style-1 .timeline {
+        padding-left: 28px;
+    }
+    .timeline-style-1 .timeline-dot {
+        left: -28px;
+    }
+}

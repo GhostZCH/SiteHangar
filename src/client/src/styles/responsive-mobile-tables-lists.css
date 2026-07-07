@@ -1,0 +1,256 @@
+/* ===== Responsive Mobile Components — Tables, Lists, Timeline, Chips, Charts, Maps, Branch, Footer, Nav ===== */
+
+/* Mobile nav is only visible on mobile */
+.mobile-nav-bar {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    /* Table */
+    .table-container {
+        background: transparent;
+        border: none;
+        border-radius: 0;
+        margin-top: 12px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    .table-container:hover {
+        box-shadow: none;
+        border-color: transparent;
+    }
+    .table {
+        min-width: 400px;
+        font-size: 13px;
+    }
+    .table th {
+        padding: 8px 6px;
+        font-size: 10px;
+        background: transparent;
+        border-bottom: 2px solid var(--on-surface);
+    }
+    .table td {
+        padding: 8px 6px;
+    }
+
+    /* List */
+    .list-section {
+        margin-top: 12px;
+    }
+    .list-section > .list-title {
+        font-size: 10px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 6px;
+    }
+    .list {
+        background: transparent;
+        border: none;
+        border-top: 2px solid var(--on-surface);
+        border-radius: 0;
+    }
+    .list-item {
+        padding: 10px 0;
+        border-bottom: 1px solid var(--outline-variant);
+        align-items: flex-start;
+    }
+    .list-item:last-child {
+        border-bottom: none;
+    }
+    .list-item:hover {
+        background: transparent;
+    }
+    .list-icon {
+        width: auto;
+        height: auto;
+        background: transparent;
+        border: none;
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--on-surface-variant);
+        min-width: 22px;
+    }
+    .list-title {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .list-subtitle {
+        font-size: 12px;
+        margin-top: 2px;
+    }
+
+    /* Timeline */
+    .timeline-section-content .timeline {
+        padding-left: 24px;
+    }
+    .timeline-section-content .timeline::before {
+        left: 0;
+        top: 6px;
+        bottom: 6px;
+        width: 1px;
+        background: var(--outline);
+    }
+    .timeline-section-content .timeline-item {
+        padding-bottom: 16px;
+    }
+    .timeline-section-content .timeline-dot {
+        left: -24px;
+        top: 2px;
+        width: 14px;
+        height: 14px;
+        border: 2px solid var(--outline);
+        background: var(--surface);
+        box-shadow: 0 0 0 3px var(--surface);
+    }
+    .timeline-section-content .timeline-dot::after {
+        width: 5px;
+        height: 5px;
+    }
+    .timeline-section-content .timeline-content {
+        background: transparent;
+        border: none;
+        border-radius: 0;
+        padding: 0 0 0 8px;
+        box-shadow: none;
+    }
+    .timeline-section-content .timeline-content::before {
+        display: none;
+    }
+    .timeline-section-content .timeline-content:hover {
+        transform: none;
+        border-color: transparent;
+        box-shadow: none;
+    }
+    .timeline-section-content .timeline-date {
+        font-family: inherit;
+        font-size: 11px;
+        font-weight: 600;
+        color: var(--on-surface-variant);
+        margin-bottom: 2px;
+        letter-spacing: 0;
+    }
+    .timeline-section-content .timeline-title {
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 2px;
+    }
+    .timeline-section-content .timeline-subtitle {
+        font-size: 11px;
+        margin-bottom: 4px;
+    }
+    .timeline-section-content .timeline-desc {
+        font-size: 12px;
+        line-height: 1.65;
+        margin-top: 4px;
+    }
+    .timeline-section-content .timeline-desc p {
+        margin-bottom: 4px;
+    }
+    .timeline-section-content .timeline-media {
+        height: 120px;
+        border-radius: var(--radius-md);
+        margin-top: 8px;
+    }
+
+    /* Chips */
+    .chip-group {
+        margin: 12px 0;
+    }
+    .chip {
+        height: 26px;
+        padding: 0 10px;
+        font-size: 10px;
+    }
+
+    /* Chart */
+    .chart-container {
+        height: 240px;
+        background: transparent;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    /* China Map */
+    .china-map-container {
+        height: 300px;
+        background: transparent;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+    }
+    .china-map-legend {
+        padding: 8px;
+        margin-top: 8px;
+        font-size: 11px;
+    }
+
+    /* Branch Visualizer */
+    .branch-visualizer {
+        background: transparent;
+        border: none;
+        border-radius: 0;
+        padding: 12px 0;
+    }
+
+    /* Mobile Bottom Nav */
+    .mobile-nav-bar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 48px;
+        background: var(--surface);
+        border-top: 1px solid var(--outline-variant);
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0;
+        z-index: 1000;
+        padding: 0;
+        transition: transform 0.3s ease;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+    .mobile-nav-bar::-webkit-scrollbar {
+        display: none;
+    }
+    .mobile-nav-bar.mobile-hidden {
+        transform: translateY(100%);
+    }
+    .mobile-nav-item {
+        flex: 0 0 auto;
+        min-width: 56px;
+        text-align: center;
+        font-size: 11px;
+        color: var(--on-surface-variant);
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        padding: 6px 12px;
+        cursor: pointer;
+        position: relative;
+        transition: color 0.3s ease;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        background: transparent;
+        border: none;
+    }
+    .mobile-nav-item.active {
+        color: var(--on-surface);
+        font-weight: 500;
+    }
+    .mobile-nav-item.active::after {
+        content: '';
+        position: absolute;
+        bottom: 2px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 16px;
+        height: 2px;
+        background: var(--on-surface);
+        border-radius: 1px;
+    }
+}

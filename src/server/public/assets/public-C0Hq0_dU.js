@@ -1,0 +1,1 @@
+import{a as n}from"./client-C5H7SEeD.js";const o={render(t){return n.get("/render/"+t.filter(Boolean).join("/")).then(e=>e.data)},listColumns(t){return n.get("/sites/"+t+"/columns").then(e=>e.data)},getGlobalConfig(){return n.get("/config").then(t=>t.data)}};export{o as publicApi};

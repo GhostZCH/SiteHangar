@@ -1,0 +1,174 @@
+/* ===== Glass Theme Text Colors - Clean Hierarchy ===== */
+
+[data-theme="glass"] .cat-section-title {
+    color: rgba(255,255,255,0.95);
+    border-bottom-color: rgba(255,255,255,0.12);
+    font-weight: 600;
+}
+
+[data-theme="glass"] .cat-recent-title {
+    color: rgba(255,255,255,0.95);
+    font-weight: 500;
+}
+
+[data-theme="glass"] .cat-recent-desc {
+    color: rgba(255,255,255,0.60);
+    line-height: 1.7;
+}
+
+[data-theme="glass"] .cat-sub-title {
+    color: rgba(255,255,255,0.95);
+    border-bottom-color: rgba(255,255,255,0.12);
+    font-weight: 600;
+}
+
+[data-theme="glass"] .cat-link-item {
+    color: rgba(255,255,255,0.65);
+}
+
+[data-theme="glass"] .cat-link-item:hover {
+    color: #c7d2fe;
+    background: rgba(123,140,254,0.12);
+}
+
+[data-theme="glass"] .appbar-title {
+    color: rgba(255,255,255,0.95);
+    font-weight: 500;
+}
+
+[data-theme="glass"] .nav-item {
+    color: rgba(255,255,255,0.60);
+}
+
+[data-theme="glass"] .nav-item:hover {
+    background: rgba(255,255,255,0.08);
+    color: rgba(255,255,255,0.95);
+}
+
+[data-theme="glass"] .nav-item.active {
+    background: rgba(123,140,254,0.18);
+    color: #c7d2fe;
+}
+
+[data-theme="glass"] .nav-subtitle {
+    color: rgba(255,255,255,0.40);
+}
+
+[data-theme="glass"] .footer-beian {
+    color: rgba(255,255,255,0.40);
+}
+
+[data-theme="glass"] .footer-beian a {
+    color: rgba(255,255,255,0.40);
+}
+
+[data-theme="glass"] .footer-beian a:hover {
+    color: #c7d2fe;
+}
+
+[data-theme="glass"] .icon-btn {
+    color: rgba(255,255,255,0.65);
+}
+
+[data-theme="glass"] .icon-btn:hover {
+    background: rgba(255,255,255,0.10);
+    color: #fff;
+}
+
+[data-theme="glass"] .theme-menu {
+    background: rgba(255,255,255,0.04);
+    backdrop-filter: blur(40px) saturate(120%);
+    -webkit-backdrop-filter: blur(40px) saturate(120%);
+    border: 1px solid rgba(255,255,255,0.10);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+    border-radius: var(--radius-lg);
+}
+
+[data-theme="glass"] .theme-option {
+    color: rgba(255,255,255,0.85);
+}
+
+[data-theme="glass"] .theme-option:hover {
+    background: rgba(255,255,255,0.10);
+}
+
+[data-theme="glass"] .theme-option.active {
+    background: rgba(123,140,254,0.25);
+    color: #c7d2fe;
+}
+
+[data-theme="glass"] .scroll-top-btn:hover {
+    background: rgba(255,255,255,0.10);
+    color: #c7d2fe;
+}
+
+[data-theme="glass"] .accent-dot,
+[data-theme="glass"] .accent-line {
+    background: #c7d2fe;
+    box-shadow: 0 0 6px rgba(123,140,254,0.40);
+}
+
+[data-theme="glass"] .divider {
+    background: rgba(255,255,255,0.08);
+}
+
+[data-theme="glass"] .hero-version {
+    background: rgba(123,140,254,0.15);
+    color: #c7d2fe;
+    border: 1px solid rgba(123,140,254,0.25);
+}
+
+[data-theme="glass"] .hero-lastmodified {
+    color: rgba(255,255,255,0.50);
+}
+
+[data-theme="glass"] .hero-lastmodified::before {
+    background: rgba(255,255,255,0.20);
+}
+
+[data-theme="glass"] .introduction-text {
+    color: rgba(255,255,255,0.70);
+    line-height: 1.7;
+}
+
+[data-theme="glass"] .introduction-icon {
+    color: #c7d2fe;
+}
+
+[data-theme="glass"] .detail-panel p {
+    color: rgba(255,255,255,0.70);
+    line-height: 1.7;
+}
+
+[data-theme="glass"] .detail-panel .detail-highlight {
+    color: rgba(255,255,255,0.95);
+    font-weight: 500;
+}
+
+[data-theme="glass"] .branch-name {
+    color: rgba(255,255,255,0.90);
+    font-weight: 500;
+}
+
+[data-theme="glass"] .branch-period-label {
+    color: rgba(255,255,255,0.45);
+}
+
+[data-theme="glass"] .branch-stage-text {
+    color: rgba(255,255,255,0.65);
+}
+
+[data-theme="glass"] .china-map-legend h4 {
+    color: rgba(255,255,255,0.90);
+    font-weight: 600;
+}
+
+[data-theme="glass"] .china-map-legend .legend-item {
+    color: rgba(255,255,255,0.55);
+}
+
+[data-theme="glass"] .hero-tag {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    color: rgba(255,255,255,0.75);
+}

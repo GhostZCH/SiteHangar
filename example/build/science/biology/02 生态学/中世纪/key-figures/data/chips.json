@@ -1,0 +1,22 @@
+[
+  {
+    "label": "大阿尔伯特",
+    "accent": true
+  },
+  {
+    "label": "博克",
+    "accent": true
+  },
+  {
+    "label": "富克斯",
+    "accent": true
+  },
+  {
+    "label": "马蒂奥利",
+    "accent": false
+  },
+  {
+    "label": "切萨尔皮诺",
+    "accent": false
+  }
+]

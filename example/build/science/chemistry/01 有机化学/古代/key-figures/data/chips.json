@@ -1,0 +1,22 @@
+[
+  {
+    "label": "贾比尔",
+    "accent": true
+  },
+  {
+    "label": "蔡伦",
+    "accent": true
+  },
+  {
+    "label": "罗吉尔·培根",
+    "accent": false
+  },
+  {
+    "label": "阿诺尔德",
+    "accent": false
+  },
+  {
+    "label": "古埃及工匠",
+    "accent": false
+  }
+]

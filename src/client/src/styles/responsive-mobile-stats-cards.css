@@ -1,0 +1,86 @@
+/* ===== Responsive Mobile Components — Stats & Cards ===== */
+@media (max-width: 768px) {
+    /* Stats */
+    .stats-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin: 12px 0;
+        padding: 12px 0;
+        border-top: 1px solid var(--outline);
+        border-bottom: 1px solid var(--outline);
+    }
+    .stat-item {
+        background: transparent;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+        text-align: left;
+        display: flex;
+        align-items: baseline;
+        gap: 4px;
+    }
+    .stat-item:hover {
+        transform: none;
+        box-shadow: none;
+    }
+    .stat-value {
+        font-size: 18px;
+        font-weight: 300;
+        color: var(--on-surface);
+    }
+    .stat-label {
+        font-size: 11px;
+    }
+
+    /* Cards */
+    .grid-3 {
+        display: block;
+        margin-top: 12px;
+    }
+    .card {
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid var(--outline-variant);
+        border-radius: 0;
+        padding: 12px 0;
+        margin-bottom: 0;
+    }
+    .card:last-child {
+        border-bottom: none;
+    }
+    .card:hover {
+        transform: none;
+        box-shadow: none;
+        border-color: var(--outline-variant);
+    }
+    .card-media {
+        height: 140px;
+        border-radius: var(--radius-md);
+        margin-bottom: 8px;
+    }
+    .card-media::after {
+        border-radius: var(--radius-md);
+    }
+    .card-content {
+        padding: 0;
+    }
+    .card-headline {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .card-supporting {
+        font-size: 12px;
+        line-height: 1.6;
+        margin-top: 2px;
+    }
+    .detail-panel {
+        background: transparent;
+        border-top: 1px solid var(--outline-variant);
+        padding: 8px 0 0;
+        margin-bottom: 0;
+    }
+    .detail-panel p {
+        font-size: 12px;
+    }
+}

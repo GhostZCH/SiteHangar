@@ -1,0 +1,30 @@
+[data-theme="glass"] {
+    --primary: #7b8cfe;
+    --on-primary: #ffffff;
+    --primary-container: rgba(123,140,254,0.25);
+    --on-primary-container: #4a5fd9;
+    --secondary: #a0a8b8;
+    --on-secondary: #ffffff;
+    --secondary-container: rgba(160,168,184,0.20);
+    --on-secondary-container: #5a6270;
+    --tertiary: #74b9ff;
+    --on-tertiary: #ffffff;
+    --tertiary-container: rgba(116,185,255,0.22);
+    --on-tertiary-container: #3a7bc8;
+    --accent: #a29bfe;
+    --accent-light: rgba(162,155,254,0.30);
+    --surface: rgba(255,255,255,0.10);
+    --surface-variant: rgba(255,255,255,0.06);
+    --on-surface: #ffffff;
+    --on-surface-variant: rgba(255,255,255,0.75);
+    --outline: rgba(255,255,255,0.20);
+    --outline-variant: rgba(255,255,255,0.12);
+    --shadow-1: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+    --shadow-2: 0 4px 12px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.03);
+    --shadow-3: 0 8px 24px rgba(0,0,0,0.10), 0 4px 8px rgba(0,0,0,0.05);
+    --shadow-4: 0 16px 40px rgba(0,0,0,0.12), 0 8px 16px rgba(0,0,0,0.06);
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
+}

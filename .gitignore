@@ -1,0 +1,52 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Python
+__pycache__/
+*/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.mypy_cache/
+
+# Build outputs
+client/dist/
+server/dist/
+src/client/dist/
+src/server/dist/
+
+# Database & uploads
+data/app.db
+data/app.db-journal
+data/uploads/
+
+# Environment
+.env
+.env.local
+*/.env
+!*/.env.example
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# OS
+Thumbs.db
+
+# Nginx runtime files
+.nginx/
+
+# Config (local only, use config.template.yaml as template)
+config.yaml
+*/config.yaml
+
+# Online production environment (contains sensitive data)
+online/

@@ -1,0 +1,22 @@
+[
+  {
+    "label": "阿基米德",
+    "accent": true
+  },
+  {
+    "label": "亚里士多德",
+    "accent": true
+  },
+  {
+    "label": "墨子",
+    "accent": true
+  },
+  {
+    "label": "希罗",
+    "accent": false
+  },
+  {
+    "label": "维特鲁威",
+    "accent": false
+  }
+]

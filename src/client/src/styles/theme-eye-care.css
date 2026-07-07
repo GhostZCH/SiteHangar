@@ -1,0 +1,28 @@
+[data-theme="eye-care"] {
+    --primary: #5b8c5a;
+    --on-primary: #ffffff;
+    --primary-container: #e8f5e9;
+    --on-primary-container: #2e5c2e;
+    --secondary: #8d9e8d;
+    --on-secondary: #ffffff;
+    --secondary-container: #f1f8f1;
+    --on-secondary-container: #4a5d4a;
+    --tertiary: #7cb342;
+    --on-tertiary: #ffffff;
+    --tertiary-container: #f1f8e9;
+    --on-tertiary-container: #558b2f;
+    --accent: #7cb342;
+    --accent-light: #dcedc8;
+    --surface: #f4f7f0;
+    --surface-variant: #eef2ea;
+    --home-bg: #cad6bc;
+    --home-bg-variant: #bac8a8;
+    --on-surface: #2e3b2e;
+    --on-surface-variant: #5a6b5a;
+    --outline: #d0d9cc;
+    --outline-variant: #e0e8dc;
+    --shadow-1: 0 1px 3px rgba(46,59,46,0.06), 0 1px 2px rgba(46,59,46,0.04);
+    --shadow-2: 0 4px 8px rgba(46,59,46,0.06), 0 2px 4px rgba(46,59,46,0.04);
+    --shadow-3: 0 8px 16px rgba(46,59,46,0.08), 0 4px 8px rgba(46,59,46,0.05);
+    --shadow-4: 0 16px 32px rgba(46,59,46,0.10), 0 8px 16px rgba(46,59,46,0.06);
+}

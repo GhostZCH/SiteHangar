@@ -1,0 +1,205 @@
+/* ===== Timeline: Minimal Line + Card Bubble ===== */
+.timeline {
+    position: relative;
+    padding-left: 32px;
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 6px;
+    bottom: 6px;
+    width: 1px;
+    background: var(--outline);
+}
+.timeline-item {
+    position: relative;
+    padding-bottom: 28px;
+}
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+.timeline-dot {
+    position: absolute;
+    left: -32px;
+    top: 2px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid var(--outline);
+    background: var(--surface);
+    box-shadow: 0 0 0 3px var(--surface);
+    z-index: 1;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+.timeline-item:hover .timeline-dot {
+    border-color: var(--accent);
+    transform: scale(1.15);
+}
+.timeline-content {
+    background: var(--surface);
+    border: 1px solid var(--outline-variant);
+    border-radius: var(--radius-lg);
+    padding: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+    box-shadow: var(--shadow-1);
+}
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 16px;
+    width: 16px;
+    height: 16px;
+    background: var(--surface);
+    border-left: 1px solid var(--outline-variant);
+    border-bottom: 1px solid var(--outline-variant);
+    transform: rotate(45deg);
+}
+.timeline-content:hover {
+    border-color: var(--accent);
+    box-shadow: var(--shadow-2);
+    transform: translateX(4px);
+}
+.timeline-date {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 6px;
+    letter-spacing: 0.5px;
+}
+.timeline-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--on-surface);
+    margin-bottom: 4px;
+}
+.timeline-subtitle {
+    font-size: 13px;
+    color: var(--on-surface-variant);
+    margin-bottom: 10px;
+}
+.timeline-desc {
+    font-size: 13px;
+    line-height: 1.7;
+    color: var(--on-surface-variant);
+}
+.timeline-desc-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 6px;
+    position: relative;
+}
+.timeline-desc-item:last-child {
+    margin-bottom: 0;
+}
+.timeline-main-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    margin-top: 7px;
+    flex-shrink: 0;
+}
+.timeline-sub-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: 1.5px solid var(--outline);
+    background: transparent;
+    margin-top: 7px;
+    flex-shrink: 0;
+}
+.timeline-desc-text {
+    flex: 1;
+}
+.timeline-desc-sub {
+    padding-left: 16px;
+    font-size: 12px;
+    color: var(--on-surface-variant);
+    opacity: 0.85;
+}
+.timeline-desc-sub .timeline-desc-text {
+    color: var(--on-surface-variant);
+}
+.timeline-media {
+    width: 100%;
+    height: 160px;
+    border-radius: var(--radius-md);
+    background-size: cover;
+    background-position: center;
+    margin-top: 12px;
+}
+
+/* ===== Timeline Style Variations ===== */
+.timeline-section-content .timeline-item {
+    transition: all 0.3s ease;
+}
+
+/* Style 1: Minimal Line (no card) */
+.timeline-style-1 .timeline {
+    padding-left: 32px;
+}
+.timeline-style-1 .timeline::before {
+    left: 7px;
+    top: 6px;
+    bottom: 6px;
+    width: 1px;
+    background: var(--outline);
+}
+.timeline-style-1 .timeline-item {
+    padding-bottom: 28px;
+}
+.timeline-style-1 .timeline-dot {
+    left: -32px;
+    top: 2px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--outline);
+    background: var(--surface);
+    box-shadow: 0 0 0 3px var(--surface);
+}
+.timeline-style-1 .timeline-dot::after {
+    width: 6px;
+    height: 6px;
+    background: var(--accent);
+}
+.timeline-style-1 .timeline-content {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0 0 0 8px;
+    box-shadow: none;
+}
+.timeline-style-1 .timeline-content::before {
+    display: none;
+}
+.timeline-style-1 .timeline-content:hover {
+    transform: translateX(6px);
+    border-color: transparent;
+    box-shadow: none;
+}
+.timeline-style-1 .timeline-date {
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--on-surface-variant);
+    margin-bottom: 4px;
+    letter-spacing: 0;
+}
+.timeline-style-1 .timeline-title {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+.timeline-style-1 .timeline-subtitle {
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+.timeline-style-1 .timeline-desc {
+    font-size: 13px;
+    line-height: 1.6;
+}

@@ -1,0 +1,795 @@
+{
+  "page": {
+    "title": "理科知识",
+    "description": "数学、物理、化学、生物等理科知识的系统学习"
+  },
+  "hero": {
+    "title": "理科知识",
+    "brand_name": "SCIENCE_KNOWLEDGE",
+    "subtitle": "探索科学奥秘，从基础原理到前沿发现",
+    "tags": [
+      "科学普及",
+      "知识系统",
+      "学习平台"
+    ]
+  },
+  "version": "v1",
+  "lastModified": "2026-07-06 23:32:43",
+  "generatedAt": "2026-07-06 23:32:43",
+  "modules": [
+    {
+      "id": "math",
+      "title": "数学",
+      "description": "从几何到代数，探索数学的逻辑之美",
+      "image": "/api/image/science/math.jpg",
+      "tags": [
+        "逻辑",
+        "计算",
+        "抽象"
+      ],
+      "link": "/math"
+    },
+    {
+      "id": "physics",
+      "title": "物理",
+      "description": "从光学到力学，理解自然界的运行规律",
+      "image": "/api/image/science/physics.jpg",
+      "tags": [
+        "实验",
+        "规律",
+        "宇宙"
+      ],
+      "link": "/physics"
+    },
+    {
+      "id": "chemistry",
+      "title": "化学",
+      "description": "从元素到反应，揭示物质的构成与变化",
+      "image": "/api/image/science/chemistry.jpg",
+      "tags": [
+        "分子",
+        "反应",
+        "材料"
+      ],
+      "link": "/chemistry"
+    },
+    {
+      "id": "biology",
+      "title": "生物",
+      "description": "从细胞到生态，探索生命的奥秘",
+      "image": "/api/image/science/biology.jpg",
+      "tags": [
+        "生命",
+        "进化",
+        "生态"
+      ],
+      "link": "/biology"
+    }
+  ],
+  "columns": {
+    "biology": {
+      "page": {
+        "title": "生物",
+        "description": "从细胞到生态，探索生命的奥秘"
+      },
+      "hero": {
+        "title": "生物",
+        "tags": [
+          "生命",
+          "进化",
+          "生态"
+        ]
+      },
+      "version": "v1",
+      "lastModified": "2026-07-06 23:32:43",
+      "generatedAt": "2026-07-06 23:32:43",
+      "recent": [
+        {
+          "title": "中世纪生态学发展历程",
+          "subtitle": "",
+          "desc": "中世纪生态学经历了从博物学到自然神学的发展过程，为后来的生态学奠定了基础。",
+          "link": "/biology/02 生态学/中世纪/development-history"
+        },
+        {
+          "title": "古代细胞生物学发展历程",
+          "subtitle": "",
+          "desc": "古代细胞生物学从对生物形态的观察开始，逐渐发展为系统的描述和分类，为后来的生物学研究奠定了基础。",
+          "link": "/biology/01 细胞生物学/古代/development-history"
+        },
+        {
+          "title": "中世纪生态学主要人物",
+          "subtitle": "",
+          "desc": "中世纪生态学的发展离不开多位学者的贡献，他们的博物学研究为后来的生态学奠定了基础。",
+          "link": "/biology/02 生态学/中世纪/key-figures"
+        },
+        {
+          "title": "近现代细胞生物学主要人物",
+          "subtitle": "",
+          "desc": "近现代细胞生物学的发展离不开众多杰出生物学家的贡献，他们的工作彻底改变了人类对生命的认识。",
+          "link": "/biology/01 细胞生物学/近现代/key-figures"
+        },
+        {
+          "title": "中世纪细胞生物学主要成就",
+          "subtitle": "",
+          "desc": "中世纪细胞生物学主要表现为解剖学的发展和显微镜的发明，为后来的细胞发现奠定了基础。",
+          "link": "/biology/01 细胞生物学/中世纪/major-achievements"
+        },
+        {
+          "title": "中世纪细胞生物学发展历程",
+          "subtitle": "",
+          "desc": "中世纪细胞生物学经历了从解剖学到显微观察的发展过程，为后来的细胞学说奠定了基础。",
+          "link": "/biology/01 细胞生物学/中世纪/development-history"
+        },
+        {
+          "title": "古代细胞生物学主要人物",
+          "subtitle": "",
+          "desc": "古代细胞生物学的发展离不开多位学者的观察和记录，他们的工作为后来的生物学研究奠定了基础。",
+          "link": "/biology/01 细胞生物学/古代/key-figures"
+        },
+        {
+          "title": "中世纪细胞生物学主要人物",
+          "subtitle": "",
+          "desc": "中世纪细胞生物学的发展离不开多位学者的贡献，他们的工作为后来的细胞学说奠定了基础。",
+          "link": "/biology/01 细胞生物学/中世纪/key-figures"
+        }
+      ],
+      "categories": [
+        {
+          "name": "细胞生物学",
+          "subCategories": [
+            {
+              "name": "中世纪",
+              "links": [
+                {
+                  "title": "中世纪细胞生物学发展历程",
+                  "url": "/biology/01 细胞生物学/中世纪/development-history"
+                },
+                {
+                  "title": "中世纪细胞生物学主要人物",
+                  "url": "/biology/01 细胞生物学/中世纪/key-figures"
+                },
+                {
+                  "title": "中世纪细胞生物学主要成就",
+                  "url": "/biology/01 细胞生物学/中世纪/major-achievements"
+                }
+              ]
+            },
+            {
+              "name": "古代",
+              "links": [
+                {
+                  "title": "古代细胞生物学发展历程",
+                  "url": "/biology/01 细胞生物学/古代/development-history"
+                },
+                {
+                  "title": "古代细胞生物学主要人物",
+                  "url": "/biology/01 细胞生物学/古代/key-figures"
+                },
+                {
+                  "title": "古代细胞生物学主要成就",
+                  "url": "/biology/01 细胞生物学/古代/major-achievements"
+                }
+              ]
+            },
+            {
+              "name": "近现代",
+              "links": [
+                {
+                  "title": "近现代细胞生物学发展历程",
+                  "url": "/biology/01 细胞生物学/近现代/development-history"
+                },
+                {
+                  "title": "近现代细胞生物学主要人物",
+                  "url": "/biology/01 细胞生物学/近现代/key-figures"
+                },
+                {
+                  "title": "近现代细胞生物学主要成就",
+                  "url": "/biology/01 细胞生物学/近现代/major-achievements"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "生态学",
+          "subCategories": [
+            {
+              "name": "中世纪",
+              "links": [
+                {
+                  "title": "中世纪生态学发展历程",
+                  "url": "/biology/02 生态学/中世纪/development-history"
+                },
+                {
+                  "title": "中世纪生态学主要人物",
+                  "url": "/biology/02 生态学/中世纪/key-figures"
+                },
+                {
+                  "title": "中世纪生态学主要成就",
+                  "url": "/biology/02 生态学/中世纪/major-achievements"
+                }
+              ]
+            },
+            {
+              "name": "古代",
+              "links": [
+                {
+                  "title": "古代生态学发展历程",
+                  "url": "/biology/02 生态学/古代/development-history"
+                },
+                {
+                  "title": "古代生态学主要人物",
+                  "url": "/biology/02 生态学/古代/key-figures"
+                },
+                {
+                  "title": "古代生态学主要成就",
+                  "url": "/biology/02 生态学/古代/major-achievements"
+                }
+              ]
+            },
+            {
+              "name": "近现代",
+              "links": [
+                {
+                  "title": "近现代生态学发展历程",
+                  "url": "/biology/02 生态学/近现代/development-history"
+                },
+                {
+                  "title": "近现代生态学主要人物",
+                  "url": "/biology/02 生态学/近现代/key-figures"
+                },
+                {
+                  "title": "近现代生态学主要成就",
+                  "url": "/biology/02 生态学/近现代/major-achievements"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "chemistry": {
+      "page": {
+        "title": "化学",
+        "description": "从元素到反应，揭示物质的构成与变化"
+      },
+      "hero": {
+        "title": "化学",
+        "tags": [
+          "分子",
+          "反应",
+          "材料"
+        ]
+      },
+      "version": "v1",
+      "lastModified": "2026-07-06 23:32:43",
+      "generatedAt": "2026-07-06 23:32:43",
+      "recent": [
+        {
+          "title": "古代有机化学主要成就",
+          "subtitle": "",
+          "desc": "古代有机化学主要表现为发酵、酿造、染色等实用技术，以及炼金术对物质变化的探索。",
+          "link": "/chemistry/01 有机化学/古代/major-achievements"
+        },
+        {
+          "title": "中世纪有机化学主要成就",
+          "subtitle": "",
+          "desc": "中世纪有机化学主要表现为炼金术的发展和医药化学的兴起，帕拉塞尔苏斯等人将化学应用于医学。",
+          "link": "/chemistry/01 有机化学/中世纪/major-achievements"
+        },
+        {
+          "title": "中世纪有机化学发展历程",
+          "subtitle": "",
+          "desc": "中世纪有机化学经历了从炼金术到医药化学的转变，为后来的化学革命奠定了基础。",
+          "link": "/chemistry/01 有机化学/中世纪/development-history"
+        },
+        {
+          "title": "古代有机化学主要人物",
+          "subtitle": "",
+          "desc": "古代有机化学的发展主要依靠工匠和炼金术士的实践积累，他们的经验为后来的化学科学奠定了基础。",
+          "link": "/chemistry/01 有机化学/古代/key-figures"
+        },
+        {
+          "title": "中世纪有机化学主要人物",
+          "subtitle": "",
+          "desc": "中世纪有机化学的发展从炼金术转向医药化学，多位学者为化学与医学的结合做出了贡献。",
+          "link": "/chemistry/01 有机化学/中世纪/key-figures"
+        },
+        {
+          "title": "近现代有机化学主要成就",
+          "subtitle": "",
+          "desc": "近现代有机化学经历了从生命力说到合成化学的革命性转变，维勒合成尿素打破了有机与无机的界限。",
+          "link": "/chemistry/01 有机化学/近现代/major-achievements"
+        },
+        {
+          "title": "中世纪无机化学主要成就",
+          "subtitle": "",
+          "desc": "中世纪无机化学主要表现为炼金术的发展和矿物酸的发现，为后来的化学革命奠定了基础。",
+          "link": "/chemistry/02 无机化学/中世纪/major-achievements"
+        },
+        {
+          "title": "古代无机化学主要成就",
+          "subtitle": "",
+          "desc": "古代无机化学主要表现为冶金、陶瓷、玻璃制造等实用技术，以及炼金术对物质转化的探索。",
+          "link": "/chemistry/02 无机化学/古代/major-achievements"
+        }
+      ],
+      "categories": [
+        {
+          "name": "有机化学",
+          "subCategories": [
+            {
+              "name": "中世纪",
+              "links": [
+                {
+                  "title": "中世纪有机化学发展历程",
+                  "url": "/chemistry/01 有机化学/中世纪/development-history"
+                },
+                {
+                  "title": "中世纪有机化学主要人物",
+                  "url": "/chemistry/01 有机化学/中世纪/key-figures"
+                },
+                {
+                  "title": "中世纪有机化学主要成就",
+                  "url": "/chemistry/01 有机化学/中世纪/major-achievements"
+                }
+              ]
+            },
+            {
+              "name": "古代",
+              "links": [
+                {
+                  "title": "古代有机化学发展历程",
+                  "url": "/chemistry/01 有机化学/古代/development-history"
+                },
+                {
+                  "title": "古代有机化学主要人物",
+                  "url": "/chemistry/01 有机化学/古代/key-figures"
+                },
+                {
+                  "title": "古代有机化学主要成就",
+                  "url": "/chemistry/01 有机化学/古代/major-achievements"
+                }
+              ]
+            },
+            {
+              "name": "近现代",
+              "links": [
+                {
+                  "title": "近现代有机化学发展历程",
+                  "url": "/chemistry/01 有机化学/近现代/development-history"
+                },
+                {
+                  "title": "近现代有机化学主要人物",
+                  "url": "/chemistry/01 有机化学/近现代/key-figures"
+                },
+                {
+                  "title": "近现代有机化学主要成就",
+                  "url": "/chemistry/01 有机化学/近现代/major-achievements"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "无机化学",
+          "subCategories": [
+            {
+              "name": "中世纪",
+              "links": [
+                {
+                  "title": "中世纪无机化学发展历程",
+                  "url": "/chemistry/02 无机化学/中世纪/development-history"
+                },
+                {
+                  "title": "中世纪无机化学主要人物",
+                  "url": "/chemistry/02 无机化学/中世纪/key-figures"
+                },
+                {
+                  "title": "中世纪无机化学主要成就",
+                  "url": "/chemistry/02 无机化学/中世纪/major-achievements"
+                }
+              ]
+            },
+            {
+              "name": "古代",
+              "links": [
+                {
+                  "title": "古代无机化学发展历程",
+                  "url": "/chemistry/02 无机化学/古代/development-history"
+                },
+                {
+                  "title": "古代无机化学主要人物",
+                  "url": "/chemistry/02 无机化学/古代/key-figures"
+                },
+                {
+                  "title": "古代无机化学主要成就",
+                  "url": "/chemistry/02 无机化学/古代/major-achievements"
+                }
+              ]
+            },
+            {
+              "name": "近现代",
+              "links": [
+                {
+                  "title": "近现代无机化学发展历程",
+                  "url": "/chemistry/02 无机化学/近现代/development-history"
+                },
+                {
+                  "title": "近现代无机化学主要人物",
+                  "url": "/chemistry/02 无机化学/近现代/key-figures"
+                },
+                {
+                  "title": "近现代无机化学主要成就",
+                  "url": "/chemistry/02 无机化学/近现代/major-achievements"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "math": {
+      "page": {
+        "title": "数学",
+        "description": "从几何到代数，探索数学的逻辑之美"
+      },
+      "hero": {
+        "title": "数学",
+        "tags": [
+          "逻辑",
+          "计算",
+          "抽象"
+        ]
+      },
+      "version": "v1",
+      "lastModified": "2026-07-06 23:32:43",
+      "generatedAt": "2026-07-06 23:32:43",
+      "recent": [
+        {
+          "title": "中世纪代数学主要成就",
+          "subtitle": "",
+          "desc": "中世纪代数学在阿拉伯世界取得了重大进展，花拉子米建立了系统的代数方法，为后来的代数学发展奠定了基础。",
+          "link": "/math/01 代数/中世纪/major-achievements"
+        },
+        {
+          "title": "古代代数学发展历程",
+          "subtitle": "",
+          "desc": "古代代数学从简单的算术运算发展到复杂的方程求解，经历了多个文明的贡献。",
+          "link": "/math/01 代数/古代/development-history"
+        },
+        {
+          "title": "中世纪代数学主要人物",
+          "subtitle": "",
+          "desc": "中世纪代数学的发展主要依靠阿拉伯学者的系统化工作，以及后来欧洲学者的继承和发展。",
+          "link": "/math/01 代数/中世纪/key-figures"
+        },
+        {
+          "title": "中世纪代数学发展历程",
+          "subtitle": "",
+          "desc": "中世纪代数学经历了阿拉伯世界的系统化发展和欧洲中世纪的缓慢传播，最终为文艺复兴时期的数学革命奠定了基础。",
+          "link": "/math/01 代数/中世纪/development-history"
+        },
+        {
+          "title": "古代代数学主要成就",
+          "subtitle": "",
+          "desc": "古代代数学起源于算术运算和方程求解，巴比伦人和埃及人发展出初步的代数方法，希腊人则用几何方式处理代数问题。",
+          "link": "/math/01 代数/古代/major-achievements"
+        },
+        {
+          "title": "古代几何学主要成就",
+          "subtitle": "",
+          "desc": "古代几何学起源于土地测量和建筑需求，埃及人发展出实用的测量方法，希腊人则将几何学提升为演绎科学。",
+          "link": "/math/02 几何/古代/major-achievements"
+        },
+        {
+          "title": "近现代代数学发展历程",
+          "subtitle": "",
+          "desc": "近现代代数学经历了从符号代数到抽象代数的革命性转变，群论、环论、域论等抽象代数分支的建立彻底改变了数学的面貌。",
+          "link": "/math/01 代数/近现代/development-history"
+        },
+        {
+          "title": "中世纪几何学主要成就",
+          "subtitle": "",
+          "desc": "中世纪欧洲几何学发展缓慢，但阿拉伯学者保存并发展了希腊几何学，为后来的文艺复兴奠定了基础。",
+          "link": "/math/02 几何/中世纪/major-achievements"
+        }
+      ],
+      "categories": [
+        {
+          "name": "代数",
+          "subCategories": [
+            {
+              "name": "中世纪",
+              "links": [
+                {
+                  "title": "中世纪代数学发展历程",
+                  "url": "/math/01 代数/中世纪/development-history"
+                },
+                {
+                  "title": "中世纪代数学主要人物",
+                  "url": "/math/01 代数/中世纪/key-figures"
+                },
+                {
+                  "title": "中世纪代数学主要成就",
+                  "url": "/math/01 代数/中世纪/major-achievements"
+                }
+              ]
+            },
+            {
+              "name": "古代",
+              "links": [
+                {
+                  "title": "古代代数学发展历程",
+                  "url": "/math/01 代数/古代/development-history"
+                },
+                {
+                  "title": "古代代数学主要人物",
+                  "url": "/math/01 代数/古代/key-figures"
+                },
+                {
+                  "title": "古代代数学主要成就",
+                  "url": "/math/01 代数/古代/major-achievements"
+                }
+              ]
+            },
+            {
+              "name": "近现代",
+              "links": [
+                {
+                  "title": "近现代代数学发展历程",
+                  "url": "/math/01 代数/近现代/development-history"
+                },
+                {
+                  "title": "近现代代数学主要人物",
+                  "url": "/math/01 代数/近现代/key-figures"
+                },
+                {
+                  "title": "近现代代数学主要成就",
+                  "url": "/math/01 代数/近现代/major-achievements"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "几何",
+          "subCategories": [
+            {
+              "name": "中世纪",
+              "links": [
+                {
+                  "title": "中世纪几何学发展历程",
+                  "url": "/math/02 几何/中世纪/development-history"
+                },
+                {
+                  "title": "中世纪几何学主要人物",
+                  "url": "/math/02 几何/中世纪/key-figures"
+                },
+                {
+                  "title": "中世纪几何学主要成就",
+                  "url": "/math/02 几何/中世纪/major-achievements"
+                }
+              ]
+            },
+            {
+              "name": "古代",
+              "links": [
+                {
+                  "title": "古代几何学发展历程",
+                  "url": "/math/02 几何/古代/development-history"
+                },
+                {
+                  "title": "古代几何学主要人物",
+                  "url": "/math/02 几何/古代/key-figures"
+                },
+                {
+                  "title": "古代几何学主要成就",
+                  "url": "/math/02 几何/古代/major-achievements"
+                }
+              ]
+            },
+            {
+              "name": "近现代",
+              "links": [
+                {
+                  "title": "近现代几何学发展历程",
+                  "url": "/math/02 几何/近现代/development-history"
+                },
+                {
+                  "title": "近现代几何学主要人物",
+                  "url": "/math/02 几何/近现代/key-figures"
+                },
+                {
+                  "title": "近现代几何学主要成就",
+                  "url": "/math/02 几何/近现代/major-achievements"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "physics": {
+      "page": {
+        "title": "物理",
+        "description": "从光学到力学，理解自然界的运行规律"
+      },
+      "hero": {
+        "title": "物理",
+        "tags": [
+          "实验",
+          "规律",
+          "宇宙"
+        ]
+      },
+      "version": "v1",
+      "lastModified": "2026-07-06 23:32:43",
+      "generatedAt": "2026-07-06 23:32:43",
+      "recent": [
+        {
+          "title": "中世纪力学主要成就",
+          "subtitle": "",
+          "desc": "中世纪力学在亚里士多德框架内发展，但牛津和巴黎的学者提出了冲力说等重要概念，为后来的力学革命奠定了基础。",
+          "link": "/physics/01 力学/中世纪/major-achievements"
+        },
+        {
+          "title": "中世纪力学主要人物",
+          "subtitle": "",
+          "desc": "中世纪力学的发展主要依靠欧洲学者的努力，他们在亚里士多德框架内提出了新的概念，为后来的科学革命做准备。",
+          "link": "/physics/01 力学/中世纪/key-figures"
+        },
+        {
+          "title": "古代力学发展历程",
+          "subtitle": "",
+          "desc": "古代力学从工程实践中发展而来，最终形成了系统的静力学理论，为后来的力学发展奠定了基础。",
+          "link": "/physics/01 力学/古代/development-history"
+        },
+        {
+          "title": "近现代力学主要成就",
+          "subtitle": "",
+          "desc": "近现代力学经历了从伽利略的运动学研究到牛顿的经典力学，再到爱因斯坦的相对论力学的革命性发展。",
+          "link": "/physics/01 力学/近现代/major-achievements"
+        },
+        {
+          "title": "中世纪力学发展历程",
+          "subtitle": "",
+          "desc": "中世纪力学经历了从亚里士多德运动理论到冲力说的过渡，为后来的经典力学革命奠定了基础。",
+          "link": "/physics/01 力学/中世纪/development-history"
+        },
+        {
+          "title": "古代力学主要成就",
+          "subtitle": "",
+          "desc": "古代力学主要研究静力学问题，包括杠杆、滑轮、斜面等简单机械，以及浮力、重心等概念。",
+          "link": "/physics/01 力学/古代/major-achievements"
+        },
+        {
+          "title": "古代力学主要人物",
+          "subtitle": "",
+          "desc": "古代力学的发展与工程实践密切相关，多位学者为静力学和简单机械的研究做出了贡献。",
+          "link": "/physics/01 力学/古代/key-figures"
+        },
+        {
+          "title": "中世纪光学主要成就",
+          "subtitle": "",
+          "desc": "中世纪光学在阿拉伯世界取得了重大进展，海桑的实验光学为后来的科学革命奠定了基础。",
+          "link": "/physics/02 光学/中世纪/major-achievements"
+        }
+      ],
+      "categories": [
+        {
+          "name": "力学",
+          "subCategories": [
+            {
+              "name": "中世纪",
+              "links": [
+                {
+                  "title": "中世纪力学发展历程",
+                  "url": "/physics/01 力学/中世纪/development-history"
+                },
+                {
+                  "title": "中世纪力学主要人物",
+                  "url": "/physics/01 力学/中世纪/key-figures"
+                },
+                {
+                  "title": "中世纪力学主要成就",
+                  "url": "/physics/01 力学/中世纪/major-achievements"
+                }
+              ]
+            },
+            {
+              "name": "古代",
+              "links": [
+                {
+                  "title": "古代力学发展历程",
+                  "url": "/physics/01 力学/古代/development-history"
+                },
+                {
+                  "title": "古代力学主要人物",
+                  "url": "/physics/01 力学/古代/key-figures"
+                },
+                {
+                  "title": "古代力学主要成就",
+                  "url": "/physics/01 力学/古代/major-achievements"
+                }
+              ]
+            },
+            {
+              "name": "近现代",
+              "links": [
+                {
+                  "title": "近现代力学发展历程",
+                  "url": "/physics/01 力学/近现代/development-history"
+                },
+                {
+                  "title": "近现代力学主要人物",
+                  "url": "/physics/01 力学/近现代/key-figures"
+                },
+                {
+                  "title": "近现代力学主要成就",
+                  "url": "/physics/01 力学/近现代/major-achievements"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "光学",
+          "subCategories": [
+            {
+              "name": "中世纪",
+              "links": [
+                {
+                  "title": "中世纪光学发展历程",
+                  "url": "/physics/02 光学/中世纪/development-history"
+                },
+                {
+                  "title": "中世纪光学主要人物",
+                  "url": "/physics/02 光学/中世纪/key-figures"
+                },
+                {
+                  "title": "中世纪光学主要成就",
+                  "url": "/physics/02 光学/中世纪/major-achievements"
+                }
+              ]
+            },
+            {
+              "name": "古代",
+              "links": [
+                {
+                  "title": "古代光学发展历程",
+                  "url": "/physics/02 光学/古代/development-history"
+                },
+                {
+                  "title": "古代光学主要人物",
+                  "url": "/physics/02 光学/古代/key-figures"
+                },
+                {
+                  "title": "古代光学主要成就",
+                  "url": "/physics/02 光学/古代/major-achievements"
+                }
+              ]
+            },
+            {
+              "name": "近现代",
+              "links": [
+                {
+                  "title": "近现代光学发展历程",
+                  "url": "/physics/02 光学/近现代/development-history"
+                },
+                {
+                  "title": "近现代光学主要人物",
+                  "url": "/physics/02 光学/近现代/key-figures"
+                },
+                {
+                  "title": "近现代光学主要成就",
+                  "url": "/physics/02 光学/近现代/major-achievements"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "label": "贾比尔",
+    "accent": true
+  },
+  {
+    "label": "帕拉塞尔苏斯",
+    "accent": true
+  },
+  {
+    "label": "阿格里科拉",
+    "accent": true
+  },
+  {
+    "label": "瓦伦丁",
+    "accent": false
+  },
+  {
+    "label": "利巴维乌斯",
+    "accent": false
+  }
+]

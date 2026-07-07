@@ -1,0 +1,26 @@
+[
+  {
+    "label": "笛卡尔",
+    "accent": true
+  },
+  {
+    "label": "高斯",
+    "accent": true
+  },
+  {
+    "label": "罗巴切夫斯基",
+    "accent": true
+  },
+  {
+    "label": "黎曼",
+    "accent": true
+  },
+  {
+    "label": "克莱因",
+    "accent": false
+  },
+  {
+    "label": "庞加莱",
+    "accent": false
+  }
+]

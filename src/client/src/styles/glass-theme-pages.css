@@ -1,0 +1,23 @@
+/* ===== Glass Theme Pages - Clean Cards ===== */
+
+[data-theme="glass"] .cat-recent-card:hover {
+    background: rgba(255,255,255,0.12);
+    border-color: rgba(255,255,255,0.28);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12), inset 0 1px 0 rgba(255,255,255,0.18);
+}
+
+[data-theme="glass"] .cat-sub-card:hover {
+    background: rgba(255,255,255,0.12);
+    border-color: rgba(255,255,255,0.28);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.10), inset 0 1px 0 rgba(255,255,255,0.18);
+}
+
+[data-theme="glass"] .cat-tab:hover {
+    background: rgba(255,255,255,0.08);
+}
+
+[data-theme="glass"] .cat-tab.active {
+    background: rgba(123,140,254,0.20);
+    color: #c7d2fe;
+    border: 1px solid rgba(123,140,254,0.35);
+}

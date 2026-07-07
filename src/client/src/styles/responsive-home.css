@@ -1,0 +1,23 @@
+/* Home page responsive */
+@media (max-width: 1200px) {
+    .home-modules-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .home-modules-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .home-modules-grid {
+        grid-template-columns: 1fr;
+        padding: 16px;
+    }
+    .home-module-card {
+        aspect-ratio: 16/9;
+    }
+}

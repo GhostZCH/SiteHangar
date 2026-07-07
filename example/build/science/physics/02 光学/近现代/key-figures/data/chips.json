@@ -1,0 +1,26 @@
+[
+  {
+    "label": "牛顿",
+    "accent": true
+  },
+  {
+    "label": "惠更斯",
+    "accent": true
+  },
+  {
+    "label": "杨氏",
+    "accent": true
+  },
+  {
+    "label": "麦克斯韦",
+    "accent": true
+  },
+  {
+    "label": "爱因斯坦",
+    "accent": true
+  },
+  {
+    "label": "高斯",
+    "accent": false
+  }
+]

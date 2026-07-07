@@ -1,0 +1,8 @@
+/* ===== Responsive Mobile Utilities ===== */
+@media (max-width: 768px) {
+    /* Override Tailwind space-y-12 on mobile */
+    .space-y-12 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-y-reverse: 0;
+        margin-top: 16px;
+    }
+}
