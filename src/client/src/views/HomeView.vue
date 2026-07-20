@@ -2,6 +2,7 @@
 import { ref, computed, onMounted, onUnmounted } from 'vue';
 import { publicApi } from '@/api/public';
 import type { ModuleCard } from '@/types/content';
+import ColumnNetworkSphere from '@/components/content/ColumnNetworkSphere.vue';
 
 const modules = ref<ModuleCard[]>([]);
 const loading = ref(true);
@@ -313,6 +314,8 @@ const hasModules = computed(() => modules.value.length > 0);
         </router-link>
       </div>
       <div v-else class="empty-state">暂无栏目</div>
+
+      <ColumnNetworkSphere v-if="hasModules" :modules="modules" />
     </section>
   </div>
 </template>

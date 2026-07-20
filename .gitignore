@@ -40,6 +40,7 @@ npm-debug.log*
 .idea/
 *.swp
 .DS_Store
+.trae
 
 # OS
 Thumbs.db
