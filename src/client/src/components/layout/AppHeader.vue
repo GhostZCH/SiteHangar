@@ -11,7 +11,7 @@ const site = useSiteStore();
 const { currentTheme, setTheme } = useTheme();
 
 const showSiteLabel = computed(() => site.siteSlug);
-const siteTitle = computed(() => site.siteTitle || 'SiteHanger');
+const siteTitle = computed(() => site.siteTitle || 'SiteHangar');
 
 function selectTheme(theme: ThemeName) {
   setTheme(theme);
@@ -31,6 +31,9 @@ function selectTheme(theme: ThemeName) {
           </svg>
         </router-link>
         <span class="appbar-title">{{ siteTitle }}</span>
+        <span class="appbar-powered">
+          Powered by <a href="https://github.com/GhostZCH/SiteHangar" target="_blank" rel="noopener">SiteHangar</a>
+        </span>
       </div>
 
       <div class="appbar-actions">

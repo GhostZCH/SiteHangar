@@ -8,7 +8,6 @@ import yaml from 'js-yaml';
 function loadConfig() {
   const configFile = process.env.CONFIG_FILE;
   if (!configFile) {
-    console.warn('[vite] CONFIG_FILE environment variable not set, using empty allowedHosts');
     return {};
   }
   
@@ -24,6 +23,41 @@ function loadConfig() {
 
 const config = loadConfig();
 
+// 获取站点数据根目录：读取 config.yaml 的 buildOutputDir
+function getDataRoot(): string | undefined {
+  const buildOutputDir = config?.buildOutputDir;
+  if (buildOutputDir) {
+    if (path.isAbsolute(buildOutputDir)) {
+      return buildOutputDir;
+    }
+    return path.resolve('/app', buildOutputDir);
+  }
+  return undefined;
+}
+
+// 扫描数据根目录下的一级目录，作为允许的 Host（站点域名）
+function scanSiteHosts(): string[] {
+  const dataRoot = getDataRoot();
+  if (!dataRoot || !fs.existsSync(dataRoot)) {
+    return [];
+  }
+  try {
+    return fs.readdirSync(dataRoot)
+      .filter(entry => {
+        const fullPath = path.join(dataRoot, entry);
+        return fs.statSync(fullPath).isDirectory();
+      });
+  } catch (err) {
+    console.warn('[vite] Failed to scan site hosts:', err);
+    return [];
+  }
+}
+
+const siteHosts = scanSiteHosts();
+if (siteHosts.length > 0) {
+  console.log('[vite] allowedHosts from data root:', siteHosts);
+}
+
 // Vite 仅用于本地开发调试（HMR）。
 // Docker 部署时由 Node 进程直接托管 client/dist/ 静态文件。
 export default defineConfig({
@@ -36,7 +70,7 @@ export default defineConfig({
   server: {
     port: 5173,
     host: '0.0.0.0',
-    allowedHosts: config.allowedHosts || [],
+    allowedHosts: siteHosts.length > 0 ? siteHosts : true,
     hmr: false,
     proxy: {
       '/api': {

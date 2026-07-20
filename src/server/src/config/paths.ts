@@ -4,10 +4,12 @@ import yaml from 'js-yaml';
 import { resolveSiteSlugByHost } from './sites';
 
 /**
- * 加载项目根目录下的 config.yaml
+ * 加载配置文件
+ * 优先使用环境变量 CONFIG_FILE，否则使用项目根目录下的 config.yaml
  */
 function loadProjectConfig(): Record<string, any> {
-  const configPath = path.resolve(__dirname, '../../../config.yaml');
+  const configFile = process.env.CONFIG_FILE || path.resolve(__dirname, '../../../config.yaml');
+  const configPath = path.resolve(configFile);
   if (fs.existsSync(configPath)) {
     const content = fs.readFileSync(configPath, 'utf-8');
     const parsed = yaml.load(content) as Record<string, any>;
@@ -47,8 +49,8 @@ function resolveBuildOutputDir(): string {
   return path.resolve('/app', dir);
 }
 
-/** 网站服务数据根目录：优先使用环境变量 DATA_ROOT，否则使用编译输出目录 */
-export const DATA_ROOT = process.env.DATA_ROOT || resolveBuildOutputDir();
+/** 网站服务数据根目录：从 config.yaml 的 buildOutputDir 解析 */
+export const DATA_ROOT = resolveBuildOutputDir();
 
 /**
  * 验证并清理路径片段，防止路径遍历攻击

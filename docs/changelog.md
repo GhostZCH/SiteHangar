@@ -5,8 +5,8 @@
 ### 变更内容
 
 - **前端**：
-  - `src/client/src/components/layout/AppHeader.vue`：在站点标题（`.appbar-title`）后追加灰色 `Powered by SiteHangar` 小字标识
-  - `src/client/src/styles/appbar.css`：新增 `.appbar-powered` 样式（12px、灰色 #9e9e9e、紧凑间距）
+  - `src/client/src/components/layout/AppHeader.vue`：在站点标题（`.appbar-title`）后追加灰色 `Powered by SiteHangar` 小字标识，SiteHangar 文字附带 GitHub 仓库链接 `https://github.com/GhostZCH/SiteHangar`
+  - `src/client/src/styles/appbar.css`：新增 `.appbar-powered` 样式（12px、灰色 #9e9e9e、紧凑间距），链接 hover 时切换为主题色
 
 ### 相关文档
 

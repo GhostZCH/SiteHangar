@@ -41,7 +41,7 @@ fi
 echo "[entrypoint] BUILD_OUTPUT_DIR set to: $BUILD_OUTPUT_DIR"
 
 # 镜像内预装的依赖目录
-MODULES_DIR="/opt/kc-v2-modules"
+MODULES_DIR="/opt/site-hangar-modules"
 
 # 将镜像内的 node_modules 复制到挂载目录（如果挂载目录为空）
 # 使用 Volume 挂载 node_modules，本地不会出现该文件夹
@@ -57,8 +57,8 @@ copy_modules_if_empty() {
     fi
 }
 
-copy_modules_if_empty "$PROJECT_DIR/client" "$MODULES_DIR/client"
-copy_modules_if_empty "$PROJECT_DIR/server" "$MODULES_DIR/server"
+copy_modules_if_empty "$PROJECT_DIR/src/client" "$MODULES_DIR/client"
+copy_modules_if_empty "$PROJECT_DIR/src/server" "$MODULES_DIR/server"
 
 # 从 config 所在目录复制 nginx.conf 到 Nginx 配置目录
 CONFIG_DIR=$(dirname "$CONFIG_FILE")
@@ -73,6 +73,5 @@ fi
 
 # 启动 Supervisor
 export PROJECT_DIR="$PROJECT_DIR"
-export DATA_ROOT="$BUILD_OUTPUT_DIR"
 export CONFIG_FILE="$CONFIG_FILE"
 exec /usr/bin/supervisord -c /etc/supervisor/conf.d/supervisord.conf

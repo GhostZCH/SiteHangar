@@ -12,19 +12,22 @@ export async function scanSites(dataRoot: string): Promise<string[]> {
 /**
  * 根据 Host 头解析站点标识（siteSlug）
  * 匹配规则：
- * 1. 提取 host 的子域名部分（如 www.knowledgecube.com -> www）
- * 2. 如果子域名存在于站点列表中，直接匹配
- * 3. 默认返回 'www'
+ * 1. 优先使用完整 host（去掉端口）精确匹配数据目录名，如 travel.example.local
+ * 2. 兼容旧逻辑：提取第一段子域名匹配
+ * 3. 默认返回 'www'（如果存在），否则返回第一个站点
  */
 export async function resolveSiteSlugByHost(host: string, dataRoot: string): Promise<string> {
   const normalizedHost = host.toLowerCase().split(':')[0];
 
-  // 提取子域名（host 的第一段）
-  const subdomain = normalizedHost.split('.')[0];
-
   const sites = await scanSites(dataRoot);
 
-  // 精确匹配子域名
+  // 优先完整域名匹配
+  if (normalizedHost && sites.includes(normalizedHost)) {
+    return normalizedHost;
+  }
+
+  // 兼容旧逻辑：提取子域名（host 的第一段）
+  const subdomain = normalizedHost.split('.')[0];
   if (subdomain && sites.includes(subdomain)) {
     return subdomain;
   }

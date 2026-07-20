@@ -3,7 +3,7 @@
 这是一个博客系统，数据和展示分离，这个项目只是个展示数据的网站系统，前端使用 Vue + vite实现。
 后端使用 Node.js 实现。全部数据使用文件系统存储，不涉及数据库。开发前请先阅读文档
 
-原始数据在 E:\code\sitesanddata\my_sites_data\data 目录下，编译结果在 E:\code\sitesanddata\my_sites_data\result 目录下。
+网站的原始数据分两份，样例数据是项目的一部分，在 examples/ 目录下。线上数据在 online/ 目录下，不属于这个项目的范围。
 
 ## 项目文档索引
 
@@ -26,15 +26,4 @@
 - 如果可以使用第三方插件的，尽量使用第三方插件。
 - 单个文件建议100-200行代码，最多不超过300行。
 - 完成代码前先阅读文档，了解架构和规范
-- 涉及以下变更时，必须同步更新对应文档：
-- **禁止网页原地编译**：即输入和输出文件夹相同，不能污染原始数据
-
-| 变更类型 | 需更新的文档 |
-|----------|-------------|
-| 调整技术架构、部署方式、容器进程 | `docs/architecture.md` + `docs/deployment.md` |
-| 新增/删除/重命名代码文件或目录 | `docs/project-structure.md` |
-| 新增/修改 API 接口 | `docs/api-reference.md` |
-| 新增/修改 JSON 数据字段或格式 | `docs/data-format.md` |
-| 修改 Docker 命令、端口、挂载路径 | `docs/deployment.md` |
-| 修改代码风格、文件命名、样式规范、内容规范 | `docs/development-guide.md` |
-| 完成重要功能或做出技术决策变更 | `docs/changelog.md` |
+- 代码修改后，必须同步更新对应文档：

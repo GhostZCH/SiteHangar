@@ -1,7 +1,7 @@
 {
   "name": "kc-v2-server",
   "version": "1.0.0",
-  "description": "SiteHanger v2 后端 - 文件系统存储",
+  "description": "SiteHangar v2 后端 - 文件系统存储",
   "main": "dist/server.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",

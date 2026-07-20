@@ -2,7 +2,7 @@ import { ref } from 'vue';
 
 export type ThemeName = 'default' | 'warm' | 'cold' | 'night' | 'glass' | 'eye-care' | '3d';
 
-const STORAGE_KEY = 'sitehanger-theme';
+const STORAGE_KEY = 'sitehangar-theme';
 const currentTheme = ref<ThemeName>('default');
 
 export function useTheme() {
