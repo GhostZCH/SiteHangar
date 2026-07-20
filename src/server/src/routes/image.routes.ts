@@ -57,25 +57,16 @@ router.get('/page-asset/:site/:path(*)', async (req, res, next) => {
   try {
     const { site, path: assetPath } = req.params;
 
-    // 调试日志
-    console.log('[page-asset] site:', site);
-    console.log('[page-asset] assetPath:', assetPath);
-    console.log('[page-asset] DATA_ROOT:', DATA_ROOT);
-
     // 安全校验：拒绝路径遍历
     if (site.includes('..') || assetPath.includes('..')) {
       return res.status(400).json({ error: 'INVALID_PATH' });
     }
 
     const filePath = path.join(DATA_ROOT, site, assetPath);
-    console.log('[page-asset] filePath:', filePath);
 
     // 校验最终路径在 DATA_ROOT 内
     const resolved = path.resolve(filePath);
     const root = path.resolve(DATA_ROOT);
-    console.log('[page-asset] resolved:', resolved);
-    console.log('[page-asset] root:', root);
-    console.log('[page-asset] startsWith:', resolved.startsWith(root + path.sep));
 
     if (!resolved.startsWith(root + path.sep)) {
       return res.status(403).json({ error: 'FORBIDDEN' });

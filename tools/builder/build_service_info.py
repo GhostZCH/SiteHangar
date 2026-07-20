@@ -12,14 +12,13 @@ build_service_info.py - Info 页面编译模块
 
 import os
 from build_page import compile_simple, compile_complex
-from build_utils import format_datetime
+from build_utils import format_datetime, find_section_files
 
 
 def compile_info_page(info_dir_path: str) -> dict:
     """编译 info 文件夹为 info/data.json 数据"""
     has_page_md = os.path.exists(os.path.join(info_dir_path, 'page.md'))
     has_meta_md = os.path.exists(os.path.join(info_dir_path, 'meta.md'))
-    from build_utils import find_section_files
     section_files = find_section_files(info_dir_path)
     has_sections = len(section_files) > 0
 

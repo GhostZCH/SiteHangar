@@ -1,45 +1,50 @@
-# SiteHanger 框架
+# SiteHangar
 
-Vue 3 + Vite + Express + TypeScript，单一 Docker 容器部署。数据与展示分离，通过扫描数据目录动态生成站点结构。
+SiteHangar 是一个**数据驱动的多站点博客框架**。前端基于 Vue 3 + Vite，后端基于 Node.js + Express，所有内容以 Markdown/JSON 文件存储，无需数据库，通过 Docker 单一容器部署。
 
 ## 核心理念
 
-- **数据与展示分离**：所有内容以 JSON 文件存储，前端通过 API 获取数据并动态渲染
-- **多站点共享**：同一套代码支持多个站点，通过子域名或域名区分
-- **数据驱动**：新增栏目、页面只需添加 JSON 文件，无需修改代码
+- **数据与展示分离**：内容以 Markdown 编写，编译为 JSON 后由前端动态渲染，修改内容无需改动代码。
+- **多站点共享**：同一套代码支持多个站点，通过域名或子域名区分，每个站点拥有独立的栏目和内容。
+- **数据驱动**：新增栏目、分类或页面只需添加数据文件，系统自动生成导航和页面结构。
 
-## 技术栈
+## 技术实现
 
 | 层 | 技术 |
 |---|---|
-| 前端 | Vue 3 + Vite + TypeScript + Pinia + Vue Router + Tailwind CSS |
+| 前端 | Vue 3 + Vite + TypeScript + Pinia + Vue Router + Tailwind CSS + ECharts |
 | 后端 | Node.js + Express + TypeScript |
-| 数据 | JSON 文件（`my_sites_data` 目录） |
-| 部署 | Docker（Node.js + Nginx + Supervisor 单容器） |
+| 数据 | Markdown + YAML，编译后生成 JSON 文件 |
+| 部署 | Docker 单容器（Nginx + Vite dev server + Express + Supervisor） |
 
-## 快速启动
+### 架构一句话
 
-详细部署命令请参阅 [docs/deployment.md](docs/deployment.md)。
+用户请求 → Nginx → Vite dev server → Vue Router → 调用 `/api/render/*` → Express 读取 JSON 数据 → 动态渲染页面。
 
-简要步骤：
+## 快速开始
 
 ```powershell
-docker build -t kc-v2 .
-docker run -d -p 80:80 -p 5173:5173 -p 3000:3000 --name kc-v2 kc-v2
+# 1. 编译示例数据
+python tools/builder/build_service.py --clean --data-root example/data --output-dir example/build
+
+# 2. 构建 Docker 镜像
+docker build -t site-hangar -f docker/Dockerfile .
+
+# 3. 启动容器
+docker run -d --name site-hangar-example -p 80:80 -p 5173:5173 -p 3000:3000 `
+  -v e:\code\sitesanddata\site_hangar\example:/app/site_data `
+  -v e:\code\sitesanddata\site_hangar:/app/hanger `
+  site-hangar
 ```
 
-> 首次运行前请阅读 deployment.md 中的挂载路径和 hosts 配置说明。
+首次运行前请阅读 [docs/deployment.md](docs/deployment.md) 了解挂载路径、hosts 配置和常见问题的详细说明。
 
 ## 项目文档
 
 | 文档 | 说明 |
 |------|------|
-| [docs/architecture.md](docs/architecture.md) | 架构设计：部署架构、页面渲染流程、多站点支持、数据目录层级 |
-| [docs/project-structure.md](docs/project-structure.md) | 代码结构：前后端文件索引、组件说明、第三方依赖 |
-| [docs/api-reference.md](docs/api-reference.md) | API 接口：公开 API 列表、路由挂载方式、响应格式 |
-| [docs/data-format.md](docs/data-format.md) | 数据格式总览：JSON 页面数据规范、字段说明 |
-| [docs/data-format-multi.md](docs/data-format-multi.md) | 多 Markdown 格式（复杂模式）：多章节知识页面 |
-| [docs/data-format-single.md](docs/data-format-single.md) | 单 Markdown 格式（简单模式）：单文件知识页面 |
+| [docs/architecture.md](docs/architecture.md) | 架构设计：技术栈、代码模块、文件作用、数据流、API 流程、多站点、目录层级 |
 | [docs/deployment.md](docs/deployment.md) | 部署运维：Docker 命令、容器管理、热重载、常见问题 |
-| [docs/development-guide.md](docs/development-guide.md) | 开发规范：代码风格、**文件大小限制（200行）**、样式组织、移动端适配、内容规范 |
-| [docs/changelog.md](docs/changelog.md) | 变更日志：项目演进记录、技术决策变更、待完成事项 |
+| [docs/exmd.md](docs/exmd.md) | EXMD 格式说明：面向内容创作者的扩展 Markdown 语法，包含单文档和多文档模式 |
+| [docs/changelog.md](docs/changelog.md) | 变更日志：项目演进记录和技术决策变更 |
+| [docs/content-optimization-suggestion.md](docs/content-optimization-suggestion.md) | 内容优化建议 |

@@ -10,7 +10,7 @@
 ```
 example/
 ├── conf/                # 站点配置
-│   ├── config.yaml      # buildOutputDir、icp、allowedHosts
+│   ├── config.yaml      # buildOutputDir、icp
 │   ├── entrypoint.sh    # 容器入口脚本
 │   └── nginx.conf       # Nginx 虚拟主机配置
 ├── data/                # 源数据目录（Markdown 文件）
@@ -24,23 +24,23 @@ example/
 
 ```powershell
 # 1. 编译源数据
-python tools/build_service.py --clean --data-root example/data --output-dir example/build
+python tools/builder/build_service.py --clean --data-root example/data --output-dir example/build
 
 # 2. 构建镜像（首次或 Dockerfile 变更后）
-docker build -t kc-v2 .
+docker build -t site-hangar .
 
 # 3. 启动 Docker 容器（只挂载两个目录）
-docker run -d --name kc-v2-example -p 80:80 -p 5173:5173 -p 3000:3000 `
-  -v e:\code\sitesanddata\my_sites\example:/app/site_data `
-  -v e:\code\sitesanddata\my_sites:/app/hanger `
-  kc-v2
+docker run -d --name site-hangar-example -p 80:80 -p 5173:5173 -p 3000:3000 `
+  -v e:\code\sitesanddata\site_hangar\example:/app/site_data `
+  -v e:\code\sitesanddata\site_hangar:/app/hanger `
+  site-hangar
 ```
 
 ## 文件说明
 
 | 路径 | 说明 |
 |------|------|
-| `example/conf/config.yaml` | 站点配置：`buildOutputDir`、`icp`、`allowedHosts` |
+| `example/conf/config.yaml` | 站点配置：`buildOutputDir`、`icp` |
 | `example/conf/entrypoint.sh` | 容器入口脚本，读取 `config.yaml` 并启动服务 |
 | `example/conf/nginx.conf` | Nginx 虚拟主机配置，映射子域名到站点 |
 | `example/data/` | 源数据目录（Markdown 文件） |
@@ -52,36 +52,36 @@ docker run -d --name kc-v2-example -p 80:80 -p 5173:5173 -p 3000:3000 `
 
 ```powershell
 # 全量编译
-python tools/build_service.py --clean --data-root example/data --output-dir example/build
+python tools/builder/build_service.py --clean --data-root example/data --output-dir example/build
 
 # 增量编译
-python tools/build_service.py --data-root example/data --output-dir example/build
+python tools/builder/build_service.py --data-root example/data --output-dir example/build
 
 # 预览模式
-python tools/build_service.py --dry-run --data-root example/data --output-dir example/build
+python tools/builder/build_service.py --dry-run --data-root example/data --output-dir example/build
 ```
 
 ### Docker 管理
 
 ```powershell
 # 构建镜像（首次或 Dockerfile 变更后）
-docker build -t kc-v2 .
+docker build -t site-hangar .
 
 # 启动容器（只挂载两个目录）
-docker run -d --name kc-v2-example -p 80:80 -p 5173:5173 -p 3000:3000 `
-  -v e:\code\sitesanddata\my_sites\example:/app/site_data `
-  -v e:\code\sitesanddata\my_sites:/app/hanger `
-  kc-v2
+docker run -d --name site-hangar-example -p 80:80 -p 5173:5173 -p 3000:3000 `
+  -v e:\code\sitesanddata\site_hangar\example:/app/site_data `
+  -v e:\code\sitesanddata\site_hangar:/app/hanger `
+  site-hangar
 
 # 重启容器（修改代码后生效）
-docker restart kc-v2-example
+docker restart site-hangar-example
 
 # 查看日志
-docker logs kc-v2-example --tail 50
+docker logs site-hangar-example --tail 50
 
 # 停止并删除
-docker stop kc-v2-example
-docker rm -f kc-v2-example
+docker stop site-hangar-example
+docker rm -f site-hangar-example
 ```
 
 ## 访问地址
@@ -98,11 +98,3 @@ docker rm -f kc-v2-example
 - `http://science.example.local` — 理科知识首页
 - `http://travel.example.local/culture` — 人文景观栏目
 - `http://science.example.local/math` — 数学栏目
-
-## 注意事项
-
-1. **编译与运行分离**：网站服务只读取 `build/` 目录，不直接读取 `data/`。修改数据后需要重新编译。
-2. **目录名规范**：栏目下的分类目录建议使用 `01 名称`、`02 名称` 格式，便于排序。
-3. **图片资源**：站点图片放在 `data/{site}/image/`，编译时会自动复制到 `build/`。
-4. **关于页面**：每个站点需要创建 `info/` 目录存放关于页面数据。
-5. **node_modules**：首次启动时，容器会将镜像内预装的依赖复制到 `client/node_modules` 和 `server/node_modules` 目录下，这是正常现象。

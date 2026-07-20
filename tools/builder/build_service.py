@@ -11,7 +11,7 @@ build_service.py - 全体编译入口模块
 5. 编译 info 文件夹为 info/data.json（调用 build_service_info.compile_info_page）
 
 用法：
-    python tools/build_service.py --data-root e:\code\sitesanddata\my_sites_data\data --output-dir e:\code\sitesanddata\my_sites_data\result
+    python tools/build_service.py --data-root <数据根目录> --output-dir <编译输出目录>
 """
 
 import os
@@ -25,9 +25,8 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
 
 from build_utils import (
-    log, read_file, write_json, read_json, read_meta, format_datetime,
-    detect_compile_mode, find_section_files, get_file_mtime, copy_dir_contents,
-    parse_frontmatter, slugify, format_section_num
+    log, write_json, read_json, detect_compile_mode,
+    find_section_files, copy_dir_contents
 )
 from build_page import compile_page
 from build_index import (
@@ -365,7 +364,7 @@ if __name__ == '__main__':
         sys.stdout.reconfigure(encoding='utf-8', errors='replace')
         sys.stderr.reconfigure(encoding='utf-8', errors='replace')
 
-    parser = argparse.ArgumentParser(description='SiteHanger Build Service')
+    parser = argparse.ArgumentParser(description='SiteHangar Build Service')
     parser.add_argument('--dry-run', action='store_true', help='仅预览，不实际写入')
     parser.add_argument('--clean', action='store_true', help='清理模式：删除全部已有编译结果后重新构建')
     parser.add_argument('--data-root', type=str, required=True, help='数据根目录路径')

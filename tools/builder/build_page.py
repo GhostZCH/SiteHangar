@@ -17,8 +17,8 @@ build_page.py - 单页面编译模块
 import os
 import re
 from build_utils import (
-    read_file, parse_frontmatter, slugify, format_section_num,
-    format_datetime, find_section_files, log
+    read_file, parse_frontmatter, slugify,
+    format_datetime, find_section_files, log, detect_compile_mode
 )
 from build_page_parser import parse_markdown_blocks
 
@@ -57,12 +57,12 @@ def _parse_single_md_sections(body: str, dir_path: str = '') -> list:
         section_body = '\n'.join(current_lines).strip()
         content = parse_markdown_blocks(section_body, dir_path)
         sections.append({
-                'id': slugify(current_title),
-                'title': current_title,
-                'subtitle': '',
-                'type': 'mixed',
-                'content': content,
-            })
+            'id': slugify(current_title),
+            'title': current_title,
+            'subtitle': '',
+            'type': 'mixed',
+            'content': content,
+        })
 
     return sections
 
@@ -216,8 +216,6 @@ def compile_page(dir_path: str) -> dict:
     编译单个页面目录，返回 data.json 字典。
     根据目录内容自动判断使用单文件模式还是多文件模式。
     """
-    from build_utils import detect_compile_mode
-
     mode = detect_compile_mode(dir_path)
 
     if mode == 'none':

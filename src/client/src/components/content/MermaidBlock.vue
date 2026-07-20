@@ -1,20 +1,33 @@
 <script setup lang="ts">
 import { ref, onMounted, watch } from 'vue';
-import mermaid from 'mermaid';
 
 const props = defineProps<{ code: string }>();
 const containerRef = ref<HTMLDivElement>();
 const rendered = ref('');
 
-mermaid.initialize({
-  startOnLoad: false,
-  theme: 'dark',
-  securityLevel: 'loose',
-});
+// mermaid 懒加载：首次渲染时动态 import，避免拖慢首屏
+type Mermaid = typeof import('mermaid').default;
+let mermaidPromise: Promise<Mermaid> | null = null;
+
+function loadMermaid(): Promise<Mermaid> {
+  if (!mermaidPromise) {
+    mermaidPromise = import('mermaid').then((mod) => {
+      const mermaid = mod.default;
+      mermaid.initialize({
+        startOnLoad: false,
+        theme: 'dark',
+        securityLevel: 'loose',
+      });
+      return mermaid;
+    });
+  }
+  return mermaidPromise;
+}
 
 async function render() {
   if (!containerRef.value || !props.code.trim()) return;
   try {
+    const mermaid = await loadMermaid();
     const id = 'mermaid-' + Math.random().toString(36).slice(2);
     const { svg } = await mermaid.render(id, props.code.trim());
     rendered.value = svg;

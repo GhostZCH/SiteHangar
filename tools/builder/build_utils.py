@@ -124,11 +124,6 @@ def slugify(text: str) -> str:
     return ''.join(result).strip('-')
 
 
-def format_section_num(n: int) -> str:
-    """将整数格式化为两位字符串，如 1 -> '01'"""
-    return str(n).zfill(2)
-
-
 def parse_frontmatter(text: str) -> tuple:
     """解析 Markdown 文件的 YAML Frontmatter，返回 (frontmatter_dict, body)"""
     if not text.startswith('---'):
@@ -191,34 +186,6 @@ def detect_compile_mode(dir_path: str) -> str:
     if has_page_md:
         return 'simple'
     return 'none'
-
-
-def get_file_mtime(path: str) -> float:
-    """获取文件最后修改时间（秒级时间戳）"""
-    try:
-        return os.path.getmtime(path)
-    except OSError:
-        return None
-
-
-def get_max_mtime_in_dir(dir_path: str, pattern=None, recursive: bool = True) -> float:
-    """获取目录下所有匹配文件的最大修改时间"""
-    max_mtime = None
-    try:
-        for entry in os.scandir(dir_path):
-            if entry.is_file():
-                if pattern and not pattern.search(entry.name):
-                    continue
-                mtime = entry.stat().st_mtime
-                if max_mtime is None or mtime > max_mtime:
-                    max_mtime = mtime
-            elif entry.is_dir() and recursive:
-                sub_max = get_max_mtime_in_dir(entry.path, pattern, recursive)
-                if sub_max is not None and (max_mtime is None or sub_max > max_mtime):
-                    max_mtime = sub_max
-    except OSError:
-        pass
-    return max_mtime
 
 
 def strip_order_prefix(name: str) -> str:

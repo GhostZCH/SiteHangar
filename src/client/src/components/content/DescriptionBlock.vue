@@ -1,15 +1,26 @@
 <script setup lang="ts">
-import { onMounted, nextTick } from 'vue';
+import { ref, computed, onMounted, onUnmounted } from 'vue';
 import { useRoute } from 'vue-router';
 import { useSiteStore } from '@/stores/site';
-import katex from 'katex';
-import 'katex/dist/katex.min.css';
+import { renderMathInline, renderMathBlock, onKatexReady } from '@/composables/useKatex';
 import MermaidBlock from './MermaidBlock.vue';
 import TreeBlock from './TreeBlock.vue';
 
 const props = defineProps<{ items: string[] }>();
 const route = useRoute();
 const siteStore = useSiteStore();
+
+// katex 加载完成后触发重渲染（公式占位符替换为真实渲染结果）
+const katexReady = ref(false);
+let offKatexReady: (() => void) | null = null;
+onMounted(() => {
+  offKatexReady = onKatexReady(() => {
+    katexReady.value = true;
+  });
+});
+onUnmounted(() => {
+  offKatexReady?.();
+});
 
 function getPageAssetBaseUrl(): string {
   const site = siteStore.siteSlug || 'www';
@@ -42,28 +53,6 @@ function getHeadingLevel(text: string): number {
   if (text.startsWith('### ')) return 3;
   if (text.startsWith('## ')) return 2;
   return 0;
-}
-
-function renderMath(text: string): string {
-  try {
-    return katex.renderToString(text, {
-      throwOnError: false,
-      displayMode: false,
-    });
-  } catch {
-    return text;
-  }
-}
-
-function renderMathBlock(text: string): string {
-  try {
-    return katex.renderToString(text, {
-      throwOnError: false,
-      displayMode: true,
-    });
-  } catch {
-    return text;
-  }
 }
 
 function extractSpecialBlocks(text: string): Array<{ type: 'text' | 'mermaid' | 'tree'; content: string }> {
@@ -118,7 +107,7 @@ function renderMarkdown(text: string): string {
   // 处理公式：行内公式 $...$
   result = result.replace(
     /\$([^\s$][^$]*?)\$/g,
-    (match, formula) => `<span class="math-inline">${renderMath(formula)}</span>`
+    (match, formula) => `<span class="math-inline">${renderMathInline(formula)}</span>`
   );
   // 处理二级标题 ## heading
   result = result.replace(
@@ -191,20 +180,61 @@ function renderMarkdown(text: string): string {
   }
   return result;
 }
+
+interface RenderedPart {
+  type: 'text' | 'mermaid' | 'tree';
+  content: string;
+  /** 仅 text 类型：预计算的 HTML */
+  html?: string;
+  /** 仅 text 类型：是否为列表 */
+  isList?: boolean;
+}
+
+interface RenderedItem {
+  headingLevel: number;
+  headingText: string;
+  parts: RenderedPart[];
+}
+
+/**
+ * 预计算所有段落的 markdown 渲染结果。
+ * 依赖 katexReady：katex 加载完成后重算，将公式占位替换为真实渲染。
+ * 避免模板中对同一 content 重复调用 renderMarkdown（含高成本 katex/正则）。
+ */
+const renderedItems = computed<RenderedItem[]>(() => {
+  // 显式依赖，katex 就绪后触发重算
+  void katexReady.value;
+  return props.items.map((p) => {
+    const headingLevel = getHeadingLevel(p);
+    const headingText = getHeadingText(p);
+    if (headingLevel > 0) {
+      return { headingLevel, headingText, parts: [] };
+    }
+    const parts = extractSpecialBlocks(p).map((part) => {
+      if (part.type !== 'text') {
+        return { type: part.type, content: part.content };
+      }
+      const html = renderMarkdown(part.content);
+      const isList = html.startsWith('<ul') || html.startsWith('<ol');
+      return { type: 'text' as const, content: part.content, html, isList };
+    });
+    return { headingLevel, headingText, parts };
+  });
+});
 </script>
 
 <template>
   <div class="section-desc">
-    <template v-for="(p, i) in items" :key="i">
-      <h3 v-if="getHeadingLevel(p) === 2" class="desc-heading desc-heading-h2">{{ getHeadingText(p) }}</h3>
-      <h4 v-else-if="getHeadingLevel(p) === 3" class="desc-heading">{{ getHeadingText(p) }}</h4>
-      <h5 v-else-if="getHeadingLevel(p) === 4" class="desc-heading desc-heading-h4">{{ getHeadingText(p) }}</h5>
+    <template v-for="(item, i) in renderedItems" :key="i">
+      <h3 v-if="item.headingLevel === 2" class="desc-heading desc-heading-h2">{{ item.headingText }}</h3>
+      <h4 v-else-if="item.headingLevel === 3" class="desc-heading">{{ item.headingText }}</h4>
+      <h5 v-else-if="item.headingLevel === 4" class="desc-heading desc-heading-h4">{{ item.headingText }}</h5>
       <template v-else>
-        <template v-for="(part, pi) in extractSpecialBlocks(p)" :key="pi">
+        <template v-for="(part, pi) in item.parts" :key="pi">
           <MermaidBlock v-if="part.type === 'mermaid'" :code="part.content" />
           <TreeBlock v-else-if="part.type === 'tree'" :code="part.content" />
-          <div v-else-if="renderMarkdown(part.content).startsWith('<ul') || renderMarkdown(part.content).startsWith('<ol')" v-html="renderMarkdown(part.content)"></div>
-          <p v-else v-html="renderMarkdown(part.content)"></p>
+          <div v-else-if="part.isList" v-html="part.html"></div>
+          <p v-else v-html="part.html"></p>
         </template>
       </template>
     </template>

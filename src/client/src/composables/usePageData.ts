@@ -17,9 +17,12 @@ export function usePageData() {
   const data = ref<RenderResponse | null>(null);
   const loading = ref(true);
   const error = ref<string | null>(null);
+  // 记录最新一次请求 id，用于丢弃过期的响应（防止路由快速切换时旧请求覆盖新数据）
+  let latestRequestId = '';
 
   async function load(pathParts: string[]) {
     const requestId = Math.random().toString(36).slice(2, 8);
+    latestRequestId = requestId;
     const cleanPath = pathParts.filter(Boolean);
 
     log('info', '开始加载页面数据', { requestId, pathParts: cleanPath, currentRoute: route.path });
@@ -31,7 +34,15 @@ export function usePageData() {
       log('info', '发送 API 请求', { requestId, apiPath: '/render/' + cleanPath.join('/') });
       const startTime = performance.now();
 
-      data.value = await publicApi.render(cleanPath);
+      const result = await publicApi.render(cleanPath);
+
+      // 若期间发起了更新的请求，丢弃本次过期响应
+      if (requestId !== latestRequestId) {
+        log('info', '丢弃过期响应', { requestId, latestRequestId });
+        return;
+      }
+
+      data.value = result;
 
       const duration = Math.round(performance.now() - startTime);
       log('info', 'API 请求成功', {
@@ -44,7 +55,12 @@ export function usePageData() {
         heroTitle: data.value?.data?.hero?.title,
       });
     } catch (e: any) {
-      const duration = performance.now();
+      // 过期请求的错误也丢弃（尤其是旧页面的 404 跳转）
+      if (requestId !== latestRequestId) {
+        log('info', '丢弃过期请求的错误', { requestId, latestRequestId });
+        return;
+      }
+
       const status = e.response?.status;
       const errorCode = e.response?.data?.error;
       const errorMessage = e.message;
@@ -67,7 +83,10 @@ export function usePageData() {
       error.value = errorCode || errorMessage || '加载失败';
       log('warn', '设置错误状态', { requestId, error: error.value });
     } finally {
-      loading.value = false;
+      // 只有最新请求才复位 loading，避免旧请求提前结束 loading
+      if (requestId === latestRequestId) {
+        loading.value = false;
+      }
       log('info', '加载完成', { requestId, loading: loading.value, hasError: !!error.value });
     }
   }

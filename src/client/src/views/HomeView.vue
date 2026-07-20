@@ -14,7 +14,7 @@ const siteConfig = ref<{ title?: string; brand_name?: string; subtitle?: string 
 const decodedTitle = ref('');
 const decodedSubtitle = ref('');
 const showCursor = ref(true);
-const titleTarget = computed(() => siteConfig.value.title || 'SiteHanger');
+const titleTarget = computed(() => siteConfig.value.title || 'SiteHangar');
 const subtitleTarget = computed(() => siteConfig.value.subtitle || '');
 const brandName = computed(() => siteConfig.value.brand_name || '');
 const scrambleChars = '!<>-_\/[]{}—=+*^?#________';
@@ -113,7 +113,16 @@ interface Particle {
 
 const floatingParticles = ref<Particle[]>([]);
 let cursorInterval: ReturnType<typeof setInterval> | null = null;
+let cleanupTimer: ReturnType<typeof setInterval> | null = null;
+let spawnTimer: ReturnType<typeof setTimeout> | null = null;
 let particleIdCounter = 0;
+
+onUnmounted(() => {
+  if (cursorInterval) clearInterval(cursorInterval);
+  if (cleanupTimer) clearInterval(cleanupTimer);
+  if (spawnTimer) clearTimeout(spawnTimer);
+  cardRefs.value.clear();
+});
 
 onMounted(async () => {
   // 确保页面从顶部开始（延迟执行以覆盖路由滚动行为）
@@ -130,7 +139,7 @@ onMounted(async () => {
     const page = res.data.page || {};
     const hero = res.data.hero || {};
     siteConfig.value = {
-      title: page.title || hero.title || 'SiteHanger',
+      title: page.title || hero.title || 'SiteHangar',
       brand_name: page.brand_name || hero.brand_name || '',
       subtitle: page.subtitle || hero.subtitle || '',
     };
@@ -185,7 +194,7 @@ onMounted(async () => {
       floatingParticles.value.push(createParticle());
     }
     // 不管是否生成成功，都继续定时器，保持循环
-    setTimeout(spawnParticle, spawnInterval);
+    spawnTimer = setTimeout(spawnParticle, spawnInterval);
   }
 
   // 清理过期的粒子（生命周期结束）
@@ -204,12 +213,7 @@ onMounted(async () => {
 
   // 启动生成和清理循环
   spawnParticle();
-  const cleanupTimer = setInterval(cleanupParticles, 500); // 每500ms清理一次
-
-  onUnmounted(() => {
-    if (cursorInterval) clearInterval(cursorInterval);
-    clearInterval(cleanupTimer);
-  });
+  cleanupTimer = setInterval(cleanupParticles, 500); // 每500ms清理一次
 });
 
 const hasModules = computed(() => modules.value.length > 0);

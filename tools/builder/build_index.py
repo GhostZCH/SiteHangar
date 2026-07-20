@@ -210,21 +210,32 @@ def _build_categories_from_dirs(column_dir: str, data_root: str, sorted_pages: l
     return result
 
 
-def _scan_subcategory_pages(column_dir: str, cat_slug: str, sub_slug: str, data_root: str) -> list:
-    """扫描 column_dir/<cat_slug>/<sub_slug>/ 下的所有子目录（递归），读取 data.json 获取标题和路径"""
-    sub_dir = os.path.join(column_dir, cat_slug, sub_slug)
-    if not os.path.isdir(sub_dir):
-        return []
+def _extract_title_and_url(data: dict, url: str, fallback_name: str) -> dict:
+    """从 data.json 数据中提取标题并生成链接项"""
+    hero = data.get('hero', {})
+    page = data.get('page', {})
+    title = hero.get('title', page.get('title', fallback_name))
+    return {'title': title, 'url': url}
 
-    # 计算 URL 前缀（从 column_dir 到 data_root 的相对路径）
+
+def _calc_url_prefix(column_dir: str, data_root: str) -> str:
+    """计算页面链接的 URL 前缀（栏目相对路径，如 /wiki）"""
     rel = os.path.relpath(column_dir, data_root).replace('\\', '/')
     parts = rel.split('/', 1)
-    url_prefix = '/' + parts[1] if len(parts) > 1 else ''
+    return '/' + parts[1] if len(parts) > 1 else ''
+
+
+def _collect_page_links(root_dir: str, url_base: str, recursive: bool) -> list:
+    """扫描 root_dir 下的页面目录，读取 data.json 生成链接列表。
+    url_base: 链接的 URL 前缀（不含末尾目录名）
+    recursive: 是否递归扫描更深层级
+    """
+    if not os.path.isdir(root_dir):
+        return []
 
     links = []
 
-    def _scan_recursive(current_dir: str, rel_path: str):
-        """递归扫描目录，收集所有包含 data.json 的页面"""
+    def _scan(current_dir: str, rel_path: str):
         try:
             for entry in sorted(os.scandir(current_dir), key=lambda e: e.name):
                 if not entry.is_dir() or entry.name.startswith('.'):
@@ -233,55 +244,31 @@ def _scan_subcategory_pages(column_dir: str, cat_slug: str, sub_slug: str, data_
                 if os.path.exists(data_json_path):
                     data = read_json(data_json_path)
                     if data:
-                        hero = data.get('hero', {})
-                        page = data.get('page', {})
-                        title = hero.get('title', page.get('title', entry.name))
-                        url = f'{url_prefix}/{cat_slug}/{sub_slug}/{rel_path}{entry.name}'
-                        links.append({
-                            'title': title,
-                            'url': url,
-                        })
-                # 递归扫描子目录
-                _scan_recursive(entry.path, f'{rel_path}{entry.name}/')
+                        url = f'{url_base}/{rel_path}{entry.name}'
+                        links.append(_extract_title_and_url(data, url, entry.name))
+                if recursive:
+                    _scan(entry.path, f'{rel_path}{entry.name}/')
         except OSError:
             pass
 
-    _scan_recursive(sub_dir, '')
+    _scan(root_dir, '')
     return links
+
+
+def _scan_subcategory_pages(column_dir: str, cat_slug: str, sub_slug: str, data_root: str) -> list:
+    """扫描 column_dir/<cat_slug>/<sub_slug>/ 下的所有页面（递归），生成链接列表"""
+    url_prefix = _calc_url_prefix(column_dir, data_root)
+    url_base = f'{url_prefix}/{cat_slug}/{sub_slug}'
+    sub_dir = os.path.join(column_dir, cat_slug, sub_slug)
+    return _collect_page_links(sub_dir, url_base, recursive=True)
 
 
 def _scan_category_pages(column_dir: str, cat_slug: str, data_root: str) -> list:
-    """扫描 column_dir/<cat_slug>/ 下的子目录，读取 data.json 获取标题和路径"""
+    """扫描 column_dir/<cat_slug>/ 下的页面（不递归），生成链接列表"""
+    url_prefix = _calc_url_prefix(column_dir, data_root)
+    url_base = f'{url_prefix}/{cat_slug}'
     cat_dir = os.path.join(column_dir, cat_slug)
-    if not os.path.isdir(cat_dir):
-        return []
-
-    # 计算 URL 前缀
-    rel = os.path.relpath(column_dir, data_root).replace('\\', '/')
-    parts = rel.split('/', 1)
-    url_prefix = '/' + parts[1] if len(parts) > 1 else ''
-
-    links = []
-    try:
-        for entry in sorted(os.scandir(cat_dir), key=lambda e: e.name):
-            if not entry.is_dir() or entry.name.startswith('.'):
-                continue
-            data_json_path = os.path.join(entry.path, 'data.json')
-            if os.path.exists(data_json_path):
-                data = read_json(data_json_path)
-                if data:
-                    hero = data.get('hero', {})
-                    page = data.get('page', {})
-                    title = hero.get('title', page.get('title', entry.name))
-                    url = f'{url_prefix}/{cat_slug}/{entry.name}'
-                    links.append({
-                        'title': title,
-                        'url': url,
-                    })
-    except OSError:
-        pass
-
-    return links
+    return _collect_page_links(cat_dir, url_base, recursive=False)
 
 
 def _build_column_index(column_slug: str, column_meta: dict, column_dir: str,
@@ -305,12 +292,9 @@ def _build_column_index(column_slug: str, column_meta: dict, column_dir: str,
         })
 
     # 处理 categories
-    # 根据 column_dir 是否在 output_dir 下，决定 data_root 用于 URL 前缀计算
-    if output_dir and column_dir.startswith(output_dir):
-        data_root = output_dir
-    else:
-        data_root = site_path
-    
+    # URL 前缀基于 column_dir 的父级目录计算：有编译输出时用 output_dir，否则用站点目录
+    data_root = output_dir if output_dir else site_path
+
     categories = column_meta.get('categories')
     if categories:
         categories = _build_categories_from_meta(categories, column_dir, data_root, sorted_pages)
@@ -323,7 +307,7 @@ def _build_column_index(column_slug: str, column_meta: dict, column_dir: str,
     return {
         'page': column_meta.get('page', {
             'title': column_meta.get('title', strip_order_prefix(column_slug)),
-            'description': column_meta.get('description', f'{strip_order_prefix(column_slug)} - SiteHanger'),
+            'description': column_meta.get('description', f'{strip_order_prefix(column_slug)} - SiteHangar'),
         }),
         'hero': column_meta.get('hero', {
             'title': column_meta.get('title', strip_order_prefix(column_slug)),
@@ -354,7 +338,7 @@ def build_site_index(site_path: str, site_name: str, column_pages: dict, output_
     root_index = {
         'page': {
             'title': page.get('title', site_name),
-            'description': page.get('description', f'{site_name} - SiteHanger'),
+            'description': page.get('description', f'{site_name} - SiteHangar'),
         },
         'hero': {
             'title': page.get('title', site_name),
