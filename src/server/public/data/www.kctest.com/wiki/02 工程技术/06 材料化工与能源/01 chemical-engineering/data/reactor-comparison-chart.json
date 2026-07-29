@@ -1,0 +1,16 @@
+{
+  "type": "bar",
+  "id": "reactor-comparison-chart",
+  "title": "三种理想反应器反应推动力对比",
+  "xAxis": [
+    "间歇反应器(BR)",
+    "管式反应器(PFR)",
+    "连续搅拌釜(CSTR)"
+  ],
+  "data": [
+    5,
+    4,
+    2
+  ],
+  "color": "#546e7a"
+}

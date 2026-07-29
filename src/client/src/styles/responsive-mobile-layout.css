@@ -1,0 +1,173 @@
+/* ===== Responsive Mobile Layout ===== */
+@media (max-width: 768px) {
+    .nav-drawer { display: none; }
+    .detail-page, .hero, .content, .footer { margin-left: 0 !important; }
+    .grid-4, .grid-3, .grid-2, .stats-row { grid-template-columns: 1fr; }
+    .appbar { padding: 0 12px; }
+    .section-num { font-size: 32px; }
+    .timeline { padding-left: 24px; }
+    .timeline-dot { left: -24px; }
+    .branch-name {
+        flex: 0 0 90px;
+        font-size: 12px;
+        padding-right: 8px;
+    }
+    .branch-period-label.empty {
+        flex: 0 0 90px;
+    }
+    .branch-visualizer {
+        padding: 16px 12px;
+    }
+    .branch-stage-text {
+        font-size: 10px;
+        -webkit-line-clamp: 1;
+    }
+
+    /* Mobile Minimal Styles */
+    body {
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    /* AppBar */
+    .appbar {
+        height: 44px;
+        padding: 0 12px;
+        transition: transform 0.3s ease;
+    }
+    .appbar.mobile-hidden {
+        transform: translateY(-100%);
+    }
+    .appbar-logo svg {
+        width: 24px;
+        height: 24px;
+    }
+    .appbar-title {
+        font-size: 14px;
+        letter-spacing: 0.5px;
+    }
+    .icon-btn {
+        width: 36px;
+        height: 36px;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 52px 16px 16px;
+        background: transparent;
+    }
+    .hero::before { display: none; }
+    .hero-title {
+        font-size: 26px;
+        font-weight: 200;
+        letter-spacing: -0.5px;
+        line-height: 1.15;
+        background: none;
+        -webkit-background-clip: unset;
+        -webkit-text-fill-color: unset;
+        color: var(--on-surface);
+    }
+    [data-theme="night"] .hero-title {
+        background: none;
+        -webkit-background-clip: unset;
+        -webkit-text-fill-color: unset;
+        color: var(--on-surface);
+    }
+    .hero-tags {
+        margin-top: 8px;
+        gap: 6px;
+    }
+    .hero-tag {
+        font-size: 10px;
+        padding: 2px 8px;
+        border-radius: 10px;
+    }
+    .hero-meta {
+        margin-top: 10px;
+        font-size: 10px;
+    }
+    .hero-version {
+        font-size: 10px;
+        padding: 1px 8px;
+    }
+    .hero-subtitle {
+        font-size: 13px;
+        margin-top: 8px;
+    }
+
+    /* Introduction */
+    .introduction {
+        margin: 0 0 16px;
+        padding: 12px 0;
+        background: transparent;
+        border-left: none;
+        border-top: 1px solid var(--outline);
+        border-bottom: 1px solid var(--outline);
+        border-radius: 0;
+    }
+    .introduction-text {
+        font-size: 13px;
+        line-height: 1.8;
+        color: var(--on-surface-variant);
+    }
+
+    /* Content */
+    .content {
+        padding: 16px 16px 72px;
+    }
+
+    /* Section */
+    .section {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--outline-variant);
+        scroll-margin-top: 52px;
+    }
+    .section:last-child {
+        border-bottom: none;
+    }
+    .section-title-wrap {
+        margin-bottom: 12px;
+    }
+    .section-title {
+        font-size: 18px;
+        font-weight: 500;
+        gap: 10px;
+        line-height: 1.3;
+    }
+    .section-num {
+        font-size: 24px;
+        height: auto;
+    }
+    .section-subtitle {
+        margin-top: 6px;
+        font-size: 10px;
+        padding: 2px 8px;
+    }
+    .section-desc {
+        font-size: 14px;
+        line-height: 1.75;
+        color: var(--on-surface);
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    .section-desc p {
+        margin-bottom: 8px;
+    }
+
+    /* Subsection */
+    .subsection {
+        margin-top: 16px;
+        padding-top: 12px;
+    }
+    .subsection-title {
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 16px;
+        margin-bottom: 56px;
+        font-size: 11px;
+    }
+}

@@ -1,0 +1,139 @@
+/* ===== Enhanced Module Cards Grid ===== */
+.home-modules-grid-enhanced {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    padding: 0;
+    transform-style: preserve-3d;
+    transition: transform 0.1s ease-out;
+}
+
+.home-module-card-enhanced {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    aspect-ratio: 3/4;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    background: var(--surface-variant);
+    border: 1px solid var(--outline-variant);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.home-module-card-enhanced:hover {
+    transform: scale(1.04);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+}
+
+/* 光晕效果 */
+.card-glow {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: radial-gradient(circle at var(--mx, 50%) var(--my, 50%), rgba(84, 110, 122, 0.15) 0%, transparent 60%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.home-module-card-enhanced:hover .card-glow {
+    opacity: 1;
+}
+
+/* 卡片编号 */
+.card-number {
+    position: absolute;
+    top: 20px; right: 20px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgba(255,255,255,0.15);
+    line-height: 1;
+    z-index: 4;
+    pointer-events: none;
+}
+
+.home-module-image-enhanced {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+    z-index: 1;
+}
+
+.home-module-card-enhanced:hover .home-module-image-enhanced {
+    transform: scale(1.08);
+}
+
+.home-module-overlay-enhanced {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.75) 100%);
+    transition: background 0.3s ease;
+    z-index: 2;
+}
+
+.home-module-card-enhanced:hover .home-module-overlay-enhanced {
+    background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.85) 100%);
+}
+
+.home-module-content-enhanced {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 28px;
+    color: white;
+    z-index: 3;
+}
+
+.home-module-subtitle-enhanced {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    opacity: 0.8;
+    margin-bottom: 10px;
+    color: var(--tertiary);
+}
+
+.home-module-title-enhanced {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.home-module-desc-enhanced {
+    font-size: 13px;
+    line-height: 1.6;
+    opacity: 0.85;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.6);
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.card-footer .arrow {
+    transition: transform 0.3s;
+}
+
+.home-module-card-enhanced:hover .card-footer .arrow {
+    transform: translateX(6px);
+}

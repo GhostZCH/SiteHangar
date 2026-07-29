@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>时间线样式对比 - 知识立方</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f8f7f4;
+      --surface: #ffffff;
+      --accent: #3b5bdb;
+      --accent-light: #e0e7ff;
+      --on-surface: #1a1a2e;
+      --on-surface-variant: #5a5a6e;
+      --outline: #d4d4e0;
+      --outline-variant: #e8e8f0;
+      --shadow-1: 0 2px 8px rgba(0,0,0,0.06);
+      --shadow-2: 0 8px 24px rgba(0,0,0,0.10);
+      --radius-lg: 12px;
+      --radius-md: 8px;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Noto Sans SC', sans-serif;
+      background: var(--bg);
+      color: var(--on-surface);
+      padding: 40px 20px;
+      line-height: 1.6;
+    }
+    .page-title {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 28px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 8px;
+      color: var(--on-surface);
+    }
+    .page-subtitle {
+      text-align: center;
+      color: var(--on-surface-variant);
+      margin-bottom: 48px;
+      font-size: 15px;
+    }
+    .demos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 32px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    .demo-card {
+      background: var(--surface);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      box-shadow: var(--shadow-1);
+    }
+    .demo-card h2 {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--outline-variant);
+      color: var(--on-surface);
+    }
+
+    /* ========== 样式 A：卡片气泡风 ========== */
+    .timeline-a {
+      position: relative;
+      padding-left: 48px;
+    }
+    .timeline-a::before {
+      content: '';
+      position: absolute;
+      left: 11px;
+      top: 8px;
+      bottom: 8px;
+      width: 2px;
+      background: linear-gradient(180deg, var(--accent) 0%, var(--outline) 100%);
+      border-radius: 1px;
+    }
+    .timeline-a .item {
+      position: relative;
+      padding-bottom: 32px;
+    }
+    .timeline-a .item:last-child { padding-bottom: 0; }
+    .timeline-a .dot {
+      position: absolute;
+      left: -48px;
+      top: 4px;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--surface);
+      border: 3px solid var(--accent);
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 0 4px var(--surface);
+      transition: transform 0.3s ease;
+    }
+    .timeline-a .item:hover .dot { transform: scale(1.2); }
+    .timeline-a .dot::after {
+      content: '';
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    .timeline-a .content {
+      background: var(--surface);
+      border: 1px solid var(--outline-variant);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      transition: all 0.3s ease;
+      position: relative;
+      box-shadow: var(--shadow-1);
+    }
+    .timeline-a .content::before {
+      content: '';
+      position: absolute;
+      left: -8px;
+      top: 16px;
+      width: 16px;
+      height: 16px;
+      background: var(--surface);
+      border-left: 1px solid var(--outline-variant);
+      border-bottom: 1px solid var(--outline-variant);
+      transform: rotate(45deg);
+    }
+    .timeline-a .item:hover .content {
+      border-color: var(--accent);
+      box-shadow: var(--shadow-2);
+      transform: translateX(4px);
+    }
+    .timeline-a .date {
+      font-family: 'Playfair Display', serif;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 6px;
+      letter-spacing: 0.5px;
+    }
+    .timeline-a .title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--on-surface);
+      margin-bottom: 4px;
+    }
+    .timeline-a .subtitle {
+      font-size: 13px;
+      color: var(--on-surface-variant);
+      margin-bottom: 10px;
+    }
+    .timeline-a .desc {
+      font-size: 13px;
+      line-height: 1.7;
+      color: var(--on-surface-variant);
+    }
+
+    /* ========== 样式 B：极简竖线风 ========== */
+    .timeline-b {
+      position: relative;
+      padding-left: 32px;
+    }
+    .timeline-b::before {
+      content: '';
+      position: absolute;
+      left: 7px;
+      top: 6px;
+      bottom: 6px;
+      width: 1px;
+      background: var(--outline);
+    }
+    .timeline-b .item {
+      position: relative;
+      padding-bottom: 24px;
+    }
+    .timeline-b .item:last-child { padding-bottom: 0; }
+    .timeline-b .dot {
+      position: absolute;
+      left: -32px;
+      top: 2px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      border: 2px solid var(--outline);
+      background: var(--surface);
+      box-shadow: 0 0 0 3px var(--surface);
+      transition: border-color 0.3s ease;
+    }
+    .timeline-b .item:hover .dot { border-color: var(--accent); }
+    .timeline-b .content {
+      padding: 0 0 0 8px;
+      transition: transform 0.3s ease;
+    }
+    .timeline-b .item:hover .content { transform: translateX(6px); }
+    .timeline-b .date {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--on-surface-variant);
+      margin-bottom: 2px;
+      letter-spacing: 0.5px;
+    }
+    .timeline-b .title {
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--on-surface);
+      margin-bottom: 2px;
+    }
+    .timeline-b .subtitle {
+      font-size: 12px;
+      color: var(--on-surface-variant);
+      margin-bottom: 6px;
+    }
+    .timeline-b .desc {
+      font-size: 13px;
+      line-height: 1.6;
+      color: var(--on-surface-variant);
+    }
+
+    /* ========== 样式 C：杂志编辑风 ========== */
+    .timeline-c {
+      position: relative;
+    }
+    .timeline-c .item {
+      display: flex;
+      gap: 20px;
+      padding-bottom: 28px;
+      position: relative;
+    }
+    .timeline-c .item:last-child { padding-bottom: 0; }
+    .timeline-c .item::before {
+      content: '';
+      position: absolute;
+      left: 60px;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background: var(--outline);
+    }
+    .timeline-c .item:last-child::before { bottom: auto; height: 16px; }
+    .timeline-c .date-col {
+      flex-shrink: 0;
+      width: 48px;
+      text-align: right;
+      padding-top: 2px;
+    }
+    .timeline-c .year {
+      font-family: 'Playfair Display', serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1;
+    }
+    .timeline-c .era {
+      font-size: 11px;
+      color: var(--on-surface-variant);
+      margin-top: 2px;
+    }
+    .timeline-c .dot {
+      position: absolute;
+      left: 52px;
+      top: 8px;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--accent);
+      border: 3px solid var(--surface);
+      box-shadow: 0 0 0 1px var(--outline);
+      z-index: 1;
+      transition: transform 0.3s ease;
+    }
+    .timeline-c .item:hover .dot { transform: scale(1.15); }
+    .timeline-c .content {
+      flex: 1;
+      padding-left: 28px;
+      transition: transform 0.3s ease;
+    }
+    .timeline-c .item:hover .content { transform: translateX(4px); }
+    .timeline-c .title {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--on-surface);
+      margin-bottom: 4px;
+    }
+    .timeline-c .subtitle {
+      font-size: 13px;
+      color: var(--on-surface-variant);
+      margin-bottom: 8px;
+      font-style: italic;
+    }
+    .timeline-c .desc {
+      font-size: 13px;
+      line-height: 1.7;
+      color: var(--on-surface-variant);
+    }
+    .timeline-c .divider {
+      height: 1px;
+      background: var(--outline-variant);
+      margin: 12px 0 0 0;
+    }
+    .timeline-c .item:last-child .divider { display: none; }
+
+    @media (max-width: 480px) {
+      .demos-grid { grid-template-columns: 1fr; }
+      .demo-card { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="page-title">时间线样式对比</h1>
+  <p class="page-subtitle">三种不同风格的时间线设计，请挑选你喜欢的样式</p>
+
+  <div class="demos-grid">
+    <!-- 样式 A：卡片气泡风 -->
+    <div class="demo-card">
+      <h2>样式 A：卡片气泡风</h2>
+      <div class="timeline-a" id="timeline-a"></div>
+    </div>
+
+    <!-- 样式 B：极简竖线风 -->
+    <div class="demo-card">
+      <h2>样式 B：极简竖线风</h2>
+      <div class="timeline-b" id="timeline-b"></div>
+    </div>
+
+    <!-- 样式 C：杂志编辑风 -->
+    <div class="demo-card">
+      <h2>样式 C：杂志编辑风</h2>
+      <div class="timeline-c" id="timeline-c"></div>
+    </div>
+  </div>
+
+  <script>
+    const data = [
+      {
+        date: "1609年",
+        title: "伽利略首次使用望远镜观测天体",
+        subtitle: "光学天文学的诞生",
+        desc: "伽利略自制约20倍的折射望远镜，发现了月球环形山、木星卫星、金星相位等。"
+      },
+      {
+        date: "1687年",
+        title: "牛顿发表万有引力定律",
+        subtitle: "天体运动的数学基础",
+        desc: "牛顿在《自然哲学的数学原理》中提出万有引力定律和运动三定律。"
+      },
+      {
+        date: "1915年",
+        title: "爱因斯坦完成广义相对论",
+        subtitle: "重新定义引力本质",
+        desc: "爱因斯坦提出引力是时空弯曲的几何效应，而非牛顿意义上的超距作用。"
+      },
+      {
+        date: "1929年",
+        title: "哈勃发现宇宙膨胀",
+        subtitle: "哈勃定律",
+        desc: "哈勃通过观测遥远星系的光谱红移，发现星系退行速度与距离成正比。"
+      },
+      {
+        date: "1965年",
+        title: "发现宇宙微波背景辐射",
+        subtitle: "大爆炸的余晖",
+        desc: "彭齐亚斯和威尔逊在贝尔实验室意外发现来自宇宙背景的微波辐射。"
+      }
+    ];
+
+    function renderA() {
+      const container = document.getElementById('timeline-a');
+      container.innerHTML = data.map(d => `
+        <div class="item">
+          <div class="dot"></div>
+          <div class="content">
+            <div class="date">${d.date}</div>
+            <div class="title">${d.title}</div>
+            <div class="subtitle">${d.subtitle}</div>
+            <div class="desc">${d.desc}</div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function renderB() {
+      const container = document.getElementById('timeline-b');
+      container.innerHTML = data.map(d => `
+        <div class="item">
+          <div class="dot"></div>
+          <div class="content">
+            <div class="date">${d.date}</div>
+            <div class="title">${d.title}</div>
+            <div class="subtitle">${d.subtitle}</div>
+            <div class="desc">${d.desc}</div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function renderC() {
+      const container = document.getElementById('timeline-c');
+      container.innerHTML = data.map(d => `
+        <div class="item">
+          <div class="date-col">
+            <div class="year">${d.date.replace('年','')}</div>
+            <div class="era">年</div>
+          </div>
+          <div class="dot"></div>
+          <div class="content">
+            <div class="title">${d.title}</div>
+            <div class="subtitle">${d.subtitle}</div>
+            <div class="desc">${d.desc}</div>
+            <div class="divider"></div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    renderA();
+    renderB();
+    renderC();
+  </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+{
+  "type": "pie",
+  "id": "coal-chemical-products-chart",
+  "title": "中国煤化工主要产品产能分布",
+  "data": [
+    {
+      "value": 35,
+      "name": "合成氨",
+      "color": "#5c6bc0"
+    },
+    {
+      "value": 30,
+      "name": "甲醇",
+      "color": "#ef5350"
+    },
+    {
+      "value": 15,
+      "name": "烯烃",
+      "color": "#ffa726"
+    },
+    {
+      "value": 10,
+      "name": "乙二醇",
+      "color": "#66bb6a"
+    },
+    {
+      "value": 5,
+      "name": "油品",
+      "color": "#42a5f5"
+    },
+    {
+      "value": 5,
+      "name": "其他",
+      "color": "#ab47bc"
+    }
+  ]
+}

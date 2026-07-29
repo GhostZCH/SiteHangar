@@ -1,0 +1,22 @@
+[
+  {
+    "label": "亚里士多德",
+    "accent": true
+  },
+  {
+    "label": "狄奥弗拉斯托斯",
+    "accent": true
+  },
+  {
+    "label": "老普林尼",
+    "accent": true
+  },
+  {
+    "label": "狄奥斯科里德斯",
+    "accent": false
+  },
+  {
+    "label": "斯特拉波",
+    "accent": false
+  }
+]

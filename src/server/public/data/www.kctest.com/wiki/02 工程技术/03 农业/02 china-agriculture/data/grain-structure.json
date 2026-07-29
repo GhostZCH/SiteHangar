@@ -1,0 +1,32 @@
+{
+  "type": "pie",
+  "id": "grain-structure",
+  "title": "中国粮食作物产量结构",
+  "data": [
+    {
+      "value": 29200,
+      "name": "玉米",
+      "color": "#ffa726"
+    },
+    {
+      "value": 20900,
+      "name": "水稻",
+      "color": "#66bb6a"
+    },
+    {
+      "value": 13700,
+      "name": "小麦",
+      "color": "#42a5f5"
+    },
+    {
+      "value": 2100,
+      "name": "大豆",
+      "color": "#ab47bc"
+    },
+    {
+      "value": 6000,
+      "name": "其他",
+      "color": "#bdbdbd"
+    }
+  ]
+}

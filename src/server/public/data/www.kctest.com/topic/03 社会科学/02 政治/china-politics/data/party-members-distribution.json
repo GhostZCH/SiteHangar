@@ -1,0 +1,47 @@
+{
+  "type": "pie",
+  "id": "party-members-distribution",
+  "title": "八个民主党派成员人数比例",
+  "data": [
+    {
+      "value": 45,
+      "name": "民盟",
+      "color": "#1b5e20"
+    },
+    {
+      "value": 12,
+      "name": "民建",
+      "color": "#e65100"
+    },
+    {
+      "value": 10,
+      "name": "九三学社",
+      "color": "#01579b"
+    },
+    {
+      "value": 8,
+      "name": "民进",
+      "color": "#4a148c"
+    },
+    {
+      "value": 7,
+      "name": "农工党",
+      "color": "#b71c1c"
+    },
+    {
+      "value": 6,
+      "name": "致公党",
+      "color": "#004d40"
+    },
+    {
+      "value": 5,
+      "name": "民革",
+      "color": "#311b92"
+    },
+    {
+      "value": 2,
+      "name": "台盟",
+      "color": "#bf360c"
+    }
+  ]
+}

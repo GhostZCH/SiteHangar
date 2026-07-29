@@ -1,0 +1,37 @@
+{
+  "type": "pie",
+  "id": "urbanization-rate",
+  "title": "全球主要区域城市化率对比（2024年）",
+  "data": [
+    {
+      "value": 83,
+      "name": "北美",
+      "color": "#5c6bc0"
+    },
+    {
+      "value": 74,
+      "name": "欧洲",
+      "color": "#ef5350"
+    },
+    {
+      "value": 66,
+      "name": "东亚",
+      "color": "#ffa726"
+    },
+    {
+      "value": 62,
+      "name": "拉美",
+      "color": "#66bb6a"
+    },
+    {
+      "value": 44,
+      "name": "非洲",
+      "color": "#26a69a"
+    },
+    {
+      "value": 69,
+      "name": "大洋洲",
+      "color": "#ab47bc"
+    }
+  ]
+}

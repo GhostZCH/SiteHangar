@@ -1,0 +1,770 @@
+{
+  "page": {
+    "title": "软件概述",
+    "description": "软件概述 - 系统梳理软件分类体系、操作系统发展历程与现状、应用软件架构分类与功能类型。"
+  },
+  "hero": {
+    "title": "软件概述",
+    "tags": [
+      "计算机科学",
+      "软件工程",
+      "操作系统",
+      "应用软件"
+    ]
+  },
+  "introduction": "软件概述 - 系统梳理软件分类体系、操作系统发展历程与现状、应用软件架构分类与功能类型。",
+  "sections": [
+    {
+      "id": "软件概述",
+      "title": "软件概述",
+      "subtitle": "软件的定义、分类与产业格局",
+      "type": "mixed",
+      "content": {
+        "description": [
+          "软件是与硬件相对的逻辑产品，包括程序代码、数据和相关文档。软件具有无形性、可复制性和可变性三大本质特征，与硬件的物理属性形成鲜明对比。现代软件产业规模庞大，2024年全球软件市场规模达到7307亿美元，预计到2030年将增长至1.4万亿美元，年复合增长率11.3%。\n\n一、软件分类体系。按功能可分为系统软件（操作系统、编译器、驱动程序）、应用软件（办公软件、游戏、行业软件）和支撑软件（开发工具、测试工具、数据库管理系统）。按开发方式可分为商业软件、开源软件、自由软件和共享软件。按部署方式可分为桌面软件、Web应用、移动应用和云服务。按许可模式可分为专有软件和开源软件，后者以GPL、MIT、Apache等许可证发布。\n\n二、软件生命周期。软件从需求分析开始，经过设计、编码、测试、部署，最终进入维护阶段。现代软件工程强调迭代开发和持续交付，传统的瀑布模型已被敏捷开发方法广泛补充。DevOps文化进一步打通了开发与运维的壁垒，实现持续集成和持续部署。\n\n三、开源与商业软件。开源软件以GPL、MIT、Apache等许可证发布，源代码公开可修改。Linux、Android、MySQL是开源软件的典型代表。商业软件以专有许可证销售，如Microsoft Office、Adobe Photoshop。两种模式并非对立，许多商业公司基于开源软件构建商业产品。据统计，96%的商业软件包含开源代码，78%的企业使用开源操作系统。"
+        ],
+        "stats": [
+          {
+            "value": "7307亿",
+            "label": "2024年全球软件市场规模（美元）"
+          },
+          {
+            "value": "11.3%",
+            "label": "2025-2030年复合增长率"
+          },
+          {
+            "value": "96%",
+            "label": "商业软件包含开源代码"
+          },
+          {
+            "value": "4.2亿",
+            "label": "GitHub全球开发者数量"
+          }
+        ],
+        "blocks": [
+          {
+            "type": "description",
+            "data": [
+              "软件是与硬件相对的逻辑产品，包括程序代码、数据和相关文档。软件具有无形性、可复制性和可变性三大本质特征，与硬件的物理属性形成鲜明对比。现代软件产业规模庞大，2024年全球软件市场规模达到7307亿美元，预计到2030年将增长至1.4万亿美元，年复合增长率11.3%。\n\n一、软件分类体系。按功能可分为系统软件（操作系统、编译器、驱动程序）、应用软件（办公软件、游戏、行业软件）和支撑软件（开发工具、测试工具、数据库管理系统）。按开发方式可分为商业软件、开源软件、自由软件和共享软件。按部署方式可分为桌面软件、Web应用、移动应用和云服务。按许可模式可分为专有软件和开源软件，后者以GPL、MIT、Apache等许可证发布。\n\n二、软件生命周期。软件从需求分析开始，经过设计、编码、测试、部署，最终进入维护阶段。现代软件工程强调迭代开发和持续交付，传统的瀑布模型已被敏捷开发方法广泛补充。DevOps文化进一步打通了开发与运维的壁垒，实现持续集成和持续部署。\n\n三、开源与商业软件。开源软件以GPL、MIT、Apache等许可证发布，源代码公开可修改。Linux、Android、MySQL是开源软件的典型代表。商业软件以专有许可证销售，如Microsoft Office、Adobe Photoshop。两种模式并非对立，许多商业公司基于开源软件构建商业产品。据统计，96%的商业软件包含开源代码，78%的企业使用开源操作系统。"
+            ]
+          },
+          {
+            "type": "stats",
+            "data": [
+              {
+                "value": "7307亿",
+                "label": "2024年全球软件市场规模（美元）"
+              },
+              {
+                "value": "11.3%",
+                "label": "2025-2030年复合增长率"
+              },
+              {
+                "value": "96%",
+                "label": "商业软件包含开源代码"
+              },
+              {
+                "value": "4.2亿",
+                "label": "GitHub全球开发者数量"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "操作系统基础",
+      "title": "操作系统基础",
+      "subtitle": "核心功能、内核架构与虚拟化技术",
+      "type": "mixed",
+      "content": {
+        "description": [
+          "操作系统是管理计算机硬件与软件资源的核心系统软件，为应用程序提供运行环境。操作系统负责进程管理（CPU调度、并发控制）、内存管理（虚拟内存、分页分段）、文件系统（存储组织、权限控制）、设备管理（驱动程序、I/O控制）和用户接口（命令行、图形界面）。\n\n一、内核架构类型。宏内核（Monolithic）将大部分系统服务集成在内核空间，如Linux、传统Windows，性能高但稳定性受限。微内核（Microkernel）仅保留最基本功能在内核空间，其他服务在用户空间运行，如Minix、QNX，稳定性高但性能开销大。混合内核（Hybrid）结合两者优点，如Windows NT、macOS XNU。外核（Exokernel）将硬件抽象最小化，主要用于学术研究。\n\n二、虚拟化技术。虚拟化技术允许在一台物理机上运行多个操作系统实例。全虚拟化（VMware、VirtualBox）通过虚拟机监控器模拟完整硬件。硬件辅助虚拟化（Intel VT-x、AMD-V）通过CPU指令集提升性能。准虚拟化（Xen）修改客户操作系统以获得更高效率。\n\n三、容器与编排。容器技术（Docker）通过操作系统级虚拟化实现轻量级隔离，共享主机内核，启动速度快、资源开销低。Kubernetes是容器编排的事实标准，提供服务发现、负载均衡、自动扩缩容等功能，已成为云原生应用的基础设施。"
+        ],
+        "cards": [
+          [
+            {
+              "headline": "宏内核（Monolithic）",
+              "supporting": "将大部分系统服务集成在内核空间，性能高但稳定性受限",
+              "detail": [
+                "代表系统：Linux、传统 Windows",
+                "优点：性能高、组件间通信开销小",
+                "缺点：单个组件故障可能影响整个系统",
+                "适用场景：通用操作系统、服务器系统"
+              ]
+            },
+            {
+              "headline": "微内核（Microkernel）",
+              "supporting": "仅保留最基本功能在内核空间，其他服务在用户空间运行",
+              "detail": [
+                "代表系统：Minix、QNX、L4",
+                "优点：稳定性高、模块化程度高、易于维护",
+                "缺点：性能开销大、组件间通信频繁",
+                "适用场景：嵌入式系统、高可靠性系统"
+              ]
+            },
+            {
+              "headline": "混合内核（Hybrid）",
+              "supporting": "结合宏内核和微内核的优点，兼顾性能与稳定性",
+              "detail": [
+                "代表系统：Windows NT、macOS XNU",
+                "优点：兼具性能和模块化优势",
+                "缺点：架构复杂、设计难度大",
+                "适用场景：现代桌面操作系统"
+              ]
+            },
+            {
+              "headline": "外核（Exokernel）",
+              "supporting": "将硬件抽象最小化，主要用于学术研究和特定场景",
+              "detail": [
+                "代表系统：ExOS、Xok",
+                "优点：极低的抽象开销、高度灵活",
+                "缺点：开发难度大、应用兼容性差",
+                "适用场景：学术研究、高性能计算"
+              ]
+            }
+          ]
+        ],
+        "blocks": [
+          {
+            "type": "description",
+            "data": [
+              "操作系统是管理计算机硬件与软件资源的核心系统软件，为应用程序提供运行环境。操作系统负责进程管理（CPU调度、并发控制）、内存管理（虚拟内存、分页分段）、文件系统（存储组织、权限控制）、设备管理（驱动程序、I/O控制）和用户接口（命令行、图形界面）。\n\n一、内核架构类型。宏内核（Monolithic）将大部分系统服务集成在内核空间，如Linux、传统Windows，性能高但稳定性受限。微内核（Microkernel）仅保留最基本功能在内核空间，其他服务在用户空间运行，如Minix、QNX，稳定性高但性能开销大。混合内核（Hybrid）结合两者优点，如Windows NT、macOS XNU。外核（Exokernel）将硬件抽象最小化，主要用于学术研究。\n\n二、虚拟化技术。虚拟化技术允许在一台物理机上运行多个操作系统实例。全虚拟化（VMware、VirtualBox）通过虚拟机监控器模拟完整硬件。硬件辅助虚拟化（Intel VT-x、AMD-V）通过CPU指令集提升性能。准虚拟化（Xen）修改客户操作系统以获得更高效率。\n\n三、容器与编排。容器技术（Docker）通过操作系统级虚拟化实现轻量级隔离，共享主机内核，启动速度快、资源开销低。Kubernetes是容器编排的事实标准，提供服务发现、负载均衡、自动扩缩容等功能，已成为云原生应用的基础设施。"
+            ]
+          },
+          {
+            "type": "cards",
+            "data": [
+              {
+                "headline": "宏内核（Monolithic）",
+                "supporting": "将大部分系统服务集成在内核空间，性能高但稳定性受限",
+                "detail": [
+                  "代表系统：Linux、传统 Windows",
+                  "优点：性能高、组件间通信开销小",
+                  "缺点：单个组件故障可能影响整个系统",
+                  "适用场景：通用操作系统、服务器系统"
+                ]
+              },
+              {
+                "headline": "微内核（Microkernel）",
+                "supporting": "仅保留最基本功能在内核空间，其他服务在用户空间运行",
+                "detail": [
+                  "代表系统：Minix、QNX、L4",
+                  "优点：稳定性高、模块化程度高、易于维护",
+                  "缺点：性能开销大、组件间通信频繁",
+                  "适用场景：嵌入式系统、高可靠性系统"
+                ]
+              },
+              {
+                "headline": "混合内核（Hybrid）",
+                "supporting": "结合宏内核和微内核的优点，兼顾性能与稳定性",
+                "detail": [
+                  "代表系统：Windows NT、macOS XNU",
+                  "优点：兼具性能和模块化优势",
+                  "缺点：架构复杂、设计难度大",
+                  "适用场景：现代桌面操作系统"
+                ]
+              },
+              {
+                "headline": "外核（Exokernel）",
+                "supporting": "将硬件抽象最小化，主要用于学术研究和特定场景",
+                "detail": [
+                  "代表系统：ExOS、Xok",
+                  "优点：极低的抽象开销、高度灵活",
+                  "缺点：开发难度大、应用兼容性差",
+                  "适用场景：学术研究、高性能计算"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "PC端操作系统",
+      "title": "PC端操作系统",
+      "subtitle": "Windows、Linux、macOS 三足鼎立",
+      "type": "mixed",
+      "content": {
+        "description": [
+          "PC端操作系统经历了从命令行到图形界面、从单用户到多用户、从单机到网络的演进。当前，Windows、Linux、macOS形成三足鼎立格局，各自在不同领域占据优势地位。\n\n一、Windows发展历程。Microsoft Windows从1985年的Windows 1.0开始，经历了3.x/9x系列（16位/32位混合）、NT系列（纯32位/64位）两大分支。Windows XP（2001）统一了消费级和企业级产品线。Windows 7（2009）成为历史上最成功的桌面系统之一。Windows 8（2012）引入触控界面但反响平平。Windows 10（2015）采用'Windows即服务'模式，持续更新。Windows 11（2021）重新设计界面，提高硬件要求。截至2024年12月，Windows 10仍占Windows用户的62.73%，Windows 11占34.1%。\n\n二、Linux生态体系。Linux内核由Linus Torvalds于1991年发布，遵循GPL开源协议。经过30余年发展，形成了丰富的发行版生态：Debian系（Ubuntu、Linux Mint）注重易用性；Red Hat系（Fedora、CentOS、RHEL）面向企业；Arch系（Arch Linux、Manjaro）追求简洁和滚动更新；SUSE系（openSUSE、SLES）专注企业应用。Linux在服务器市场占据主导地位，在桌面市场约4.13%份额。\n\n三、macOS演进路线。macOS的前身是1984年的Macintosh System Software。2001年苹果发布Mac OS X，基于NeXTSTEP和BSD Unix，采用混合内核XNU。2012年更名为OS X，2016年改为macOS。macOS以Unix为基础，兼具商业软件的易用性和开源系统的稳定性，在创意设计和软件开发领域拥有大量用户。\n\n四、桌面操作系统市场格局。截至2024年12月，全球桌面操作系统市场Windows约占73.38%，macOS约占14.16%，Linux约占4.13%，Chrome OS约占1.89%。Windows在企业市场和游戏领域保持优势，macOS在创意设计和开发者群体中受欢迎，Linux在服务器和嵌入式领域占主导。"
+        ],
+        "charts": [
+          {
+            "type": "pie",
+            "id": "desktop-os-market",
+            "title": "2024年全球桌面操作系统市场份额",
+            "data2": [
+              {
+                "value": 73.38,
+                "name": "Windows",
+                "color": "#0078d4"
+              },
+              {
+                "value": 14.16,
+                "name": "macOS",
+                "color": "#555555"
+              },
+              {
+                "value": 4.13,
+                "name": "Linux",
+                "color": "#fcc624"
+              },
+              {
+                "value": 1.89,
+                "name": "Chrome OS",
+                "color": "#1aa260"
+              },
+              {
+                "value": 6.46,
+                "name": "其他/未知",
+                "color": "#9e9e9e"
+              }
+            ]
+          }
+        ],
+        "blocks": [
+          {
+            "type": "description",
+            "data": [
+              "PC端操作系统经历了从命令行到图形界面、从单用户到多用户、从单机到网络的演进。当前，Windows、Linux、macOS形成三足鼎立格局，各自在不同领域占据优势地位。\n\n一、Windows发展历程。Microsoft Windows从1985年的Windows 1.0开始，经历了3.x/9x系列（16位/32位混合）、NT系列（纯32位/64位）两大分支。Windows XP（2001）统一了消费级和企业级产品线。Windows 7（2009）成为历史上最成功的桌面系统之一。Windows 8（2012）引入触控界面但反响平平。Windows 10（2015）采用'Windows即服务'模式，持续更新。Windows 11（2021）重新设计界面，提高硬件要求。截至2024年12月，Windows 10仍占Windows用户的62.73%，Windows 11占34.1%。\n\n二、Linux生态体系。Linux内核由Linus Torvalds于1991年发布，遵循GPL开源协议。经过30余年发展，形成了丰富的发行版生态：Debian系（Ubuntu、Linux Mint）注重易用性；Red Hat系（Fedora、CentOS、RHEL）面向企业；Arch系（Arch Linux、Manjaro）追求简洁和滚动更新；SUSE系（openSUSE、SLES）专注企业应用。Linux在服务器市场占据主导地位，在桌面市场约4.13%份额。\n\n三、macOS演进路线。macOS的前身是1984年的Macintosh System Software。2001年苹果发布Mac OS X，基于NeXTSTEP和BSD Unix，采用混合内核XNU。2012年更名为OS X，2016年改为macOS。macOS以Unix为基础，兼具商业软件的易用性和开源系统的稳定性，在创意设计和软件开发领域拥有大量用户。\n\n四、桌面操作系统市场格局。截至2024年12月，全球桌面操作系统市场Windows约占73.38%，macOS约占14.16%，Linux约占4.13%，Chrome OS约占1.89%。Windows在企业市场和游戏领域保持优势，macOS在创意设计和开发者群体中受欢迎，Linux在服务器和嵌入式领域占主导。"
+            ]
+          },
+          {
+            "type": "charts",
+            "data": {
+              "type": "pie",
+              "id": "desktop-os-market",
+              "title": "2024年全球桌面操作系统市场份额",
+              "data2": [
+                {
+                  "value": 73.38,
+                  "name": "Windows",
+                  "color": "#0078d4"
+                },
+                {
+                  "value": 14.16,
+                  "name": "macOS",
+                  "color": "#555555"
+                },
+                {
+                  "value": 4.13,
+                  "name": "Linux",
+                  "color": "#fcc624"
+                },
+                {
+                  "value": 1.89,
+                  "name": "Chrome OS",
+                  "color": "#1aa260"
+                },
+                {
+                  "value": 6.46,
+                  "name": "其他/未知",
+                  "color": "#9e9e9e"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "移动端操作系统",
+      "title": "移动端操作系统",
+      "subtitle": "Android、iOS、HarmonyOS 三强争霸",
+      "type": "mixed",
+      "content": {
+        "description": [
+          "移动端操作系统以Android和iOS为主导，HarmonyOS等新兴系统正在探索跨设备融合的新路径。2024年全球智能手机操作系统市场Android约占74%，iOS约占22%，HarmonyOS约占4%。\n\n一、Android开源生态。Android由Andy Rubin于2003年创立，2005年被Google收购，2008年发布首个商用版本。Android基于Linux内核，采用Apache许可证开源，但Google移动服务（GMS）需授权。Android版本以甜点命名（Cupcake、Donut到Android 10后改为数字）。中国市场的Android系统多基于开源版本定制（小米MIUI、OPPO ColorOS、vivo OriginOS）。\n\n二、iOS封闭生态。iOS源于2007年发布的iPhone OS，2010年更名为iOS。iOS是闭源系统，仅运行于苹果设备。苹果通过严格控制硬件和软件生态，实现了高度的系统优化和安全性。App Store的审核机制保证了应用质量，但也因'苹果税'（30%抽成）引发争议。iOS在全球智能手机市场约占22%，在高端市场占据更大份额，App Store收入916亿美元，远超Google Play的357亿美元。\n\n三、HarmonyOS与新兴系统。HarmonyOS（鸿蒙）是华为于2019年发布的分布式操作系统，2021年推出手机版本HarmonyOS 2。采用微内核架构，支持手机、平板、手表、电视、汽车等多种设备。OpenHarmony开源项目由开放原子开源基金会管理。HarmonyOS NEXT（2024）彻底去除Android兼容层，构建独立生态。截至2024年，HarmonyOS设备数超过10亿，在中国市场占比达19%。\n\n四、移动端与PC端融合趋势。移动端与PC端的界限正在模糊。苹果通过Apple Silicon芯片（M系列）实现Mac与iPad应用互通，推出Universal Control、Sidecar等功能。微软推出Your Phone应用连接Android手机。Google推进Chrome OS与Android融合。跨平台开发框架（Flutter、React Native）使一套代码可同时运行于移动端和桌面端。"
+        ],
+        "stats": [
+          {
+            "value": "74%",
+            "label": "Android 全球市场份额"
+          },
+          {
+            "value": "22%",
+            "label": "iOS 全球市场份额"
+          },
+          {
+            "value": "4%",
+            "label": "HarmonyOS 全球市场份额"
+          },
+          {
+            "value": "19%",
+            "label": "HarmonyOS 中国市场份额"
+          }
+        ],
+        "cards": [
+          [
+            {
+              "headline": "Android",
+              "supporting": "全球市场份额最高的移动操作系统，基于开源Linux内核",
+              "detail": [
+                "全球市场份额：74%",
+                "开发语言：Java、Kotlin",
+                "生态模式：开源（AOSP）+ 授权服务（GMS）",
+                "特点：设备种类丰富、定制化程度高、应用数量庞大"
+              ]
+            },
+            {
+              "headline": "iOS",
+              "supporting": "苹果专有移动操作系统，仅运行于苹果设备",
+              "detail": [
+                "全球市场份额：22%",
+                "开发语言：Swift、Objective-C",
+                "生态模式：完全封闭、App Store 审核",
+                "特点：系统流畅、安全性高、用户付费意愿强"
+              ]
+            },
+            {
+              "headline": "HarmonyOS",
+              "supporting": "华为分布式操作系统，面向全场景智能设备",
+              "detail": [
+                "全球市场份额：4%（中国 19%）",
+                "开发语言：ArkTS、C++",
+                "生态模式：开源（OpenHarmony）+ 商业版本",
+                "特点：分布式架构、跨设备协同、微内核设计"
+              ]
+            }
+          ]
+        ],
+        "blocks": [
+          {
+            "type": "description",
+            "data": [
+              "移动端操作系统以Android和iOS为主导，HarmonyOS等新兴系统正在探索跨设备融合的新路径。2024年全球智能手机操作系统市场Android约占74%，iOS约占22%，HarmonyOS约占4%。\n\n一、Android开源生态。Android由Andy Rubin于2003年创立，2005年被Google收购，2008年发布首个商用版本。Android基于Linux内核，采用Apache许可证开源，但Google移动服务（GMS）需授权。Android版本以甜点命名（Cupcake、Donut到Android 10后改为数字）。中国市场的Android系统多基于开源版本定制（小米MIUI、OPPO ColorOS、vivo OriginOS）。\n\n二、iOS封闭生态。iOS源于2007年发布的iPhone OS，2010年更名为iOS。iOS是闭源系统，仅运行于苹果设备。苹果通过严格控制硬件和软件生态，实现了高度的系统优化和安全性。App Store的审核机制保证了应用质量，但也因'苹果税'（30%抽成）引发争议。iOS在全球智能手机市场约占22%，在高端市场占据更大份额，App Store收入916亿美元，远超Google Play的357亿美元。\n\n三、HarmonyOS与新兴系统。HarmonyOS（鸿蒙）是华为于2019年发布的分布式操作系统，2021年推出手机版本HarmonyOS 2。采用微内核架构，支持手机、平板、手表、电视、汽车等多种设备。OpenHarmony开源项目由开放原子开源基金会管理。HarmonyOS NEXT（2024）彻底去除Android兼容层，构建独立生态。截至2024年，HarmonyOS设备数超过10亿，在中国市场占比达19%。\n\n四、移动端与PC端融合趋势。移动端与PC端的界限正在模糊。苹果通过Apple Silicon芯片（M系列）实现Mac与iPad应用互通，推出Universal Control、Sidecar等功能。微软推出Your Phone应用连接Android手机。Google推进Chrome OS与Android融合。跨平台开发框架（Flutter、React Native）使一套代码可同时运行于移动端和桌面端。"
+            ]
+          },
+          {
+            "type": "stats",
+            "data": [
+              {
+                "value": "74%",
+                "label": "Android 全球市场份额"
+              },
+              {
+                "value": "22%",
+                "label": "iOS 全球市场份额"
+              },
+              {
+                "value": "4%",
+                "label": "HarmonyOS 全球市场份额"
+              },
+              {
+                "value": "19%",
+                "label": "HarmonyOS 中国市场份额"
+              }
+            ]
+          },
+          {
+            "type": "cards",
+            "data": [
+              {
+                "headline": "Android",
+                "supporting": "全球市场份额最高的移动操作系统，基于开源Linux内核",
+                "detail": [
+                  "全球市场份额：74%",
+                  "开发语言：Java、Kotlin",
+                  "生态模式：开源（AOSP）+ 授权服务（GMS）",
+                  "特点：设备种类丰富、定制化程度高、应用数量庞大"
+                ]
+              },
+              {
+                "headline": "iOS",
+                "supporting": "苹果专有移动操作系统，仅运行于苹果设备",
+                "detail": [
+                  "全球市场份额：22%",
+                  "开发语言：Swift、Objective-C",
+                  "生态模式：完全封闭、App Store 审核",
+                  "特点：系统流畅、安全性高、用户付费意愿强"
+                ]
+              },
+              {
+                "headline": "HarmonyOS",
+                "supporting": "华为分布式操作系统，面向全场景智能设备",
+                "detail": [
+                  "全球市场份额：4%（中国 19%）",
+                  "开发语言：ArkTS、C++",
+                  "生态模式：开源（OpenHarmony）+ 商业版本",
+                  "特点：分布式架构、跨设备协同、微内核设计"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "应用软件架构",
+      "title": "应用软件架构",
+      "subtitle": "从单体到微服务再到Serverless的演进",
+      "type": "mixed",
+      "content": {
+        "description": [
+          "应用软件架构从单体到微服务再到Serverless的演进，反映了业务复杂度增长和云计算普及的技术趋势。不同架构各有适用场景，现代应用常采用混合架构。\n\n一、单体架构与三层架构。单体架构（Monolithic）将所有功能模块打包在一个应用中，传统三层架构分为表示层（用户界面）、业务逻辑层（核心功能）和数据访问层（数据库交互）。单体架构开发简单、部署方便，适合小型应用。但随着业务增长，代码耦合度高、扩展困难、技术栈锁定等问题逐渐显现。\n\n二、面向服务架构（SOA）。SOA将系统拆分为可重用的服务，通过企业服务总线（ESB）进行通信。每个服务有明确的接口定义（WSDL），使用SOAP协议交换数据。SOA解决了单体系统的部分问题，但ESB成为性能瓶颈，服务粒度较粗，难以快速迭代。SOA在2000年代的企业级应用中广泛采用。\n\n三、微服务架构。微服务架构将应用拆分为更小的、独立部署的服务单元，每个服务围绕业务功能构建，拥有独立的数据库和技术栈。服务间通过轻量级协议（REST API、gRPC、消息队列）通信。Netflix、Amazon是微服务架构的早期实践者。微服务带来弹性扩展、独立部署、技术多样性等优势，但也增加了分布式系统的复杂度（服务发现、链路追踪、熔断降级）。\n\n四、无服务器架构（Serverless）。Serverless将服务器管理完全交给云厂商，开发者只需编写业务逻辑函数。函数计算（AWS Lambda、Azure Functions、阿里云函数计算）按调用次数计费，适合事件驱动和突发流量场景。Serverless降低了运维成本，但存在冷启动延迟、调试困难、供应商锁定等问题。当前，微服务与Serverless常结合使用，核心服务用容器部署，边缘逻辑用函数计算。"
+        ],
+        "branchVisualizer": [
+          {
+            "periods": [
+              "时期 1",
+              "时期 2",
+              "时期 3",
+              "时期 4"
+            ],
+            "branches": [
+              {
+                "name": "部署复杂度",
+                "levels": [
+                  1,
+                  2,
+                  4,
+                  5
+                ],
+                "descriptions": [
+                  "单包部署，简单直接",
+                  "服务拆分，ESB 协调",
+                  "多服务独立部署，需编排工具",
+                  "函数级部署，完全托管"
+                ]
+              },
+              {
+                "name": "扩展灵活性",
+                "levels": [
+                  1,
+                  2,
+                  4,
+                  5
+                ],
+                "descriptions": [
+                  "整体扩展，资源利用率低",
+                  "服务级扩展，粒度较粗",
+                  "细粒度独立扩展，弹性高",
+                  "按需自动扩展，极致弹性"
+                ]
+              },
+              {
+                "name": "技术栈自由度",
+                "levels": [
+                  1,
+                  2,
+                  4,
+                  5
+                ],
+                "descriptions": [
+                  "统一技术栈，技术锁定",
+                  "服务内统一，跨服务可异构",
+                  "服务级技术栈自由选型",
+                  "函数级自由，无服务器限制"
+                ]
+              },
+              {
+                "name": "运维复杂度",
+                "levels": [
+                  1,
+                  2,
+                  4,
+                  3
+                ],
+                "descriptions": [
+                  "运维简单，监控集中",
+                  "ESB 成为运维焦点",
+                  "分布式治理挑战大",
+                  "托管服务降低运维负担"
+                ]
+              }
+            ]
+          }
+        ],
+        "blocks": [
+          {
+            "type": "description",
+            "data": [
+              "应用软件架构从单体到微服务再到Serverless的演进，反映了业务复杂度增长和云计算普及的技术趋势。不同架构各有适用场景，现代应用常采用混合架构。\n\n一、单体架构与三层架构。单体架构（Monolithic）将所有功能模块打包在一个应用中，传统三层架构分为表示层（用户界面）、业务逻辑层（核心功能）和数据访问层（数据库交互）。单体架构开发简单、部署方便，适合小型应用。但随着业务增长，代码耦合度高、扩展困难、技术栈锁定等问题逐渐显现。\n\n二、面向服务架构（SOA）。SOA将系统拆分为可重用的服务，通过企业服务总线（ESB）进行通信。每个服务有明确的接口定义（WSDL），使用SOAP协议交换数据。SOA解决了单体系统的部分问题，但ESB成为性能瓶颈，服务粒度较粗，难以快速迭代。SOA在2000年代的企业级应用中广泛采用。\n\n三、微服务架构。微服务架构将应用拆分为更小的、独立部署的服务单元，每个服务围绕业务功能构建，拥有独立的数据库和技术栈。服务间通过轻量级协议（REST API、gRPC、消息队列）通信。Netflix、Amazon是微服务架构的早期实践者。微服务带来弹性扩展、独立部署、技术多样性等优势，但也增加了分布式系统的复杂度（服务发现、链路追踪、熔断降级）。\n\n四、无服务器架构（Serverless）。Serverless将服务器管理完全交给云厂商，开发者只需编写业务逻辑函数。函数计算（AWS Lambda、Azure Functions、阿里云函数计算）按调用次数计费，适合事件驱动和突发流量场景。Serverless降低了运维成本，但存在冷启动延迟、调试困难、供应商锁定等问题。当前，微服务与Serverless常结合使用，核心服务用容器部署，边缘逻辑用函数计算。"
+            ]
+          },
+          {
+            "type": "branchVisualizer",
+            "data": {
+              "periods": [
+                "时期 1",
+                "时期 2",
+                "时期 3",
+                "时期 4"
+              ],
+              "branches": [
+                {
+                  "name": "部署复杂度",
+                  "levels": [
+                    1,
+                    2,
+                    4,
+                    5
+                  ],
+                  "descriptions": [
+                    "单包部署，简单直接",
+                    "服务拆分，ESB 协调",
+                    "多服务独立部署，需编排工具",
+                    "函数级部署，完全托管"
+                  ]
+                },
+                {
+                  "name": "扩展灵活性",
+                  "levels": [
+                    1,
+                    2,
+                    4,
+                    5
+                  ],
+                  "descriptions": [
+                    "整体扩展，资源利用率低",
+                    "服务级扩展，粒度较粗",
+                    "细粒度独立扩展，弹性高",
+                    "按需自动扩展，极致弹性"
+                  ]
+                },
+                {
+                  "name": "技术栈自由度",
+                  "levels": [
+                    1,
+                    2,
+                    4,
+                    5
+                  ],
+                  "descriptions": [
+                    "统一技术栈，技术锁定",
+                    "服务内统一，跨服务可异构",
+                    "服务级技术栈自由选型",
+                    "函数级自由，无服务器限制"
+                  ]
+                },
+                {
+                  "name": "运维复杂度",
+                  "levels": [
+                    1,
+                    2,
+                    4,
+                    3
+                  ],
+                  "descriptions": [
+                    "运维简单，监控集中",
+                    "ESB 成为运维焦点",
+                    "分布式治理挑战大",
+                    "托管服务降低运维负担"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "应用软件分类",
+      "title": "应用软件分类",
+      "subtitle": "办公软件、多媒体、行业软件与开发工具",
+      "type": "mixed",
+      "content": {
+        "description": [
+          "应用软件按功能可分为办公软件、多媒体软件、行业软件和开发工具四大类，每类都有代表性的产品和成熟的市场。2024年全球移动应用消费支出达1270亿美元，游戏软件是规模最大的娱乐软件类别。\n\n一、办公软件。办公软件是应用最广泛的软件类型，包括文字处理（Microsoft Word、WPS、Google Docs）、电子表格（Excel、WPS表格、Google Sheets）、演示文稿（PowerPoint、Keynote、Google Slides）和电子邮件客户端（Outlook、Thunderbird）。办公软件市场由Microsoft Office主导，WPS在中国市场占有率高，Google Workspace在协作办公领域有优势。\n\n二、多媒体与娱乐软件。多媒体软件包括图像处理（Adobe Photoshop、GIMP、Canva）、音视频编辑（Premiere、Final Cut Pro、DaVinci Resolve、Audacity）、三维建模（Blender、Maya、3ds Max）和游戏（Steam、Epic Games平台）。游戏软件是规模最大的娱乐软件类别，2024年全球游戏市场收入约1840亿美元。\n\n三、行业专业软件。行业软件面向特定领域，包括计算机辅助设计（AutoCAD、SolidWorks）、企业资源规划（SAP、Oracle、用友、金蝶）、客户关系管理（Salesforce、Dynamics 365）、供应链管理（SAP SCM、Oracle SCM）等。行业软件通常价格高昂、实施周期长、定制化程度高，是软件产业中利润最丰厚的细分领域。\n\n四、软件开发工具。软件开发工具包括集成开发环境（Visual Studio、IntelliJ IDEA、VS Code、Eclipse）、版本控制系统（Git、SVN）、数据库管理工具（MySQL Workbench、pgAdmin、Navicat）和调试/测试工具（Jenkins、Jira、Selenium）。VS Code是目前最受欢迎的代码编辑器，Git是版本控制的事实标准，GitHub是全球最大的代码托管平台。"
+        ],
+        "tables": [
+          {
+            "headers": [
+              "软件类型",
+              "代表产品",
+              "主要功能",
+              "市场特点"
+            ],
+            "rows": [
+              [
+                "办公软件",
+                "Microsoft Office、WPS、Google Workspace",
+                "文字处理、电子表格、演示文稿",
+                "市场成熟、订阅制转型、协作功能增强"
+              ],
+              [
+                "多媒体软件",
+                "Photoshop、Premiere、Blender",
+                "图像处理、音视频编辑、三维建模",
+                "创意产业核心、AI 功能集成、订阅模式"
+              ],
+              [
+                "行业软件",
+                "SAP、Salesforce、AutoCAD",
+                "ERP、CRM、CAD、供应链管理",
+                "高客单价、长实施周期、云化转型中"
+              ],
+              [
+                "开发工具",
+                "VS Code、IntelliJ IDEA、Git",
+                "代码编辑、版本控制、调试测试",
+                "开源主导、插件生态、云原生集成"
+              ],
+              [
+                "游戏软件",
+                "Steam、Unity、Unreal Engine",
+                "游戏分发、游戏引擎、开发工具",
+                "规模最大、电竞崛起、跨平台趋势"
+              ],
+              [
+                "安全软件",
+                "CrowdStrike、360、卡巴斯基",
+                "杀毒、防火墙、终端安全",
+                "威胁升级、零信任架构、AI 驱动"
+              ]
+            ]
+          }
+        ],
+        "cards": [
+          [
+            {
+              "headline": "VS Code",
+              "supporting": "微软开发的轻量级代码编辑器，目前最受欢迎的 IDE",
+              "detail": [
+                "开发者：Microsoft",
+                "核心功能：代码编辑、调试、Git 集成、插件扩展",
+                "用户规模：月活开发者超 1500 万",
+                "特点：免费开源、跨平台、插件生态丰富"
+              ]
+            },
+            {
+              "headline": "Git",
+              "supporting": "Linus Torvalds 创建的分布式版本控制系统",
+              "detail": [
+                "开发者：Linus Torvalds（2005年）",
+                "核心功能：版本控制、分支管理、代码合并",
+                "用户规模：全球开发者广泛使用",
+                "特点：分布式、高效、支持离线工作"
+              ]
+            },
+            {
+              "headline": "Docker",
+              "supporting": "容器化技术的代表，实现应用级虚拟化",
+              "detail": [
+                "开发者：Docker Inc.（2013年）",
+                "核心功能：容器打包、镜像分发、环境隔离",
+                "用户规模：企业级应用广泛采用",
+                "特点：轻量级、快速启动、一致性环境"
+              ]
+            },
+            {
+              "headline": "Kubernetes",
+              "supporting": "Google 开源的容器编排平台，云原生基础设施",
+              "detail": [
+                "开发者：Google（2014年开源）",
+                "核心功能：容器编排、服务发现、自动扩缩容",
+                "用户规模：云原生应用标准平台",
+                "特点：高可用、弹性扩展、自动化运维"
+              ]
+            }
+          ]
+        ],
+        "blocks": [
+          {
+            "type": "description",
+            "data": [
+              "应用软件按功能可分为办公软件、多媒体软件、行业软件和开发工具四大类，每类都有代表性的产品和成熟的市场。2024年全球移动应用消费支出达1270亿美元，游戏软件是规模最大的娱乐软件类别。\n\n一、办公软件。办公软件是应用最广泛的软件类型，包括文字处理（Microsoft Word、WPS、Google Docs）、电子表格（Excel、WPS表格、Google Sheets）、演示文稿（PowerPoint、Keynote、Google Slides）和电子邮件客户端（Outlook、Thunderbird）。办公软件市场由Microsoft Office主导，WPS在中国市场占有率高，Google Workspace在协作办公领域有优势。\n\n二、多媒体与娱乐软件。多媒体软件包括图像处理（Adobe Photoshop、GIMP、Canva）、音视频编辑（Premiere、Final Cut Pro、DaVinci Resolve、Audacity）、三维建模（Blender、Maya、3ds Max）和游戏（Steam、Epic Games平台）。游戏软件是规模最大的娱乐软件类别，2024年全球游戏市场收入约1840亿美元。\n\n三、行业专业软件。行业软件面向特定领域，包括计算机辅助设计（AutoCAD、SolidWorks）、企业资源规划（SAP、Oracle、用友、金蝶）、客户关系管理（Salesforce、Dynamics 365）、供应链管理（SAP SCM、Oracle SCM）等。行业软件通常价格高昂、实施周期长、定制化程度高，是软件产业中利润最丰厚的细分领域。\n\n四、软件开发工具。软件开发工具包括集成开发环境（Visual Studio、IntelliJ IDEA、VS Code、Eclipse）、版本控制系统（Git、SVN）、数据库管理工具（MySQL Workbench、pgAdmin、Navicat）和调试/测试工具（Jenkins、Jira、Selenium）。VS Code是目前最受欢迎的代码编辑器，Git是版本控制的事实标准，GitHub是全球最大的代码托管平台。"
+            ]
+          },
+          {
+            "type": "tables",
+            "data": {
+              "headers": [
+                "软件类型",
+                "代表产品",
+                "主要功能",
+                "市场特点"
+              ],
+              "rows": [
+                [
+                  "办公软件",
+                  "Microsoft Office、WPS、Google Workspace",
+                  "文字处理、电子表格、演示文稿",
+                  "市场成熟、订阅制转型、协作功能增强"
+                ],
+                [
+                  "多媒体软件",
+                  "Photoshop、Premiere、Blender",
+                  "图像处理、音视频编辑、三维建模",
+                  "创意产业核心、AI 功能集成、订阅模式"
+                ],
+                [
+                  "行业软件",
+                  "SAP、Salesforce、AutoCAD",
+                  "ERP、CRM、CAD、供应链管理",
+                  "高客单价、长实施周期、云化转型中"
+                ],
+                [
+                  "开发工具",
+                  "VS Code、IntelliJ IDEA、Git",
+                  "代码编辑、版本控制、调试测试",
+                  "开源主导、插件生态、云原生集成"
+                ],
+                [
+                  "游戏软件",
+                  "Steam、Unity、Unreal Engine",
+                  "游戏分发、游戏引擎、开发工具",
+                  "规模最大、电竞崛起、跨平台趋势"
+                ],
+                [
+                  "安全软件",
+                  "CrowdStrike、360、卡巴斯基",
+                  "杀毒、防火墙、终端安全",
+                  "威胁升级、零信任架构、AI 驱动"
+                ]
+              ]
+            }
+          },
+          {
+            "type": "cards",
+            "data": [
+              {
+                "headline": "VS Code",
+                "supporting": "微软开发的轻量级代码编辑器，目前最受欢迎的 IDE",
+                "detail": [
+                  "开发者：Microsoft",
+                  "核心功能：代码编辑、调试、Git 集成、插件扩展",
+                  "用户规模：月活开发者超 1500 万",
+                  "特点：免费开源、跨平台、插件生态丰富"
+                ]
+              },
+              {
+                "headline": "Git",
+                "supporting": "Linus Torvalds 创建的分布式版本控制系统",
+                "detail": [
+                  "开发者：Linus Torvalds（2005年）",
+                  "核心功能：版本控制、分支管理、代码合并",
+                  "用户规模：全球开发者广泛使用",
+                  "特点：分布式、高效、支持离线工作"
+                ]
+              },
+              {
+                "headline": "Docker",
+                "supporting": "容器化技术的代表，实现应用级虚拟化",
+                "detail": [
+                  "开发者：Docker Inc.（2013年）",
+                  "核心功能：容器打包、镜像分发、环境隔离",
+                  "用户规模：企业级应用广泛采用",
+                  "特点：轻量级、快速启动、一致性环境"
+                ]
+              },
+              {
+                "headline": "Kubernetes",
+                "supporting": "Google 开源的容器编排平台，云原生基础设施",
+                "detail": [
+                  "开发者：Google（2014年开源）",
+                  "核心功能：容器编排、服务发现、自动扩缩容",
+                  "用户规模：云原生应用标准平台",
+                  "特点：高可用、弹性扩展、自动化运维"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "version": "",
+  "lastModified": "2026-07-27 19:18:37"
+}

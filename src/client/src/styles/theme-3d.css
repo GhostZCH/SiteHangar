@@ -1,0 +1,30 @@
+[data-theme="3d"] {
+    --primary: #546e7a;
+    --on-primary: #ffffff;
+    --primary-container: #e0e5ec;
+    --on-primary-container: #4a5568;
+    --secondary: #718096;
+    --on-secondary: #ffffff;
+    --secondary-container: #e0e5ec;
+    --on-secondary-container: #4a5568;
+    --tertiary: #4fc3f7;
+    --on-tertiary: #000000;
+    --tertiary-container: #e1f5fe;
+    --on-tertiary-container: #01579b;
+    --accent: #ff7043;
+    --accent-light: #ffccbc;
+    --surface: #e0e5ec;
+    --surface-variant: #e0e5ec;
+    --on-surface: #4a5568;
+    --on-surface-variant: #718096;
+    --outline: rgba(0,0,0,0.04);
+    --outline-variant: rgba(0,0,0,0.06);
+    --shadow-1: 4px 4px 8px #bec3c9, -4px -4px 8px #ffffff;
+    --shadow-2: 8px 8px 16px #bec3c9, -8px -8px 16px #ffffff;
+    --shadow-3: 8px 8px 16px #bec3c9, -8px -8px 16px #ffffff;
+    --shadow-4: 12px 12px 24px #bec3c9, -12px -12px 24px #ffffff;
+    --radius-sm: 10px;
+    --radius-md: 14px;
+    --radius-lg: 16px;
+    --radius-xl: 22px;
+}

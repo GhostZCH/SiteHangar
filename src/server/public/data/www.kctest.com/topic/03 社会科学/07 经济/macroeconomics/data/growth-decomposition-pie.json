@@ -1,0 +1,22 @@
+{
+  "type": "pie",
+  "id": "growth-decomposition-pie",
+  "title": "中国经济增长来源分解（1978年以来估算）",
+  "data": [
+    {
+      "value": 50,
+      "name": "资本积累",
+      "color": "#81c784"
+    },
+    {
+      "value": 15,
+      "name": "劳动力增长",
+      "color": "#64b5f6"
+    },
+    {
+      "value": 35,
+      "name": "TFP（技术进步）",
+      "color": "#ffb74d"
+    }
+  ]
+}

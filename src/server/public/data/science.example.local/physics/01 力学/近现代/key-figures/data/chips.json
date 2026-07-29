@@ -1,0 +1,26 @@
+[
+  {
+    "label": "伽利略",
+    "accent": true
+  },
+  {
+    "label": "牛顿",
+    "accent": true
+  },
+  {
+    "label": "拉格朗日",
+    "accent": true
+  },
+  {
+    "label": "哈密顿",
+    "accent": true
+  },
+  {
+    "label": "爱因斯坦",
+    "accent": true
+  },
+  {
+    "label": "麦克斯韦",
+    "accent": false
+  }
+]

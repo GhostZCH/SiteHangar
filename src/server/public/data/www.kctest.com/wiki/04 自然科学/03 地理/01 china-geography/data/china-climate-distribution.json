@@ -1,0 +1,33 @@
+{
+  "type": "pie",
+  "id": "china-climate-distribution",
+  "title": "中国气候类型面积占比",
+  "subType": "donut",
+  "data": [
+    {
+      "value": 30,
+      "name": "温带大陆性气候",
+      "color": "#91cc75"
+    },
+    {
+      "value": 28,
+      "name": "温带季风气候",
+      "color": "#5470c6"
+    },
+    {
+      "value": 25,
+      "name": "亚热带季风气候",
+      "color": "#fac858"
+    },
+    {
+      "value": 15,
+      "name": "高山高原气候",
+      "color": "#ee6666"
+    },
+    {
+      "value": 2,
+      "name": "热带季风气候",
+      "color": "#73c0de"
+    }
+  ]
+}

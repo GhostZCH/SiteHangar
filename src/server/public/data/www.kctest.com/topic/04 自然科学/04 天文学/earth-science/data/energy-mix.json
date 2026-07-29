@@ -1,0 +1,27 @@
+{
+  "type": "pie",
+  "id": "energy-mix",
+  "title": "全球能源消费结构",
+  "data": [
+    {
+      "value": 31,
+      "name": "石油"
+    },
+    {
+      "value": 27,
+      "name": "煤炭"
+    },
+    {
+      "value": 24,
+      "name": "天然气"
+    },
+    {
+      "value": 14,
+      "name": "非化石能源"
+    },
+    {
+      "value": 4,
+      "name": "核能"
+    }
+  ]
+}

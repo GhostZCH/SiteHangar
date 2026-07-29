@@ -1,0 +1,32 @@
+{
+  "type": "pie",
+  "id": "synthetic-bio-app",
+  "title": "合成生物学主要应用领域分布",
+  "data": [
+    {
+      "value": 57.3,
+      "name": "医疗健康",
+      "color": "#5c6bc0"
+    },
+    {
+      "value": 15.2,
+      "name": "化工与材料",
+      "color": "#ef5350"
+    },
+    {
+      "value": 12.5,
+      "name": "农业与食品",
+      "color": "#ffa726"
+    },
+    {
+      "value": 9.8,
+      "name": "能源与环境",
+      "color": "#66bb6a"
+    },
+    {
+      "value": 5.2,
+      "name": "其他",
+      "color": "#bdbdbd"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+page:
+  title: 知识立方
+  description: 知识学习和分享
+  brand_name: KNOWLEDGE_CUBE
+  subtitle: 用于学习和分享知识的平台
+  tags:
+    - 知识图谱
+    - 系统性
+    - 完整性
+    - 简明性
+
+modules:
+  - id: wiki
+    title: 百科常识
+    description: 普通人应该了解的常识，广泛覆盖，浅显易懂，，涵盖自然科学、人文科学、工程技术、社会科学
+    image: wiki.jpg
+    tags:
+      - 生活常识
+      - 科学原理
+      - 实用知识
+      - 日常技巧
+
+  - id: topic
+    title: 专题科普
+    description: 深入某个知识点的科普文章
+    image: topic.jpg
+    tags:
+      - 正在建设中
+
+  - id: tools
+    title: 工具&游戏
+    description: 学习工具、可视化组件、演示案例等实用工具
+    image: tools.jpg
+    tags:
+      - 学习工具
+      - 可视化
+      - 演示
+      - 教育
+
+

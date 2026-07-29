@@ -1,0 +1,27 @@
+{
+  "type": "pie",
+  "id": "china-edu-funding",
+  "title": "中国教育经费来源构成",
+  "data": [
+    {
+      "value": 68,
+      "name": "国家财政性教育经费",
+      "color": "#5c6bc0"
+    },
+    {
+      "value": 17,
+      "name": "民办学校举办者投入",
+      "color": "#ef5350"
+    },
+    {
+      "value": 10,
+      "name": "社会捐赠和集资",
+      "color": "#ffa726"
+    },
+    {
+      "value": 5,
+      "name": "个人家庭支出",
+      "color": "#66bb6a"
+    }
+  ]
+}

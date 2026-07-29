@@ -1,0 +1,28 @@
+{
+  "type": "pie",
+  "subType": "donut",
+  "id": "human-genome",
+  "title": "人类基因组DNA功能分布",
+  "data": [
+    {
+      "value": 2,
+      "name": "蛋白质编码区",
+      "color": "#5c6bc0"
+    },
+    {
+      "value": 8,
+      "name": "非编码RNA和调控序列",
+      "color": "#ef5350"
+    },
+    {
+      "value": 45,
+      "name": "转座子等重复序列",
+      "color": "#ffa726"
+    },
+    {
+      "value": 45,
+      "name": "其他非编码DNA",
+      "color": "#66bb6a"
+    }
+  ]
+}

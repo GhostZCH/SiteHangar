@@ -1,0 +1,23 @@
+{
+  "type": "pie",
+  "id": "denomination-pie",
+  "title": "全球三大宗派信徒比例",
+  "subType": "donut",
+  "data": [
+    {
+      "value": 52,
+      "name": "天主教",
+      "color": "#f4b400"
+    },
+    {
+      "value": 38,
+      "name": "新教",
+      "color": "#4285f4"
+    },
+    {
+      "value": 10,
+      "name": "东正教",
+      "color": "#ea4335"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+/* ===== Home Page Responsive ===== */
+@media (max-width: 1200px) {
+    .home-modules-grid-enhanced {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+}
+
+@media (max-width: 900px) {
+    .home-modules-grid-enhanced {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .hero-title-enhanced {
+        font-size: clamp(2.5rem, 8vw, 3.5rem);
+    }
+    .hero-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cta-btn-primary,
+    .cta-btn-secondary {
+        width: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    .home-modules-grid-enhanced {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .home-module-card-enhanced {
+        aspect-ratio: 16/10;
+    }
+    .hero-enhanced {
+        padding: 60px 16px 100px;
+    }
+    .brand-tag {
+        font-size: 0.65rem;
+    }
+    .hero-subtitle-enhanced {
+        font-size: 1rem;
+    }
+    .modules-section {
+        padding: 48px 16px;
+    }
+    .section-title {
+        font-size: 1.5rem;
+    }
+}

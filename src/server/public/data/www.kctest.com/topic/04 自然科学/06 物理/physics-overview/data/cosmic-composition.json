@@ -1,0 +1,23 @@
+{
+  "type": "pie",
+  "id": "cosmic-composition",
+  "title": "宇宙的物质能量组成",
+  "subType": "donut",
+  "data": [
+    {
+      "value": 4.9,
+      "name": "普通物质",
+      "color": "#1565c0"
+    },
+    {
+      "value": 26.8,
+      "name": "暗物质",
+      "color": "#e53935"
+    },
+    {
+      "value": 68.3,
+      "name": "暗能量",
+      "color": "#ffa726"
+    }
+  ]
+}

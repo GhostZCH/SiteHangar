@@ -1,0 +1,26 @@
+[data-theme="night"] {
+    --primary: #38bdf8;
+    --on-primary: #0f172a;
+    --primary-container: #1e293b;
+    --on-primary-container: #38bdf8;
+    --secondary: #94a3b8;
+    --on-secondary: #0f172a;
+    --secondary-container: #334155;
+    --on-secondary-container: #e2e8f0;
+    --tertiary: #22d3ee;
+    --on-tertiary: #0f172a;
+    --tertiary-container: #1e293b;
+    --on-tertiary-container: #22d3ee;
+    --accent: #38bdf8;
+    --accent-light: rgba(56,189,248,0.15);
+    --surface: #0f172a;
+    --surface-variant: #1e293b;
+    --on-surface: #f1f5f9;
+    --on-surface-variant: #94a3b8;
+    --outline: rgba(148,163,184,0.15);
+    --outline-variant: rgba(148,163,184,0.1);
+    --shadow-1: 0 1px 3px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.2);
+    --shadow-2: 0 4px 8px rgba(0,0,0,0.3), 0 2px 4px rgba(0,0,0,0.2);
+    --shadow-3: 0 8px 16px rgba(0,0,0,0.4), 0 4px 8px rgba(0,0,0,0.3);
+    --shadow-4: 0 16px 32px rgba(0,0,0,0.5), 0 8px 16px rgba(0,0,0,0.4);
+}

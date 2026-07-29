@@ -1,0 +1,14 @@
+{
+  "type": "bar",
+  "id": "federal-unitary-countries",
+  "title": "全球联邦制与单一制国家数量对比",
+  "xAxis": [
+    "联邦制",
+    "单一制"
+  ],
+  "data": [
+    27,
+    166
+  ],
+  "color": "#5c6bc0"
+}

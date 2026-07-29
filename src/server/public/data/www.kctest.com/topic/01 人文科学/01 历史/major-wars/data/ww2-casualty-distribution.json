@@ -1,0 +1,43 @@
+{
+  "type": "pie",
+  "id": "ww2-casualty-distribution",
+  "title": "第二次世界大战各主要国家军人与平民死亡人数分布",
+  "subType": "donut",
+  "data": [
+    {
+      "value": 2660,
+      "name": "苏联",
+      "color": "#ef5350"
+    },
+    {
+      "value": 1800,
+      "name": "中国",
+      "color": "#ffa726"
+    },
+    {
+      "value": 550,
+      "name": "德国",
+      "color": "#78909c"
+    },
+    {
+      "value": 300,
+      "name": "波兰",
+      "color": "#5c6bc0"
+    },
+    {
+      "value": 240,
+      "name": "日本",
+      "color": "#26a69a"
+    },
+    {
+      "value": 45,
+      "name": "英国",
+      "color": "#42a5f5"
+    },
+    {
+      "value": 42,
+      "name": "美国",
+      "color": "#66bb6a"
+    }
+  ]
+}

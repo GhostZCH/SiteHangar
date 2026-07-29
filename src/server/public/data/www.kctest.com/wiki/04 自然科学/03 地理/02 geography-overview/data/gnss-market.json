@@ -1,0 +1,27 @@
+{
+  "type": "pie",
+  "id": "gnss-market",
+  "title": "全球卫星导航系统市场份额对比",
+  "data": [
+    {
+      "value": 52,
+      "name": "GPS（美国）",
+      "color": "#5c6bc0"
+    },
+    {
+      "value": 25,
+      "name": "北斗（中国）",
+      "color": "#ef5350"
+    },
+    {
+      "value": 15,
+      "name": "GLONASS（俄罗斯）",
+      "color": "#ffa726"
+    },
+    {
+      "value": 8,
+      "name": "Galileo（欧盟）",
+      "color": "#66bb6a"
+    }
+  ]
+}

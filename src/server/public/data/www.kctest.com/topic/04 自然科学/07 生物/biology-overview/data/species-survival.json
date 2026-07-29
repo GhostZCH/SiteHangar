@@ -1,0 +1,17 @@
+{
+  "type": "pie",
+  "id": "species-survival",
+  "title": "已描述物种占估计总物种的比例",
+  "data": [
+    {
+      "value": 23,
+      "name": "已描述",
+      "color": "#5c6bc0"
+    },
+    {
+      "value": 77,
+      "name": "尚未描述",
+      "color": "#b0bec5"
+    }
+  ]
+}

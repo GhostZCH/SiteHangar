@@ -1,0 +1,38 @@
+{
+  "type": "pie",
+  "id": "physics-branches",
+  "title": "物理学主要分支领域构成",
+  "subType": "donut",
+  "data": [
+    {
+      "value": 25,
+      "name": "经典物理",
+      "color": "#1565c0"
+    },
+    {
+      "value": 20,
+      "name": "量子物理",
+      "color": "#e53935"
+    },
+    {
+      "value": 15,
+      "name": "相对论与宇宙学",
+      "color": "#ffa726"
+    },
+    {
+      "value": 20,
+      "name": "凝聚态与统计物理",
+      "color": "#43a047"
+    },
+    {
+      "value": 10,
+      "name": "粒子物理",
+      "color": "#8e24aa"
+    },
+    {
+      "value": 10,
+      "name": "交叉与应用物理",
+      "color": "#00acc1"
+    }
+  ]
+}

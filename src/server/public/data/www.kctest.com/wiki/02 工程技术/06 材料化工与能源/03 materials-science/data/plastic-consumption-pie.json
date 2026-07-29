@@ -1,0 +1,37 @@
+{
+  "type": "pie",
+  "id": "plastic-consumption-pie",
+  "title": "全球塑料消费领域分布",
+  "data": [
+    {
+      "value": 36,
+      "name": "包装",
+      "color": "#5c6bc0"
+    },
+    {
+      "value": 16,
+      "name": "建筑",
+      "color": "#ef5350"
+    },
+    {
+      "value": 15,
+      "name": "汽车",
+      "color": "#ffa726"
+    },
+    {
+      "value": 8,
+      "name": "电子电器",
+      "color": "#66bb6a"
+    },
+    {
+      "value": 5,
+      "name": "农业",
+      "color": "#42a5f5"
+    },
+    {
+      "value": 20,
+      "name": "其他",
+      "color": "#78909c"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+/* Category page responsive */
+@media (max-width: 768px) {
+    .category-page {
+        padding: 24px 16px;
+    }
+    .cat-sub-grid {
+        grid-template-columns: 1fr;
+    }
+    .cat-tabs {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+}

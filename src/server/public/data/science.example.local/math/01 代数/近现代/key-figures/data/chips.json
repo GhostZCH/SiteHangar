@@ -1,0 +1,26 @@
+[
+  {
+    "label": "韦达",
+    "accent": true
+  },
+  {
+    "label": "伽罗瓦",
+    "accent": true
+  },
+  {
+    "label": "阿贝尔",
+    "accent": true
+  },
+  {
+    "label": "哈密顿",
+    "accent": true
+  },
+  {
+    "label": "诺特",
+    "accent": true
+  },
+  {
+    "label": "戴德金",
+    "accent": false
+  }
+]

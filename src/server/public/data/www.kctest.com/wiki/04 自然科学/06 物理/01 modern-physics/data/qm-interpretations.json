@@ -1,0 +1,33 @@
+{
+  "type": "pie",
+  "id": "qm-interpretations",
+  "title": "量子力学主要诠释分布",
+  "subType": "donut",
+  "data": [
+    {
+      "value": 42,
+      "name": "哥本哈根诠释",
+      "color": "#1565c0"
+    },
+    {
+      "value": 18,
+      "name": "多世界诠释",
+      "color": "#e53935"
+    },
+    {
+      "value": 12,
+      "name": "导航波理论",
+      "color": "#ffa726"
+    },
+    {
+      "value": 10,
+      "name": "量子退相干",
+      "color": "#43a047"
+    },
+    {
+      "value": 18,
+      "name": "其他/未表态",
+      "color": "#78909c"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "type": "bar",
+  "id": "electronegativity-chart",
+  "title": "主族元素的电负性变化趋势(Pauling标度)",
+  "xAxis": [
+    "IA(Li-Fr)",
+    "IIA(Be-Ra)",
+    "IIIA(B-Tl)",
+    "IVA(C-Pb)",
+    "VA(N-Bi)",
+    "VIA(O-Po)",
+    "VIIA(F-At)"
+  ],
+  "data": [
+    0.98,
+    1.57,
+    2.04,
+    2.55,
+    3.04,
+    3.44,
+    3.98
+  ]
+}

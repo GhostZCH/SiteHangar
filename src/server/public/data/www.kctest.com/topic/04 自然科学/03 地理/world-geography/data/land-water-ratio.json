@@ -1,0 +1,17 @@
+{
+  "type": "pie",
+  "id": "land-water-ratio",
+  "title": "地球海陆面积比例",
+  "data": [
+    {
+      "value": 29.2,
+      "name": "陆地面积",
+      "color": "#5c6bc0"
+    },
+    {
+      "value": 70.8,
+      "name": "海洋面积",
+      "color": "#42a5f5"
+    }
+  ]
+}

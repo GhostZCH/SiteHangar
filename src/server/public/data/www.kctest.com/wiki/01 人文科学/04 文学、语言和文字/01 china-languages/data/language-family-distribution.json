@@ -1,0 +1,47 @@
+{
+  "type": "pie",
+  "id": "language-family-distribution",
+  "title": "中国境内各语系少数民族语言数量占比",
+  "data": [
+    {
+      "value": 23,
+      "name": "藏缅语族",
+      "color": "#5c6bc0"
+    },
+    {
+      "value": 10,
+      "name": "壮侗语族",
+      "color": "#ef5350"
+    },
+    {
+      "value": 8,
+      "name": "突厥语族",
+      "color": "#ffa726"
+    },
+    {
+      "value": 6,
+      "name": "蒙古语族",
+      "color": "#66bb6a"
+    },
+    {
+      "value": 5,
+      "name": "满-通古斯语族",
+      "color": "#42a5f5"
+    },
+    {
+      "value": 4,
+      "name": "苗瑶语族",
+      "color": "#ab47bc"
+    },
+    {
+      "value": 4,
+      "name": "南亚语系",
+      "color": "#ec407a"
+    },
+    {
+      "value": 2,
+      "name": "印欧语系",
+      "color": "#26c6da"
+    }
+  ]
+}

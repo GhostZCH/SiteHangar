@@ -1,0 +1,47 @@
+{
+  "type": "pie",
+  "id": "era-distribution",
+  "title": "中国历代著名作家时代分布",
+  "data": [
+    {
+      "value": 1.5,
+      "name": "先秦",
+      "color": "#5c6bc0"
+    },
+    {
+      "value": 3,
+      "name": "汉代",
+      "color": "#ef5350"
+    },
+    {
+      "value": 8,
+      "name": "魏晋南北朝",
+      "color": "#ffa726"
+    },
+    {
+      "value": 37.5,
+      "name": "隋唐五代",
+      "color": "#66bb6a"
+    },
+    {
+      "value": 27.5,
+      "name": "宋代",
+      "color": "#42a5f5"
+    },
+    {
+      "value": 6.5,
+      "name": "辽金元",
+      "color": "#ab47bc"
+    },
+    {
+      "value": 12.5,
+      "name": "明代",
+      "color": "#26a69a"
+    },
+    {
+      "value": 17.5,
+      "name": "清代",
+      "color": "#78909c"
+    }
+  ]
+}

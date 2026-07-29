@@ -1,0 +1,22 @@
+{
+  "type": "pie",
+  "id": "universe-composition",
+  "title": "当前宇宙物质-能量组成",
+  "data": [
+    {
+      "value": 69,
+      "name": "暗能量",
+      "color": "#ef4444"
+    },
+    {
+      "value": 26,
+      "name": "暗物质",
+      "color": "#8b5cf6"
+    },
+    {
+      "value": 5,
+      "name": "普通物质",
+      "color": "#3b82f6"
+    }
+  ]
+}

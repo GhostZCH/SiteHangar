@@ -1,0 +1,33 @@
+{
+  "type": "pie",
+  "id": "five-elements-cycle",
+  "title": "五行相生相克关系",
+  "subType": "donut",
+  "data": [
+    {
+      "value": 20,
+      "name": "木（肝）生火（心）",
+      "color": "#4caf50"
+    },
+    {
+      "value": 20,
+      "name": "火（心）生土（脾）",
+      "color": "#f44336"
+    },
+    {
+      "value": 20,
+      "name": "土（脾）生金（肺）",
+      "color": "#ff9800"
+    },
+    {
+      "value": 20,
+      "name": "金（肺）生水（肾）",
+      "color": "#2196f3"
+    },
+    {
+      "value": 20,
+      "name": "水（肾）生木（肝）",
+      "color": "#9c27b0"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "label": "欧几里得",
+    "accent": true
+  },
+  {
+    "label": "海桑",
+    "accent": true
+  },
+  {
+    "label": "墨子",
+    "accent": true
+  },
+  {
+    "label": "托勒密",
+    "accent": false
+  },
+  {
+    "label": "塞内卡",
+    "accent": false
+  }
+]

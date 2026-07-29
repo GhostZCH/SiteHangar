@@ -1,0 +1,32 @@
+{
+  "type": "pie",
+  "id": "desktop-os-market",
+  "title": "2024年全球桌面操作系统市场份额",
+  "data": [
+    {
+      "value": 73.38,
+      "name": "Windows",
+      "color": "#0078d4"
+    },
+    {
+      "value": 14.16,
+      "name": "macOS",
+      "color": "#555555"
+    },
+    {
+      "value": 4.13,
+      "name": "Linux",
+      "color": "#fcc624"
+    },
+    {
+      "value": 1.89,
+      "name": "Chrome OS",
+      "color": "#1aa260"
+    },
+    {
+      "value": 6.46,
+      "name": "其他/未知",
+      "color": "#9e9e9e"
+    }
+  ]
+}

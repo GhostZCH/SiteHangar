@@ -1,0 +1,38 @@
+{
+  "type": "pie",
+  "id": "cell-composition",
+  "title": "细胞化学组成百分比",
+  "subType": "donut",
+  "data": [
+    {
+      "value": 70,
+      "name": "水",
+      "color": "#42a5f5"
+    },
+    {
+      "value": 15,
+      "name": "蛋白质",
+      "color": "#ef5350"
+    },
+    {
+      "value": 6,
+      "name": "脂质",
+      "color": "#ffa726"
+    },
+    {
+      "value": 5,
+      "name": "核酸",
+      "color": "#ab47bc"
+    },
+    {
+      "value": 3,
+      "name": "糖类",
+      "color": "#66bb6a"
+    },
+    {
+      "value": 1,
+      "name": "无机盐",
+      "color": "#78909c"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "type": "pie",
+  "id": "continent-arable",
+  "title": "全球各大洲耕地面积占比",
+  "data": [
+    {
+      "value": 30,
+      "name": "亚洲",
+      "color": "#ef5350"
+    },
+    {
+      "value": 20,
+      "name": "欧洲",
+      "color": "#5c6bc0"
+    },
+    {
+      "value": 18,
+      "name": "北美洲",
+      "color": "#ffa726"
+    },
+    {
+      "value": 16,
+      "name": "非洲",
+      "color": "#66bb6a"
+    },
+    {
+      "value": 12,
+      "name": "南美洲",
+      "color": "#ab47bc"
+    },
+    {
+      "value": 4,
+      "name": "大洋洲",
+      "color": "#26c6da"
+    }
+  ]
+}

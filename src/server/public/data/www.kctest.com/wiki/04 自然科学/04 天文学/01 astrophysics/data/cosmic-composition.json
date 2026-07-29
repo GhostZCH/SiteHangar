@@ -1,0 +1,19 @@
+{
+  "type": "pie",
+  "id": "cosmic-composition",
+  "title": "宇宙物质-能量构成",
+  "data2": [
+    {
+      "value": 68.3,
+      "name": "暗能量"
+    },
+    {
+      "value": 26.8,
+      "name": "暗物质"
+    },
+    {
+      "value": 4.9,
+      "name": "普通物质"
+    }
+  ]
+}

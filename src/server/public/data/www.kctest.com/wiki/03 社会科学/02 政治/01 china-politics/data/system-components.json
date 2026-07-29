@@ -1,0 +1,27 @@
+{
+  "type": "pie",
+  "id": "system-components",
+  "title": "中国政治制度核心组成部分",
+  "data": [
+    {
+      "value": 40,
+      "name": "党的领导与党的建设",
+      "color": "#c62828"
+    },
+    {
+      "value": 25,
+      "name": "人民代表大会制度",
+      "color": "#1565c0"
+    },
+    {
+      "value": 20,
+      "name": "多党合作与政治协商",
+      "color": "#ef6c00"
+    },
+    {
+      "value": 15,
+      "name": "基层群众自治制度",
+      "color": "#2e7d32"
+    }
+  ]
+}

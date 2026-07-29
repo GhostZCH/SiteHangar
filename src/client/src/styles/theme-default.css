@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== CSS Variables & Themes ===== */
+:root {
+    --primary: #546e7a;
+    --on-primary: #ffffff;
+    --primary-container: #e3f2fd;
+    --on-primary-container: #1a237e;
+    --secondary: #78909c;
+    --on-secondary: #ffffff;
+    --secondary-container: #f5f5f5;
+    --on-secondary-container: #37474f;
+    --tertiary: #4fc3f7;
+    --on-tertiary: #000000;
+    --tertiary-container: #e1f5fe;
+    --on-tertiary-container: #01579b;
+    --accent: #607d8b;
+    --accent-light: #b0bec5;
+    --surface: #fafafa;
+    --surface-variant: #f0f2f5;
+    --home-bg: #cfd6db;
+    --home-bg-variant: #c0c9d0;
+    --on-surface: #212121;
+    --on-surface-variant: #616161;
+    --outline: #e0e0e0;
+    --outline-variant: #eeeeee;
+    --shadow-1: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
+    --shadow-2: 0 4px 8px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.04);
+    --shadow-3: 0 8px 16px rgba(0,0,0,0.1), 0 4px 8px rgba(0,0,0,0.06);
+    --shadow-4: 0 16px 32px rgba(0,0,0,0.12), 0 8px 16px rgba(0,0,0,0.08);
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 14px;
+    --radius-xl: 20px;
+    --nav-width: 68px;
+    --nav-expanded-width: 220px;
+}

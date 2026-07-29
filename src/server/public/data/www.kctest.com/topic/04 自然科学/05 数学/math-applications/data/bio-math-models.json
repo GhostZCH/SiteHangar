@@ -1,0 +1,20 @@
+{
+  "type": "bar",
+  "id": "bio-math-models",
+  "title": "生物学中主要数学模型的论文引用量",
+  "xAxis": [
+    "SIR流行病模型",
+    "Lotka-Volterra",
+    "Logistic增长",
+    "Hardy-Weinberg",
+    "Kimura分子进化"
+  ],
+  "data": [
+    45,
+    32,
+    38,
+    25,
+    28
+  ],
+  "color": "#26a69a"
+}

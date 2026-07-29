@@ -1,0 +1,22 @@
+{
+  "type": "pie",
+  "id": "dark-composition",
+  "title": "可见宇宙的组成",
+  "data2": [
+    {
+      "value": 68.3,
+      "name": "暗能量",
+      "color": "#9c27b0"
+    },
+    {
+      "value": 26.8,
+      "name": "暗物质",
+      "color": "#3f51b5"
+    },
+    {
+      "value": 4.9,
+      "name": "普通物质",
+      "color": "#ff9800"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "pie-sample",
+  "title": "气候类型面积占比",
+  "subType": "donut",
+  "data2": [
+    { "value": 30, "name": "温带大陆性气候", "color": "#91cc75" },
+    { "value": 28, "name": "温带季风气候", "color": "#5470c6" },
+    { "value": 18, "name": "亚热带季风气候", "color": "#fac858" },
+    { "value": 12, "name": "高原山地气候", "color": "#ee6666" },
+    { "value": 8, "name": "热带季风气候", "color": "#73c0de" },
+    { "value": 4, "name": "其他", "color": "#3ba272" }
+  ]
+}

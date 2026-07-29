@@ -1,0 +1,23 @@
+{
+  "type": "pie",
+  "id": "sect-pie",
+  "title": "中国道教宫观分布比例",
+  "subType": "donut",
+  "data": [
+    {
+      "value": 55,
+      "name": "全真道宫观",
+      "color": "#5c6bc0"
+    },
+    {
+      "value": 40,
+      "name": "正一道宫观",
+      "color": "#ef5350"
+    },
+    {
+      "value": 5,
+      "name": "其他",
+      "color": "#ffa726"
+    }
+  ]
+}

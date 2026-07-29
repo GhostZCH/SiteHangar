@@ -1,0 +1,48 @@
+{
+  "type": "pie",
+  "id": "language-families-pie",
+  "title": "世界主要语系人口分布（亿）",
+  "subType": "donut",
+  "data": [
+    {
+      "value": 30,
+      "name": "印欧语系",
+      "color": "#5c6bc0"
+    },
+    {
+      "value": 15,
+      "name": "汉藏语系",
+      "color": "#ef5350"
+    },
+    {
+      "value": 7,
+      "name": "尼日尔-刚果语系",
+      "color": "#ffa726"
+    },
+    {
+      "value": 5,
+      "name": "亚非语系",
+      "color": "#66bb6a"
+    },
+    {
+      "value": 3.86,
+      "name": "南岛语系",
+      "color": "#42a5f5"
+    },
+    {
+      "value": 2.5,
+      "name": "达罗毗荼语系",
+      "color": "#ab47bc"
+    },
+    {
+      "value": 0.25,
+      "name": "乌拉尔语系",
+      "color": "#78909c"
+    },
+    {
+      "value": 10,
+      "name": "其他",
+      "color": "#8d6e63"
+    }
+  ]
+}

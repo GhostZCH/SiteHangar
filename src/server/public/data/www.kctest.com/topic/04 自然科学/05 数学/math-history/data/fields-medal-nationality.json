@@ -1,0 +1,57 @@
+{
+  "type": "pie",
+  "id": "fields-medal-nationality",
+  "title": "菲尔兹奖获得者国籍分布（1936—2022）",
+  "data": [
+    {
+      "value": 14,
+      "name": "美国",
+      "color": "#3b82f6"
+    },
+    {
+      "value": 12,
+      "name": "法国",
+      "color": "#ef4444"
+    },
+    {
+      "value": 8,
+      "name": "俄罗斯/苏联",
+      "color": "#8b5cf6"
+    },
+    {
+      "value": 6,
+      "name": "英国",
+      "color": "#22c55e"
+    },
+    {
+      "value": 3,
+      "name": "日本",
+      "color": "#f59e0b"
+    },
+    {
+      "value": 3,
+      "name": "德国",
+      "color": "#06b6d4"
+    },
+    {
+      "value": 2,
+      "name": "意大利",
+      "color": "#ec4899"
+    },
+    {
+      "value": 2,
+      "name": "澳大利亚",
+      "color": "#84cc16"
+    },
+    {
+      "value": 2,
+      "name": "伊朗",
+      "color": "#f97316"
+    },
+    {
+      "value": 12,
+      "name": "其他各国",
+      "color": "#9ca3af"
+    }
+  ]
+}

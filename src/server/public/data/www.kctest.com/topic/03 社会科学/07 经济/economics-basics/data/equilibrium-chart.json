@@ -1,0 +1,16 @@
+{
+  "type": "bar",
+  "id": "equilibrium-chart",
+  "title": "市场均衡示意——供给与需求",
+  "xAxis": [
+    "短缺时(Qd>Qs)",
+    "均衡时(Qd=Qs)",
+    "过剩时(Qd<Qs)"
+  ],
+  "data": [
+    120,
+    100,
+    80
+  ],
+  "color": "#5c6bc0"
+}

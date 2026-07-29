@@ -1,0 +1,81 @@
+{
+  "page": {
+    "title": "SiteHangar样例",
+    "description": "SiteHangar样例"
+  },
+  "hero": {
+    "title": "SiteHangar样例",
+    "brand_name": "SITE_HANGAR_DATA_FORMAT",
+    "subtitle": "SiteHangar样例",
+    "tags": [
+      "SiteHangar",
+      "样例"
+    ]
+  },
+  "version": "v1",
+  "lastModified": "2026-07-27 19:18:36",
+  "generatedAt": "2026-07-27 19:18:36",
+  "modules": [
+    {
+      "id": "exmd",
+      "title": "示例Markdown",
+      "description": "示例Markdown文件",
+      "image": "/api/image/data.format.show/exmd.jpg",
+      "tags": [
+        "样例"
+      ],
+      "link": "/exmd"
+    }
+  ],
+  "columns": {
+    "exmd": {
+      "page": {
+        "title": "示例Markdown",
+        "description": "示例Markdown文件"
+      },
+      "hero": {
+        "title": "示例Markdown",
+        "tags": [
+          "样例"
+        ]
+      },
+      "version": "v1",
+      "lastModified": "2026-07-27 19:18:36",
+      "generatedAt": "2026-07-27 19:18:36",
+      "recent": [
+        {
+          "title": "单 Markdown 渲染演示",
+          "subtitle": "",
+          "desc": "Markdown 支持多种内联文本格式：\n\n**加粗文本** 用于强调重要内容。\n\n*斜体文本* 用于表示引用或特殊含义。\n\n***加粗斜体*** 用于强烈强调。\n\n`行内代码` 用于标记代码片段或技术术语。\n\n[外部链接](https://www.example.com) 用于跳转到外部网站。\n\n~~删除线~~ 用于标记已废弃或修改的内容。\n\n下划线文本可以通过 HTML 标签实现：<u>下划线</u>。",
+          "link": "/exmd/演示/single-md-example"
+        },
+        {
+          "title": "多 Markdown 渲染演示",
+          "subtitle": "",
+          "desc": "展示知识立方平台支持的所有内容类型、可视化组件和布局方式",
+          "link": "/exmd/演示/multi-md-example"
+        }
+      ],
+      "categories": [
+        {
+          "name": "演示",
+          "subCategories": [
+            {
+              "name": "演示",
+              "links": [
+                {
+                  "title": "多 Markdown 渲染演示",
+                  "url": "/exmd/演示/multi-md-example"
+                },
+                {
+                  "title": "单 Markdown 渲染演示",
+                  "url": "/exmd/演示/single-md-example"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

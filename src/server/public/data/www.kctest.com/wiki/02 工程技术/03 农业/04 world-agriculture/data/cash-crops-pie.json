@@ -1,0 +1,32 @@
+{
+  "type": "pie",
+  "id": "cash-crops-pie",
+  "title": "全球主要经济作物产量分布（亿吨）",
+  "data": [
+    {
+      "value": 19,
+      "name": "甘蔗",
+      "color": "#66bb6a"
+    },
+    {
+      "value": 3.7,
+      "name": "大豆",
+      "color": "#ffa726"
+    },
+    {
+      "value": 0.85,
+      "name": "油菜籽",
+      "color": "#ab47bc"
+    },
+    {
+      "value": 0.5,
+      "name": "花生",
+      "color": "#ef5350"
+    },
+    {
+      "value": 0.25,
+      "name": "棉花",
+      "color": "#5c6bc0"
+    }
+  ]
+}

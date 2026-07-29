@@ -1,0 +1,1496 @@
+{
+  "page": {
+    "title": "知识立方",
+    "description": "知识学习和分享"
+  },
+  "hero": {
+    "title": "知识立方",
+    "brand_name": "KNOWLEDGE_CUBE",
+    "subtitle": "用于学习和分享知识的平台",
+    "tags": [
+      "知识图谱",
+      "系统性",
+      "完整性",
+      "简明性"
+    ]
+  },
+  "version": "v1",
+  "lastModified": "2026-07-27 19:18:37",
+  "generatedAt": "2026-07-27 19:18:37",
+  "modules": [
+    {
+      "id": "wiki",
+      "title": "百科常识",
+      "description": "普通人应该了解的常识，广泛覆盖，浅显易懂，，涵盖自然科学、人文科学、工程技术、社会科学",
+      "image": "/api/image/www.kctest.com/wiki.jpg",
+      "tags": [
+        "生活常识",
+        "科学原理",
+        "实用知识",
+        "日常技巧"
+      ],
+      "link": "/wiki"
+    },
+    {
+      "id": "topic",
+      "title": "专题科普",
+      "description": "深入某个知识点的科普文章",
+      "image": "/api/image/www.kctest.com/topic.jpg",
+      "tags": [
+        "正在建设中"
+      ],
+      "link": "/topic"
+    },
+    {
+      "id": "tools",
+      "title": "工具&游戏",
+      "description": "学习工具、可视化组件、演示案例等实用工具",
+      "image": "/api/image/www.kctest.com/tools.jpg",
+      "tags": [
+        "学习工具",
+        "可视化",
+        "演示",
+        "教育"
+      ],
+      "link": "/tools"
+    }
+  ],
+  "columns": {
+    "tools": {
+      "page": {
+        "title": "工具&游戏",
+        "description": "学习工具、可视化组件、演示案例等实用工具"
+      },
+      "hero": {
+        "title": "工具&游戏",
+        "tags": [
+          "学习工具",
+          "可视化",
+          "演示",
+          "教育"
+        ]
+      },
+      "version": "v1",
+      "lastModified": "2026-07-27 19:18:37",
+      "generatedAt": "2026-07-27 19:18:37",
+      "recent": [
+        {
+          "title": "小学1-6年级必备英语词汇",
+          "subtitle": "",
+          "desc": "小学1-6年级必备英语词汇，包含人体、学习用品、学校、颜色、形状、交通工具等分类，配有音标和中文释义。",
+          "link": "/tools/01 工具/教育/elementary-english-vocabulary"
+        },
+        {
+          "title": "单 Markdown 渲染演示",
+          "subtitle": "",
+          "desc": "Markdown 支持多种内联文本格式：\n\n**加粗文本** 用于强调重要内容。\n\n*斜体文本* 用于表示引用或特殊含义。\n\n***加粗斜体*** 用于强烈强调。\n\n`行内代码` 用于标记代码片段或技术术语。\n\n[外部链接](https://www.example.com) 用于跳转到外部网站。\n\n~~删除线~~ 用于标记已废弃或修改的内容。\n\n下划线文本可以通过 HTML 标签实现：<u>下划线</u>。",
+          "link": "/tools/01 工具/演示/single-md-example"
+        },
+        {
+          "title": "一张表看完汉语拼音",
+          "subtitle": "",
+          "desc": "完整的汉语拼音表，包含声母、韵母、整体认读音节以及完整的拼音拼写表。",
+          "link": "/tools/01 工具/教育/pinyin-all"
+        },
+        {
+          "title": "元素周期表介绍",
+          "subtitle": "",
+          "desc": "元素周期表介绍 - 完整的化学元素周期表，包含118种元素的详细信息、分类、性质和用途。",
+          "link": "/tools/01 工具/教育/periodic-table"
+        },
+        {
+          "title": "多 Markdown 渲染演示",
+          "subtitle": "",
+          "desc": "展示知识立方平台支持的所有内容类型、可视化组件和布局方式",
+          "link": "/tools/01 工具/演示/multi-md-example"
+        }
+      ],
+      "categories": [
+        {
+          "name": "工具",
+          "subCategories": [
+            {
+              "name": "教育",
+              "links": [
+                {
+                  "title": "小学1-6年级必备英语词汇",
+                  "url": "/tools/01 工具/教育/elementary-english-vocabulary"
+                },
+                {
+                  "title": "元素周期表介绍",
+                  "url": "/tools/01 工具/教育/periodic-table"
+                },
+                {
+                  "title": "一张表看完汉语拼音",
+                  "url": "/tools/01 工具/教育/pinyin-all"
+                }
+              ]
+            },
+            {
+              "name": "演示",
+              "links": [
+                {
+                  "title": "多 Markdown 渲染演示",
+                  "url": "/tools/01 工具/演示/multi-md-example"
+                },
+                {
+                  "title": "单 Markdown 渲染演示",
+                  "url": "/tools/01 工具/演示/single-md-example"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "topic": {
+      "page": {
+        "title": "专题科普",
+        "description": "深入某个知识点的科普文章"
+      },
+      "hero": {
+        "title": "专题科普",
+        "tags": [
+          "正在建设中"
+        ]
+      },
+      "version": "v1",
+      "lastModified": "2026-07-27 19:18:38",
+      "generatedAt": "2026-07-27 19:18:38",
+      "recent": [
+        {
+          "title": "明朝",
+          "subtitle": "",
+          "desc": "明朝（1368-1644年）是中国历史上由汉族建立的最后一个大一统封建王朝。知识立方提供明朝的系统知识介绍，涵盖开国建制、政治制度、经济发展、军事边防、文化科技、对外关系、社会变迁及衰亡过程等核心内容。",
+          "link": "/topic/01 人文科学/01 历史/ming-dynasty"
+        },
+        {
+          "title": "清朝",
+          "subtitle": "",
+          "desc": "清朝系统梳理清朝历史，涵盖清军入关、康雍乾盛世、晚清衰落、鸦片战争、洋务运动、戊戌变法、辛亥革命等重大历史事件。",
+          "link": "/topic/01 人文科学/01 历史/qing-dynasty"
+        },
+        {
+          "title": "汉朝",
+          "subtitle": "",
+          "desc": "汉朝系统介绍汉朝从高祖立国到献帝禅位的四百余年发展历程，涵盖政治制度、军事外交、经济社会、科技文化和杰出人物。",
+          "link": "/topic/01 人文科学/01 历史/han-dynasty"
+        },
+        {
+          "title": "秦朝",
+          "subtitle": "",
+          "desc": "秦朝系统介绍秦朝的历史发展、政治制度、军事成就、社会经济、文化思想与重要人物，帮助读者全面了解中国历史上第一个大一统王朝。",
+          "link": "/topic/01 人文科学/01 历史/qin-dynasty"
+        },
+        {
+          "title": "考古学",
+          "subtitle": "",
+          "desc": "考古学系统介绍考古学的基本概念、研究方法、主要分支、重要考古发现、年代测定技术及田野考古流程，帮助读者全面了解这门通过物质遗存研究人类历史的学科。",
+          "link": "/topic/01 人文科学/01 历史/archaeology"
+        },
+        {
+          "title": "世界通史（中）：远古到中世纪",
+          "subtitle": "",
+          "desc": "世界通史（中）：远古到中世纪系统梳理从古代文明的诞生、古典文明的兴盛与衰落到中世纪世界的形成与发展，涵盖美索不达米亚、古埃及、古希腊、古罗马、中世纪欧洲、拜占庭帝国、伊斯兰文明等核心内容。",
+          "link": "/topic/01 人文科学/01 历史/world-history-2"
+        },
+        {
+          "title": "中国通史（3）：封建帝国",
+          "subtitle": "",
+          "desc": "中国通史（3）：封建帝国系统介绍从秦汉到明清的中国封建帝国历史，涵盖两千多年的政治制度演变、经济变迁、文化发展和朝代更替。",
+          "link": "/topic/01 人文科学/01 历史/china-history-3"
+        },
+        {
+          "title": "世界通史（上）：从动物到人",
+          "subtitle": "",
+          "desc": "世界通史（上）：从动物到人系统介绍人类的演化历程，从灵长类祖先到智人走出非洲，从旧石器时代的狩猎采集到新石器时代的农业革命，涵盖长达数百万年的人类史前史。",
+          "link": "/topic/01 人文科学/01 历史/world-history-1"
+        }
+      ],
+      "categories": [
+        {
+          "name": "人文科学",
+          "subCategories": [
+            {
+              "name": "历史",
+              "links": [
+                {
+                  "title": "考古学",
+                  "url": "/topic/01 人文科学/01 历史/archaeology"
+                },
+                {
+                  "title": "中国古代制度与文化",
+                  "url": "/topic/01 人文科学/01 历史/china-culture-systems"
+                },
+                {
+                  "title": "中国通史（1）：总体时间线",
+                  "url": "/topic/01 人文科学/01 历史/china-history-1"
+                },
+                {
+                  "title": "中国通史（2）：远古到夏商周",
+                  "url": "/topic/01 人文科学/01 历史/china-history-2"
+                },
+                {
+                  "title": "中国通史（3）：封建帝国",
+                  "url": "/topic/01 人文科学/01 历史/china-history-3"
+                },
+                {
+                  "title": "帝国兴衰录",
+                  "url": "/topic/01 人文科学/01 历史/empires-rise-fall"
+                },
+                {
+                  "title": "汉朝",
+                  "url": "/topic/01 人文科学/01 历史/han-dynasty"
+                },
+                {
+                  "title": "重大战争与冲突概览",
+                  "url": "/topic/01 人文科学/01 历史/major-wars"
+                },
+                {
+                  "title": "明朝",
+                  "url": "/topic/01 人文科学/01 历史/ming-dynasty"
+                },
+                {
+                  "title": "秦朝",
+                  "url": "/topic/01 人文科学/01 历史/qin-dynasty"
+                },
+                {
+                  "title": "清朝",
+                  "url": "/topic/01 人文科学/01 历史/qing-dynasty"
+                },
+                {
+                  "title": "宋朝",
+                  "url": "/topic/01 人文科学/01 历史/song-dynasty"
+                },
+                {
+                  "title": "唐朝",
+                  "url": "/topic/01 人文科学/01 历史/tang-dynasty"
+                },
+                {
+                  "title": "世界通史（上）：从动物到人",
+                  "url": "/topic/01 人文科学/01 历史/world-history-1"
+                },
+                {
+                  "title": "世界通史（中）：远古到中世纪",
+                  "url": "/topic/01 人文科学/01 历史/world-history-2"
+                },
+                {
+                  "title": "世界通史（下）：中世纪至近现代",
+                  "url": "/topic/01 人文科学/01 历史/world-history-3"
+                },
+                {
+                  "title": "时间历史世界线",
+                  "url": "/topic/01 人文科学/01 历史/world-timeline"
+                },
+                {
+                  "title": "元朝",
+                  "url": "/topic/01 人文科学/01 历史/yuan-dynasty"
+                }
+              ]
+            },
+            {
+              "name": "哲学",
+              "links": [
+                {
+                  "title": "中国哲学简史和流派",
+                  "url": "/topic/01 人文科学/02 哲学/chinese-philosophy"
+                },
+                {
+                  "title": "哲学概论",
+                  "url": "/topic/01 人文科学/02 哲学/philosophy-overview"
+                },
+                {
+                  "title": "外国哲学简史和流派",
+                  "url": "/topic/01 人文科学/02 哲学/western-philosophy"
+                }
+              ]
+            },
+            {
+              "name": "宗教与神话",
+              "links": [
+                {
+                  "title": "佛教",
+                  "url": "/topic/01 人文科学/03 宗教与神话/buddhism"
+                },
+                {
+                  "title": "基督教",
+                  "url": "/topic/01 人文科学/03 宗教与神话/christianity"
+                },
+                {
+                  "title": "伊斯兰教",
+                  "url": "/topic/01 人文科学/03 宗教与神话/islam"
+                },
+                {
+                  "title": "宗教概览",
+                  "url": "/topic/01 人文科学/03 宗教与神话/religion-overview"
+                },
+                {
+                  "title": "道教",
+                  "url": "/topic/01 人文科学/03 宗教与神话/taoism"
+                },
+                {
+                  "title": "世界神话体系",
+                  "url": "/topic/01 人文科学/03 宗教与神话/world-mythology"
+                },
+                {
+                  "title": "世界宗教概述",
+                  "url": "/topic/01 人文科学/03 宗教与神话/world-religions"
+                }
+              ]
+            },
+            {
+              "name": "文学、语言和文字",
+              "links": [
+                {
+                  "title": "中国语言",
+                  "url": "/topic/01 人文科学/04 文学、语言和文字/china-languages"
+                },
+                {
+                  "title": "中国著名作家",
+                  "url": "/topic/01 人文科学/04 文学、语言和文字/chinese-authors"
+                },
+                {
+                  "title": "汉语",
+                  "url": "/topic/01 人文科学/04 文学、语言和文字/chinese-language"
+                },
+                {
+                  "title": "中国文学史",
+                  "url": "/topic/01 人文科学/04 文学、语言和文字/chinese-literary-history"
+                },
+                {
+                  "title": "中国名著概览",
+                  "url": "/topic/01 人文科学/04 文学、语言和文字/chinese-masterpieces"
+                },
+                {
+                  "title": "语言学",
+                  "url": "/topic/01 人文科学/04 文学、语言和文字/linguistics"
+                },
+                {
+                  "title": "文学评价和对比",
+                  "url": "/topic/01 人文科学/04 文学、语言和文字/literary-criticism"
+                },
+                {
+                  "title": "世界著名作家",
+                  "url": "/topic/01 人文科学/04 文学、语言和文字/world-authors"
+                },
+                {
+                  "title": "世界语言概览",
+                  "url": "/topic/01 人文科学/04 文学、语言和文字/world-languages"
+                },
+                {
+                  "title": "世界文学史",
+                  "url": "/topic/01 人文科学/04 文学、语言和文字/world-literary-history"
+                },
+                {
+                  "title": "世界名著概览",
+                  "url": "/topic/01 人文科学/04 文学、语言和文字/world-masterpieces"
+                }
+              ]
+            },
+            {
+              "name": "艺术",
+              "links": [
+                {
+                  "title": "中国传统建筑艺术",
+                  "url": "/topic/01 人文科学/05 艺术/chinese-architecture-art"
+                },
+                {
+                  "title": "中国工艺美术",
+                  "url": "/topic/01 人文科学/05 艺术/chinese-crafts"
+                },
+                {
+                  "title": "中国书画艺术",
+                  "url": "/topic/01 人文科学/05 艺术/chinese-painting-calligraphy"
+                },
+                {
+                  "title": "戏剧与电影",
+                  "url": "/topic/01 人文科学/05 艺术/film-and-theater"
+                },
+                {
+                  "title": "音乐基础与主要流派",
+                  "url": "/topic/01 人文科学/05 艺术/music-basics"
+                },
+                {
+                  "title": "世界艺术史",
+                  "url": "/topic/01 人文科学/05 艺术/world-art-history"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "工程技术",
+          "subCategories": [
+            {
+              "name": "交通与运输",
+              "links": [
+                {
+                  "title": "中国交通",
+                  "url": "/topic/02 工程技术/01 交通与运输/china-transport"
+                },
+                {
+                  "title": "交通概述",
+                  "url": "/topic/02 工程技术/01 交通与运输/transport-overview"
+                },
+                {
+                  "title": "世界交通",
+                  "url": "/topic/02 工程技术/01 交通与运输/world-transport"
+                }
+              ]
+            },
+            {
+              "name": "信息技术",
+              "links": [
+                {
+                  "title": "通信技术",
+                  "url": "/topic/02 工程技术/02 信息技术/communication-tech"
+                },
+                {
+                  "title": "计算机概述",
+                  "url": "/topic/02 工程技术/02 信息技术/computer-overview"
+                },
+                {
+                  "title": "硬件概述",
+                  "url": "/topic/02 工程技术/02 信息技术/hardware-overview"
+                },
+                {
+                  "title": "互联网",
+                  "url": "/topic/02 工程技术/02 信息技术/internet"
+                },
+                {
+                  "title": "软件概述",
+                  "url": "/topic/02 工程技术/02 信息技术/software-overview"
+                },
+                {
+                  "title": "前沿发展",
+                  "url": "/topic/02 工程技术/02 信息技术/tech-frontiers"
+                }
+              ]
+            },
+            {
+              "name": "农业",
+              "links": [
+                {
+                  "title": "农业科学概述",
+                  "url": "/topic/02 工程技术/03 农业/agriculture-overview"
+                },
+                {
+                  "title": "中国农业",
+                  "url": "/topic/02 工程技术/03 农业/china-agriculture"
+                },
+                {
+                  "title": "现代农业工程",
+                  "url": "/topic/02 工程技术/03 农业/modern-agriculture"
+                },
+                {
+                  "title": "世界农业",
+                  "url": "/topic/02 工程技术/03 农业/world-agriculture"
+                }
+              ]
+            },
+            {
+              "name": "土木与建筑",
+              "links": [
+                {
+                  "title": "桥梁与隧道工程",
+                  "url": "/topic/02 工程技术/04 土木与建筑/bridge-tunnel"
+                },
+                {
+                  "title": "土木与建筑概述",
+                  "url": "/topic/02 工程技术/04 土木与建筑/civil-architecture-overview"
+                },
+                {
+                  "title": "工程施工与管理",
+                  "url": "/topic/02 工程技术/04 土木与建筑/construction-management"
+                },
+                {
+                  "title": "水利与市政工程",
+                  "url": "/topic/02 工程技术/04 土木与建筑/water-municipal"
+                }
+              ]
+            },
+            {
+              "name": "机械制造与电气电子",
+              "links": [
+                {
+                  "title": "电路与电子技术基础",
+                  "url": "/topic/02 工程技术/05 机械制造与电气电子/circuit-electronics"
+                },
+                {
+                  "title": "机械制造概述",
+                  "url": "/topic/02 工程技术/05 机械制造与电气电子/mechanical-manufacturing"
+                },
+                {
+                  "title": "电力系统与自动化",
+                  "url": "/topic/02 工程技术/05 机械制造与电气电子/power-automation"
+                }
+              ]
+            },
+            {
+              "name": "材料化工与能源",
+              "links": [
+                {
+                  "title": "化学工程",
+                  "url": "/topic/02 工程技术/06 材料化工与能源/chemical-engineering"
+                },
+                {
+                  "title": "能源类型与动力系统",
+                  "url": "/topic/02 工程技术/06 材料化工与能源/energy-power"
+                },
+                {
+                  "title": "材料科学概览",
+                  "url": "/topic/02 工程技术/06 材料化工与能源/materials-science"
+                }
+              ]
+            },
+            {
+              "name": "航空航天",
+              "links": [
+                {
+                  "title": "航空航天基础",
+                  "url": "/topic/02 工程技术/07 航空航天/aero-space-basics"
+                },
+                {
+                  "title": "航空技术初步",
+                  "url": "/topic/02 工程技术/07 航空航天/aviation-basics"
+                },
+                {
+                  "title": "航天技术初步",
+                  "url": "/topic/02 工程技术/07 航空航天/space-basics"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "社会科学",
+          "subCategories": [
+            {
+              "name": "心理学",
+              "links": [
+                {
+                  "title": "心理学",
+                  "url": "/topic/03 社会科学/01 心理学/psychology"
+                }
+              ]
+            },
+            {
+              "name": "政治",
+              "links": [
+                {
+                  "title": "中国政治制度简介",
+                  "url": "/topic/03 社会科学/02 政治/china-politics"
+                },
+                {
+                  "title": "国际组织简介",
+                  "url": "/topic/03 社会科学/02 政治/international-organizations"
+                },
+                {
+                  "title": "政体类型概览",
+                  "url": "/topic/03 社会科学/02 政治/political-systems"
+                }
+              ]
+            },
+            {
+              "name": "教育学",
+              "links": [
+                {
+                  "title": "教育学",
+                  "url": "/topic/03 社会科学/03 教育学/education"
+                }
+              ]
+            },
+            {
+              "name": "法律",
+              "links": [
+                {
+                  "title": "中国法律体系概览",
+                  "url": "/topic/03 社会科学/04 法律/china-law"
+                },
+                {
+                  "title": "法律体系概述",
+                  "url": "/topic/03 社会科学/04 法律/legal-systems"
+                }
+              ]
+            },
+            {
+              "name": "社会学",
+              "links": [
+                {
+                  "title": "社会学",
+                  "url": "/topic/03 社会科学/05 社会学/sociology"
+                }
+              ]
+            },
+            {
+              "name": "管理学",
+              "links": [
+                {
+                  "title": "管理学基础",
+                  "url": "/topic/03 社会科学/06 管理学/management-basics"
+                }
+              ]
+            },
+            {
+              "name": "经济",
+              "links": [
+                {
+                  "title": "经济学基本原理",
+                  "url": "/topic/03 社会科学/07 经济/economics-basics"
+                },
+                {
+                  "title": "宏观经济学概论",
+                  "url": "/topic/03 社会科学/07 经济/macroeconomics"
+                },
+                {
+                  "title": "微观经济学基础",
+                  "url": "/topic/03 社会科学/07 经济/microeconomics"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "自然科学",
+          "subCategories": [
+            {
+              "name": "化学",
+              "links": [
+                {
+                  "title": "化学前沿概览",
+                  "url": "/topic/04 自然科学/01 化学/chemistry-frontiers"
+                },
+                {
+                  "title": "化学发展史",
+                  "url": "/topic/04 自然科学/01 化学/chemistry-history"
+                },
+                {
+                  "title": "化学体系概览",
+                  "url": "/topic/04 自然科学/01 化学/chemistry-overview"
+                },
+                {
+                  "title": "近现代化学简介",
+                  "url": "/topic/04 自然科学/01 化学/modern-chemistry"
+                }
+              ]
+            },
+            {
+              "name": "医学",
+              "links": [
+                {
+                  "title": "中医",
+                  "url": "/topic/04 自然科学/02 医学/chinese-medicine"
+                },
+                {
+                  "title": "科室分类",
+                  "url": "/topic/04 自然科学/02 医学/medical-departments"
+                },
+                {
+                  "title": "西医分支",
+                  "url": "/topic/04 自然科学/02 医学/western-medicine-branches"
+                },
+                {
+                  "title": "西医发展历史",
+                  "url": "/topic/04 自然科学/02 医学/western-medicine-history"
+                }
+              ]
+            },
+            {
+              "name": "地理",
+              "links": [
+                {
+                  "title": "中国地理概览",
+                  "url": "/topic/04 自然科学/03 地理/china-geography"
+                },
+                {
+                  "title": "地理学体系概览（含简史）",
+                  "url": "/topic/04 自然科学/03 地理/geography-overview"
+                },
+                {
+                  "title": "自然地理基础",
+                  "url": "/topic/04 自然科学/03 地理/physical-geography"
+                },
+                {
+                  "title": "世界地理概览",
+                  "url": "/topic/04 自然科学/03 地理/world-geography"
+                }
+              ]
+            },
+            {
+              "name": "天文学",
+              "links": [
+                {
+                  "title": "天体物理学简介",
+                  "url": "/topic/04 自然科学/04 天文学/astrophysics"
+                },
+                {
+                  "title": "地球科学基础",
+                  "url": "/topic/04 自然科学/04 天文学/earth-science"
+                },
+                {
+                  "title": "太阳系简介",
+                  "url": "/topic/04 自然科学/04 天文学/solar-system"
+                },
+                {
+                  "title": "宇宙概览",
+                  "url": "/topic/04 自然科学/04 天文学/universe"
+                }
+              ]
+            },
+            {
+              "name": "数学",
+              "links": [
+                {
+                  "title": "数学应用方向",
+                  "url": "/topic/04 自然科学/05 数学/math-applications"
+                },
+                {
+                  "title": "数学前沿概览",
+                  "url": "/topic/04 自然科学/05 数学/math-frontiers"
+                },
+                {
+                  "title": "数学发展简史",
+                  "url": "/topic/04 自然科学/05 数学/math-history"
+                },
+                {
+                  "title": "数学体系概览",
+                  "url": "/topic/04 自然科学/05 数学/math-overview"
+                },
+                {
+                  "title": "近现代数学简介",
+                  "url": "/topic/04 自然科学/05 数学/modern-math"
+                }
+              ]
+            },
+            {
+              "name": "物理",
+              "links": [
+                {
+                  "title": "近现代物理简介",
+                  "url": "/topic/04 自然科学/06 物理/modern-physics"
+                },
+                {
+                  "title": "物理应用方向",
+                  "url": "/topic/04 自然科学/06 物理/physics-applications"
+                },
+                {
+                  "title": "物理学前沿概览",
+                  "url": "/topic/04 自然科学/06 物理/physics-frontiers"
+                },
+                {
+                  "title": "物理学发展史",
+                  "url": "/topic/04 自然科学/06 物理/physics-history"
+                },
+                {
+                  "title": "物理体系概览",
+                  "url": "/topic/04 自然科学/06 物理/physics-overview"
+                }
+              ]
+            },
+            {
+              "name": "生物",
+              "links": [
+                {
+                  "title": "生物分类概述",
+                  "url": "/topic/04 自然科学/07 生物/biological-classification"
+                },
+                {
+                  "title": "生物前沿概览",
+                  "url": "/topic/04 自然科学/07 生物/biology-frontiers"
+                },
+                {
+                  "title": "生物学发展史",
+                  "url": "/topic/04 自然科学/07 生物/biology-history"
+                },
+                {
+                  "title": "生物体系概览",
+                  "url": "/topic/04 自然科学/07 生物/biology-overview"
+                },
+                {
+                  "title": "细胞生物学基础",
+                  "url": "/topic/04 自然科学/07 生物/cell-biology"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "wiki": {
+      "page": {
+        "title": "百科常识",
+        "description": "普通人应该了解的常识，广泛覆盖，浅显易懂，，涵盖自然科学、人文科学、工程技术、社会科学"
+      },
+      "hero": {
+        "title": "百科常识",
+        "tags": [
+          "生活常识",
+          "科学原理",
+          "实用知识",
+          "日常技巧"
+        ]
+      },
+      "version": "v1",
+      "lastModified": "2026-07-27 19:18:38",
+      "generatedAt": "2026-07-27 19:18:38",
+      "recent": [
+        {
+          "title": "考古学",
+          "subtitle": "",
+          "desc": "考古学系统介绍考古学的基本概念、研究方法、主要分支、重要考古发现、年代测定技术及田野考古流程，帮助读者全面了解这门通过物质遗存研究人类历史的学科。",
+          "link": "/wiki/01 人文科学/01 历史/01 archaeology"
+        },
+        {
+          "title": "中国古代制度与文化",
+          "subtitle": "",
+          "desc": "中国古代制度与文化——系统介绍中国古代政治制度、军事制度、法律制度、经济制度、科举制度以及科技文化成就，帮助读者建立对中国古代文明制度体系和文化遗产的系统认知。",
+          "link": "/wiki/01 人文科学/01 历史/02 china-culture-systems"
+        },
+        {
+          "title": "中国通史（2）：远古到夏商周",
+          "subtitle": "",
+          "desc": "中国通史（2）：远古到夏商周提供详细的知识介绍、历史背景、相关概念和扩展阅读，帮助您系统学习。",
+          "link": "/wiki/01 人文科学/01 历史/04 china-history-2"
+        },
+        {
+          "title": "清朝",
+          "subtitle": "",
+          "desc": "清朝系统梳理清朝历史，涵盖清军入关、康雍乾盛世、晚清衰落、鸦片战争、洋务运动、戊戌变法、辛亥革命等重大历史事件。",
+          "link": "/wiki/01 人文科学/01 历史/11 qing-dynasty"
+        },
+        {
+          "title": "秦朝",
+          "subtitle": "",
+          "desc": "秦朝系统介绍秦朝的历史发展、政治制度、军事成就、社会经济、文化思想与重要人物，帮助读者全面了解中国历史上第一个大一统王朝。",
+          "link": "/wiki/01 人文科学/01 历史/10 qin-dynasty"
+        },
+        {
+          "title": "汉朝",
+          "subtitle": "",
+          "desc": "汉朝系统介绍汉朝从高祖立国到献帝禅位的四百余年发展历程，涵盖政治制度、军事外交、经济社会、科技文化和杰出人物。",
+          "link": "/wiki/01 人文科学/01 历史/07 han-dynasty"
+        },
+        {
+          "title": "明朝",
+          "subtitle": "",
+          "desc": "明朝（1368-1644年）是中国历史上由汉族建立的最后一个大一统封建王朝。知识立方提供明朝的系统知识介绍，涵盖开国建制、政治制度、经济发展、军事边防、文化科技、对外关系、社会变迁及衰亡过程等核心内容。",
+          "link": "/wiki/01 人文科学/01 历史/09 ming-dynasty"
+        },
+        {
+          "title": "重大战争与冲突概览",
+          "subtitle": "",
+          "desc": "重大战争与冲突概览提供人类历史上重大战争与武装冲突的系统梳理，包括战争原因、经过、结果与历史影响，帮助读者理解战争与文明发展的关系。",
+          "link": "/wiki/01 人文科学/01 历史/08 major-wars"
+        }
+      ],
+      "categories": [
+        {
+          "name": "人文科学",
+          "subCategories": [
+            {
+              "name": "历史",
+              "links": [
+                {
+                  "title": "考古学",
+                  "url": "/wiki/01 人文科学/01 历史/01 archaeology"
+                },
+                {
+                  "title": "中国古代制度与文化",
+                  "url": "/wiki/01 人文科学/01 历史/02 china-culture-systems"
+                },
+                {
+                  "title": "中国通史（1）：总体时间线",
+                  "url": "/wiki/01 人文科学/01 历史/03 china-history-1"
+                },
+                {
+                  "title": "中国通史（2）：远古到夏商周",
+                  "url": "/wiki/01 人文科学/01 历史/04 china-history-2"
+                },
+                {
+                  "title": "中国通史（3）：封建帝国",
+                  "url": "/wiki/01 人文科学/01 历史/05 china-history-3"
+                },
+                {
+                  "title": "帝国兴衰录",
+                  "url": "/wiki/01 人文科学/01 历史/06 empires-rise-fall"
+                },
+                {
+                  "title": "汉朝",
+                  "url": "/wiki/01 人文科学/01 历史/07 han-dynasty"
+                },
+                {
+                  "title": "重大战争与冲突概览",
+                  "url": "/wiki/01 人文科学/01 历史/08 major-wars"
+                },
+                {
+                  "title": "明朝",
+                  "url": "/wiki/01 人文科学/01 历史/09 ming-dynasty"
+                },
+                {
+                  "title": "秦朝",
+                  "url": "/wiki/01 人文科学/01 历史/10 qin-dynasty"
+                },
+                {
+                  "title": "清朝",
+                  "url": "/wiki/01 人文科学/01 历史/11 qing-dynasty"
+                },
+                {
+                  "title": "宋朝",
+                  "url": "/wiki/01 人文科学/01 历史/12 song-dynasty"
+                },
+                {
+                  "title": "唐朝",
+                  "url": "/wiki/01 人文科学/01 历史/13 tang-dynasty"
+                },
+                {
+                  "title": "世界通史（上）：从动物到人",
+                  "url": "/wiki/01 人文科学/01 历史/14 world-history-1"
+                },
+                {
+                  "title": "世界通史（中）：远古到中世纪",
+                  "url": "/wiki/01 人文科学/01 历史/15 world-history-2"
+                },
+                {
+                  "title": "世界通史（下）：中世纪至近现代",
+                  "url": "/wiki/01 人文科学/01 历史/16 world-history-3"
+                },
+                {
+                  "title": "时间历史世界线",
+                  "url": "/wiki/01 人文科学/01 历史/17 world-timeline"
+                },
+                {
+                  "title": "元朝",
+                  "url": "/wiki/01 人文科学/01 历史/18 yuan-dynasty"
+                }
+              ]
+            },
+            {
+              "name": "哲学",
+              "links": [
+                {
+                  "title": "中国哲学简史和流派",
+                  "url": "/wiki/01 人文科学/02 哲学/01 chinese-philosophy"
+                },
+                {
+                  "title": "哲学概论",
+                  "url": "/wiki/01 人文科学/02 哲学/02 philosophy-overview"
+                },
+                {
+                  "title": "外国哲学简史和流派",
+                  "url": "/wiki/01 人文科学/02 哲学/03 western-philosophy"
+                }
+              ]
+            },
+            {
+              "name": "宗教与神话",
+              "links": [
+                {
+                  "title": "佛教",
+                  "url": "/wiki/01 人文科学/03 宗教与神话/01 buddhism"
+                },
+                {
+                  "title": "基督教",
+                  "url": "/wiki/01 人文科学/03 宗教与神话/02 christianity"
+                },
+                {
+                  "title": "伊斯兰教",
+                  "url": "/wiki/01 人文科学/03 宗教与神话/03 islam"
+                },
+                {
+                  "title": "宗教概览",
+                  "url": "/wiki/01 人文科学/03 宗教与神话/04 religion-overview"
+                },
+                {
+                  "title": "道教",
+                  "url": "/wiki/01 人文科学/03 宗教与神话/05 taoism"
+                },
+                {
+                  "title": "世界神话体系",
+                  "url": "/wiki/01 人文科学/03 宗教与神话/06 world-mythology"
+                },
+                {
+                  "title": "世界宗教概述",
+                  "url": "/wiki/01 人文科学/03 宗教与神话/07 world-religions"
+                }
+              ]
+            },
+            {
+              "name": "文学、语言和文字",
+              "links": [
+                {
+                  "title": "中国语言",
+                  "url": "/wiki/01 人文科学/04 文学、语言和文字/01 china-languages"
+                },
+                {
+                  "title": "中国著名作家",
+                  "url": "/wiki/01 人文科学/04 文学、语言和文字/02 chinese-authors"
+                },
+                {
+                  "title": "汉语",
+                  "url": "/wiki/01 人文科学/04 文学、语言和文字/03 chinese-language"
+                },
+                {
+                  "title": "中国文学史",
+                  "url": "/wiki/01 人文科学/04 文学、语言和文字/04 chinese-literary-history"
+                },
+                {
+                  "title": "中国名著概览",
+                  "url": "/wiki/01 人文科学/04 文学、语言和文字/05 chinese-masterpieces"
+                },
+                {
+                  "title": "语言学",
+                  "url": "/wiki/01 人文科学/04 文学、语言和文字/06 linguistics"
+                },
+                {
+                  "title": "文学评价和对比",
+                  "url": "/wiki/01 人文科学/04 文学、语言和文字/07 literary-criticism"
+                },
+                {
+                  "title": "世界著名作家",
+                  "url": "/wiki/01 人文科学/04 文学、语言和文字/08 world-authors"
+                },
+                {
+                  "title": "世界语言概览",
+                  "url": "/wiki/01 人文科学/04 文学、语言和文字/09 world-languages"
+                },
+                {
+                  "title": "世界文学史",
+                  "url": "/wiki/01 人文科学/04 文学、语言和文字/10 world-literary-history"
+                },
+                {
+                  "title": "世界名著概览",
+                  "url": "/wiki/01 人文科学/04 文学、语言和文字/11 world-masterpieces"
+                }
+              ]
+            },
+            {
+              "name": "艺术",
+              "links": [
+                {
+                  "title": "中国传统建筑艺术",
+                  "url": "/wiki/01 人文科学/05 艺术/01 chinese-architecture-art"
+                },
+                {
+                  "title": "中国工艺美术",
+                  "url": "/wiki/01 人文科学/05 艺术/02 chinese-crafts"
+                },
+                {
+                  "title": "中国书画艺术",
+                  "url": "/wiki/01 人文科学/05 艺术/03 chinese-painting-calligraphy"
+                },
+                {
+                  "title": "戏剧与电影",
+                  "url": "/wiki/01 人文科学/05 艺术/04 film-and-theater"
+                },
+                {
+                  "title": "音乐基础与主要流派",
+                  "url": "/wiki/01 人文科学/05 艺术/05 music-basics"
+                },
+                {
+                  "title": "世界艺术史",
+                  "url": "/wiki/01 人文科学/05 艺术/06 world-art-history"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "工程技术",
+          "subCategories": [
+            {
+              "name": "交通与运输",
+              "links": [
+                {
+                  "title": "中国交通",
+                  "url": "/wiki/02 工程技术/01 交通与运输/01 china-transport"
+                },
+                {
+                  "title": "交通概述",
+                  "url": "/wiki/02 工程技术/01 交通与运输/02 transport-overview"
+                },
+                {
+                  "title": "世界交通",
+                  "url": "/wiki/02 工程技术/01 交通与运输/03 world-transport"
+                }
+              ]
+            },
+            {
+              "name": "信息技术",
+              "links": [
+                {
+                  "title": "通信技术",
+                  "url": "/wiki/02 工程技术/02 信息技术/01 communication-tech"
+                },
+                {
+                  "title": "计算机概述",
+                  "url": "/wiki/02 工程技术/02 信息技术/02 computer-overview"
+                },
+                {
+                  "title": "硬件概述",
+                  "url": "/wiki/02 工程技术/02 信息技术/03 hardware-overview"
+                },
+                {
+                  "title": "互联网",
+                  "url": "/wiki/02 工程技术/02 信息技术/04 internet"
+                },
+                {
+                  "title": "软件概述",
+                  "url": "/wiki/02 工程技术/02 信息技术/05 software-overview"
+                },
+                {
+                  "title": "前沿发展",
+                  "url": "/wiki/02 工程技术/02 信息技术/06 tech-frontiers"
+                }
+              ]
+            },
+            {
+              "name": "农业",
+              "links": [
+                {
+                  "title": "农业科学概述",
+                  "url": "/wiki/02 工程技术/03 农业/01 agriculture-overview"
+                },
+                {
+                  "title": "中国农业",
+                  "url": "/wiki/02 工程技术/03 农业/02 china-agriculture"
+                },
+                {
+                  "title": "现代农业工程",
+                  "url": "/wiki/02 工程技术/03 农业/03 modern-agriculture"
+                },
+                {
+                  "title": "世界农业",
+                  "url": "/wiki/02 工程技术/03 农业/04 world-agriculture"
+                }
+              ]
+            },
+            {
+              "name": "土木与建筑",
+              "links": [
+                {
+                  "title": "桥梁与隧道工程",
+                  "url": "/wiki/02 工程技术/04 土木与建筑/01 bridge-tunnel"
+                },
+                {
+                  "title": "土木与建筑概述",
+                  "url": "/wiki/02 工程技术/04 土木与建筑/02 civil-architecture-overview"
+                },
+                {
+                  "title": "工程施工与管理",
+                  "url": "/wiki/02 工程技术/04 土木与建筑/03 construction-management"
+                },
+                {
+                  "title": "水利与市政工程",
+                  "url": "/wiki/02 工程技术/04 土木与建筑/04 water-municipal"
+                }
+              ]
+            },
+            {
+              "name": "机械制造与电气电子",
+              "links": [
+                {
+                  "title": "电路与电子技术基础",
+                  "url": "/wiki/02 工程技术/05 机械制造与电气电子/01 circuit-electronics"
+                },
+                {
+                  "title": "机械制造概述",
+                  "url": "/wiki/02 工程技术/05 机械制造与电气电子/02 mechanical-manufacturing"
+                },
+                {
+                  "title": "电力系统与自动化",
+                  "url": "/wiki/02 工程技术/05 机械制造与电气电子/03 power-automation"
+                }
+              ]
+            },
+            {
+              "name": "材料化工与能源",
+              "links": [
+                {
+                  "title": "化学工程",
+                  "url": "/wiki/02 工程技术/06 材料化工与能源/01 chemical-engineering"
+                },
+                {
+                  "title": "能源类型与动力系统",
+                  "url": "/wiki/02 工程技术/06 材料化工与能源/02 energy-power"
+                },
+                {
+                  "title": "材料科学概览",
+                  "url": "/wiki/02 工程技术/06 材料化工与能源/03 materials-science"
+                }
+              ]
+            },
+            {
+              "name": "航空航天",
+              "links": [
+                {
+                  "title": "航空航天基础",
+                  "url": "/wiki/02 工程技术/07 航空航天/01 aero-space-basics"
+                },
+                {
+                  "title": "航空技术初步",
+                  "url": "/wiki/02 工程技术/07 航空航天/02 aviation-basics"
+                },
+                {
+                  "title": "航天技术初步",
+                  "url": "/wiki/02 工程技术/07 航空航天/03 space-basics"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "社会科学",
+          "subCategories": [
+            {
+              "name": "心理学",
+              "links": [
+                {
+                  "title": "心理学",
+                  "url": "/wiki/03 社会科学/01 心理学/01 psychology"
+                }
+              ]
+            },
+            {
+              "name": "政治",
+              "links": [
+                {
+                  "title": "中国政治制度简介",
+                  "url": "/wiki/03 社会科学/02 政治/01 china-politics"
+                },
+                {
+                  "title": "国际组织简介",
+                  "url": "/wiki/03 社会科学/02 政治/02 international-organizations"
+                },
+                {
+                  "title": "政体类型概览",
+                  "url": "/wiki/03 社会科学/02 政治/03 political-systems"
+                }
+              ]
+            },
+            {
+              "name": "教育学",
+              "links": [
+                {
+                  "title": "教育学",
+                  "url": "/wiki/03 社会科学/03 教育学/01 education"
+                }
+              ]
+            },
+            {
+              "name": "法律",
+              "links": [
+                {
+                  "title": "中国法律体系概览",
+                  "url": "/wiki/03 社会科学/04 法律/01 china-law"
+                },
+                {
+                  "title": "法律体系概述",
+                  "url": "/wiki/03 社会科学/04 法律/02 legal-systems"
+                }
+              ]
+            },
+            {
+              "name": "社会学",
+              "links": [
+                {
+                  "title": "社会学",
+                  "url": "/wiki/03 社会科学/05 社会学/01 sociology"
+                }
+              ]
+            },
+            {
+              "name": "管理学",
+              "links": [
+                {
+                  "title": "管理学基础",
+                  "url": "/wiki/03 社会科学/06 管理学/01 management-basics"
+                }
+              ]
+            },
+            {
+              "name": "经济",
+              "links": [
+                {
+                  "title": "经济学基本原理",
+                  "url": "/wiki/03 社会科学/07 经济/01 economics-basics"
+                },
+                {
+                  "title": "宏观经济学概论",
+                  "url": "/wiki/03 社会科学/07 经济/02 macroeconomics"
+                },
+                {
+                  "title": "微观经济学基础",
+                  "url": "/wiki/03 社会科学/07 经济/03 microeconomics"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "自然科学",
+          "subCategories": [
+            {
+              "name": "化学",
+              "links": [
+                {
+                  "title": "化学前沿概览",
+                  "url": "/wiki/04 自然科学/01 化学/01 chemistry-frontiers"
+                },
+                {
+                  "title": "化学发展史",
+                  "url": "/wiki/04 自然科学/01 化学/02 chemistry-history"
+                },
+                {
+                  "title": "化学体系概览",
+                  "url": "/wiki/04 自然科学/01 化学/03 chemistry-overview"
+                },
+                {
+                  "title": "近现代化学简介",
+                  "url": "/wiki/04 自然科学/01 化学/04 modern-chemistry"
+                }
+              ]
+            },
+            {
+              "name": "医学",
+              "links": [
+                {
+                  "title": "中医",
+                  "url": "/wiki/04 自然科学/02 医学/01 chinese-medicine"
+                },
+                {
+                  "title": "科室分类",
+                  "url": "/wiki/04 自然科学/02 医学/02 medical-departments"
+                },
+                {
+                  "title": "西医分支",
+                  "url": "/wiki/04 自然科学/02 医学/03 western-medicine-branches"
+                },
+                {
+                  "title": "西医发展历史",
+                  "url": "/wiki/04 自然科学/02 医学/04 western-medicine-history"
+                }
+              ]
+            },
+            {
+              "name": "地理",
+              "links": [
+                {
+                  "title": "中国地理概览",
+                  "url": "/wiki/04 自然科学/03 地理/01 china-geography"
+                },
+                {
+                  "title": "地理学体系概览（含简史）",
+                  "url": "/wiki/04 自然科学/03 地理/02 geography-overview"
+                },
+                {
+                  "title": "自然地理基础",
+                  "url": "/wiki/04 自然科学/03 地理/03 physical-geography"
+                },
+                {
+                  "title": "世界地理概览",
+                  "url": "/wiki/04 自然科学/03 地理/04 world-geography"
+                }
+              ]
+            },
+            {
+              "name": "天文学",
+              "links": [
+                {
+                  "title": "天体物理学简介",
+                  "url": "/wiki/04 自然科学/04 天文学/01 astrophysics"
+                },
+                {
+                  "title": "地球科学基础",
+                  "url": "/wiki/04 自然科学/04 天文学/02 earth-science"
+                },
+                {
+                  "title": "太阳系简介",
+                  "url": "/wiki/04 自然科学/04 天文学/03 solar-system"
+                },
+                {
+                  "title": "宇宙概览",
+                  "url": "/wiki/04 自然科学/04 天文学/04 universe"
+                }
+              ]
+            },
+            {
+              "name": "数学",
+              "links": [
+                {
+                  "title": "数学应用方向",
+                  "url": "/wiki/04 自然科学/05 数学/01 math-applications"
+                },
+                {
+                  "title": "数学前沿概览",
+                  "url": "/wiki/04 自然科学/05 数学/02 math-frontiers"
+                },
+                {
+                  "title": "数学发展简史",
+                  "url": "/wiki/04 自然科学/05 数学/03 math-history"
+                },
+                {
+                  "title": "数学分支体系概览",
+                  "url": "/wiki/04 自然科学/05 数学/04 math-overview"
+                },
+                {
+                  "title": "近现代数学简介",
+                  "url": "/wiki/04 自然科学/05 数学/05 modern-math"
+                }
+              ]
+            },
+            {
+              "name": "物理",
+              "links": [
+                {
+                  "title": "近现代物理简介",
+                  "url": "/wiki/04 自然科学/06 物理/01 modern-physics"
+                },
+                {
+                  "title": "物理应用方向",
+                  "url": "/wiki/04 自然科学/06 物理/02 physics-applications"
+                },
+                {
+                  "title": "物理学前沿概览",
+                  "url": "/wiki/04 自然科学/06 物理/03 physics-frontiers"
+                },
+                {
+                  "title": "物理学发展史",
+                  "url": "/wiki/04 自然科学/06 物理/04 physics-history"
+                },
+                {
+                  "title": "物理体系概览",
+                  "url": "/wiki/04 自然科学/06 物理/05 physics-overview"
+                }
+              ]
+            },
+            {
+              "name": "生物",
+              "links": [
+                {
+                  "title": "生物分类概述",
+                  "url": "/wiki/04 自然科学/07 生物/01 biological-classification"
+                },
+                {
+                  "title": "生物前沿概览",
+                  "url": "/wiki/04 自然科学/07 生物/02 biology-frontiers"
+                },
+                {
+                  "title": "生物学发展史",
+                  "url": "/wiki/04 自然科学/07 生物/03 biology-history"
+                },
+                {
+                  "title": "生物体系概览",
+                  "url": "/wiki/04 自然科学/07 生物/04 biology-overview"
+                },
+                {
+                  "title": "细胞生物学基础",
+                  "url": "/wiki/04 自然科学/07 生物/05 cell-biology"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

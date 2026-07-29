@@ -1,0 +1,27 @@
+{
+  "type": "pie",
+  "id": "speciation-types",
+  "title": "物种形成机制类型分布（示意）",
+  "data": [
+    {
+      "value": 45,
+      "name": "异域物种形成",
+      "color": "#4caf50"
+    },
+    {
+      "value": 25,
+      "name": "邻域物种形成",
+      "color": "#2196f3"
+    },
+    {
+      "value": 20,
+      "name": "边域物种形成",
+      "color": "#ff9800"
+    },
+    {
+      "value": 10,
+      "name": "同域物种形成",
+      "color": "#9c27b0"
+    }
+  ]
+}

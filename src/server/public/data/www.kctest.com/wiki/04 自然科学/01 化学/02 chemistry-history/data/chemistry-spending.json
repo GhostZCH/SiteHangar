@@ -1,0 +1,37 @@
+{
+  "type": "pie",
+  "id": "chemistry-spending",
+  "title": "21世纪化学研发投入领域分布（示意）",
+  "data": [
+    {
+      "value": 25,
+      "name": "药物化学",
+      "color": "#5c6bc0"
+    },
+    {
+      "value": 20,
+      "name": "材料化学",
+      "color": "#ef5350"
+    },
+    {
+      "value": 18,
+      "name": "能源化学",
+      "color": "#ffa726"
+    },
+    {
+      "value": 15,
+      "name": "纳米化学",
+      "color": "#66bb6a"
+    },
+    {
+      "value": 12,
+      "name": "环境与绿色化学",
+      "color": "#26a69a"
+    },
+    {
+      "value": 10,
+      "name": "计算与AI",
+      "color": "#ab47bc"
+    }
+  ]
+}

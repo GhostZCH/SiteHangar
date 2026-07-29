@@ -1,0 +1,8 @@
+[
+  { "label": "Python", "accent": true },
+  { "label": "JavaScript", "accent": true },
+  { "label": "Vue", "accent": false },
+  { "label": "Node.js", "accent": false },
+  { "label": "Markdown", "accent": false },
+  { "label": "AI", "accent": true }
+]

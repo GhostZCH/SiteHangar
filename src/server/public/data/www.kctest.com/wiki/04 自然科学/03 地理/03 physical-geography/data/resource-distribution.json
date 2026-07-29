@@ -1,0 +1,27 @@
+{
+  "type": "pie",
+  "id": "resource-distribution",
+  "title": "全球淡水资源分布",
+  "data": [
+    {
+      "value": 68.7,
+      "name": "冰川与冰盖",
+      "color": "#42a5f5"
+    },
+    {
+      "value": 30.1,
+      "name": "地下水",
+      "color": "#66bb6a"
+    },
+    {
+      "value": 1.2,
+      "name": "地表水",
+      "color": "#26a69a"
+    },
+    {
+      "value": 0.04,
+      "name": "土壤水和大气水",
+      "color": "#ffa726"
+    }
+  ]
+}

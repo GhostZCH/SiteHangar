@@ -1,0 +1,27 @@
+{
+  "type": "pie",
+  "id": "meat-structure",
+  "title": "全球肉类产量结构（亿吨）",
+  "data": [
+    {
+      "value": 1.3,
+      "name": "禽肉",
+      "color": "#ef5350"
+    },
+    {
+      "value": 1.2,
+      "name": "猪肉",
+      "color": "#5c6bc0"
+    },
+    {
+      "value": 0.6,
+      "name": "牛肉",
+      "color": "#ffa726"
+    },
+    {
+      "value": 0.4,
+      "name": "其他肉类",
+      "color": "#66bb6a"
+    }
+  ]
+}

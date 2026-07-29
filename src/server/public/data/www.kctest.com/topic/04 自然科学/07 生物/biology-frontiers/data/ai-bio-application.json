@@ -1,0 +1,22 @@
+{
+  "type": "pie",
+  "id": "ai-bio-application",
+  "title": "AI在生物学领域的主要应用分布",
+  "data": [
+    {
+      "value": 72,
+      "name": "临床试验AI",
+      "color": "#5c6bc0"
+    },
+    {
+      "value": 17,
+      "name": "蛋白质结构预测",
+      "color": "#ef5350"
+    },
+    {
+      "value": 11,
+      "name": "AI药物发现",
+      "color": "#ffa726"
+    }
+  ]
+}

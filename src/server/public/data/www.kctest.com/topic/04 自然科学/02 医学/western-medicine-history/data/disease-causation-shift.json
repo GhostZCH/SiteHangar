@@ -1,0 +1,18 @@
+{
+  "type": "pie",
+  "id": "disease-causation-shift",
+  "title": "19世纪末已识别病原体的传染病比例",
+  "subType": "donut",
+  "data": [
+    {
+      "value": 12,
+      "name": "已查明病原的传染病",
+      "color": "#5c6bc0"
+    },
+    {
+      "value": 8,
+      "name": "其他传染病",
+      "color": "#ef5350"
+    }
+  ]
+}

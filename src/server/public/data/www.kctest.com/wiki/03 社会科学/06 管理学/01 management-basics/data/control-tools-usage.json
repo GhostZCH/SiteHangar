@@ -1,0 +1,27 @@
+{
+  "type": "pie",
+  "id": "control-tools-usage",
+  "title": "中国企业常用控制工具分布",
+  "data": [
+    {
+      "value": 45,
+      "name": "预算控制",
+      "color": "#3b82f6"
+    },
+    {
+      "value": 25,
+      "name": "财务比率分析",
+      "color": "#8b5cf6"
+    },
+    {
+      "value": 18,
+      "name": "平衡计分卡",
+      "color": "#22c55e"
+    },
+    {
+      "value": 12,
+      "name": "六西格玛",
+      "color": "#f59e0b"
+    }
+  ]
+}

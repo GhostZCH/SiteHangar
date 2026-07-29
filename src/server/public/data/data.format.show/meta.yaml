@@ -1,0 +1,18 @@
+page:
+  title: SiteHangar样例
+  description: SiteHangar样例
+  brand_name: SITE_HANGAR_DATA_FORMAT
+  subtitle: SiteHangar样例
+  tags:
+    - SiteHangar
+    - 样例
+
+modules:
+  - id: exmd
+    title: 示例Markdown
+    description: 示例Markdown文件
+    image: exmd.jpg
+    tags:
+      - 样例
+
+

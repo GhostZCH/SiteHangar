@@ -1,0 +1,28 @@
+{
+  "type": "pie",
+  "id": "dept-categories",
+  "title": "医院科室分类示意",
+  "subType": "donut",
+  "data": [
+    {
+      "value": 35,
+      "name": "临床科室",
+      "color": "#1565c0"
+    },
+    {
+      "value": 25,
+      "name": "医技科室",
+      "color": "#43a047"
+    },
+    {
+      "value": 20,
+      "name": "内科系统",
+      "color": "#e53935"
+    },
+    {
+      "value": 20,
+      "name": "外科系统",
+      "color": "#ffa726"
+    }
+  ]
+}

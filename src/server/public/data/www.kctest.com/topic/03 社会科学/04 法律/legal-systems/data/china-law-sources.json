@@ -1,0 +1,32 @@
+{
+  "type": "pie",
+  "id": "china-law-sources",
+  "title": "中国法律部门构成示意",
+  "data": [
+    {
+      "value": 30,
+      "name": "宪法及宪法相关法",
+      "color": "#d32f2f"
+    },
+    {
+      "value": 25,
+      "name": "民法商法",
+      "color": "#1976d2"
+    },
+    {
+      "value": 20,
+      "name": "行政法",
+      "color": "#388e3c"
+    },
+    {
+      "value": 15,
+      "name": "经济法与社会法",
+      "color": "#f57c00"
+    },
+    {
+      "value": 10,
+      "name": "刑法与诉讼法",
+      "color": "#7b1fa2"
+    }
+  ]
+}

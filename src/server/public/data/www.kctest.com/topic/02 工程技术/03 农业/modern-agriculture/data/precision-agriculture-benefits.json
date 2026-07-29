@@ -1,0 +1,18 @@
+{
+  "type": "bar",
+  "id": "precision-agriculture-benefits",
+  "title": "精准农业技术效益对比",
+  "xAxis": [
+    "节肥",
+    "节水",
+    "增产",
+    "减药"
+  ],
+  "data": [
+    18,
+    25,
+    8,
+    15
+  ],
+  "color": "#546e7a"
+}

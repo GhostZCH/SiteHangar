@@ -1,0 +1,32 @@
+{
+  "type": "pie",
+  "id": "nobel-region",
+  "title": "诺贝尔文学奖地域分布（1901-2024）",
+  "data": [
+    {
+      "value": 85,
+      "name": "欧洲",
+      "color": "#5c6bc0"
+    },
+    {
+      "value": 15,
+      "name": "北美洲",
+      "color": "#ef5350"
+    },
+    {
+      "value": 8,
+      "name": "南美洲",
+      "color": "#ffa726"
+    },
+    {
+      "value": 10,
+      "name": "亚洲",
+      "color": "#66bb6a"
+    },
+    {
+      "value": 3,
+      "name": "非洲",
+      "color": "#ab47bc"
+    }
+  ]
+}

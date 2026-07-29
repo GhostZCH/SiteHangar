@@ -1,0 +1,55 @@
+/* ===== Home Page Layout ===== */
+.home-page {
+    margin-left: 0 !important;
+    padding: 0;
+    max-width: 100%;
+}
+
+/* ===== Modules Section ===== */
+.modules-section {
+    padding: 80px 24px;
+    max-width: 1400px;
+    margin: 0 auto;
+    perspective: 1200px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--on-surface);
+    margin-bottom: 0.5rem;
+}
+
+.section-desc {
+    font-size: 1rem;
+    color: var(--on-surface-variant);
+    font-weight: 300;
+}
+
+/* Loading / Error / Empty states */
+.loading-state,
+.error-state,
+.empty-state {
+    text-align: center;
+    padding: 48px 24px;
+    font-size: 1rem;
+}
+
+.loading-state {
+    color: var(--on-surface-variant);
+}
+
+.error-state {
+    color: #ef5350;
+    background: var(--surface-variant);
+    border-radius: var(--radius-lg);
+}
+
+.empty-state {
+    color: var(--on-surface-variant);
+}

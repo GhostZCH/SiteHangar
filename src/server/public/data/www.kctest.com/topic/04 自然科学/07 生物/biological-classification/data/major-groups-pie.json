@@ -1,0 +1,42 @@
+{
+  "type": "pie",
+  "id": "major-groups-pie",
+  "title": "主要生物类群已描述物种比例",
+  "data": [
+    {
+      "value": 59,
+      "name": "昆虫",
+      "color": "#8bc34a"
+    },
+    {
+      "value": 13,
+      "name": "其他节肢动物",
+      "color": "#4caf50"
+    },
+    {
+      "value": 10,
+      "name": "植物",
+      "color": "#388e3c"
+    },
+    {
+      "value": 7,
+      "name": "真菌",
+      "color": "#ff9800"
+    },
+    {
+      "value": 5,
+      "name": "软体动物",
+      "color": "#2196f3"
+    },
+    {
+      "value": 3,
+      "name": "脊椎动物",
+      "color": "#f44336"
+    },
+    {
+      "value": 3,
+      "name": "原生生物",
+      "color": "#9c27b0"
+    }
+  ]
+}

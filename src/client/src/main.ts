@@ -1,0 +1,51 @@
+import { createApp } from 'vue';
+import { createPinia } from 'pinia';
+import App from './App.vue';
+import router from './router';
+import './styles/theme-default.css';
+import './styles/theme-warm.css';
+import './styles/theme-cold.css';
+import './styles/theme-night.css';
+import './styles/theme-glass.css';
+import './styles/theme-eye-care.css';
+import './styles/theme-3d.css';
+import './styles/base.css';
+import './styles/appbar.css';
+import './styles/theme-switcher.css';
+import './styles/navigation.css';
+import './styles/hero.css';
+import './styles/content.css';
+import './styles/components.css';
+import './styles/timeline.css';
+import './styles/charts.css';
+import './styles/home-layout.css';
+import './styles/home-hero.css';
+import './styles/home-cards.css';
+import './styles/home-animations.css';
+import './styles/home-responsive.css';
+import './styles/pages-category.css';
+import './styles/glass-theme-components.css';
+import './styles/glass-theme-pages.css';
+import './styles/glass-theme-typography.css';
+import './styles/glass-theme-text.css';
+import './styles/responsive-base.css';
+import './styles/responsive-mobile-layout.css';
+import './styles/responsive-mobile-stats-cards.css';
+import './styles/responsive-mobile-tables-lists.css';
+import './styles/responsive-mobile-3d-layout.css';
+import './styles/responsive-mobile-3d-nav.css';
+import './styles/responsive-mobile-utilities.css';
+import './styles/responsive-home.css';
+import './styles/responsive-category.css';
+import './styles/responsive-timeline.css';
+import './styles/responsive-timeline.css';
+
+const app = createApp(App);
+app.use(createPinia());
+app.use(router);
+
+app.config.errorHandler = (err, _instance, info) => {
+  console.error('[Vue Error]', err, info);
+};
+
+app.mount('#app');
