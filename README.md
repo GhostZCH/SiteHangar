@@ -39,20 +39,26 @@ AI 编程前请优先阅读 [docs/readme-for-ai.md](docs/readme-for-ai.md)。
 
 ```
 data/
-├── <site-domain>/              # 站点目录，文件夹名即域名
-│   ├── meta.yaml               # 站点元数据：标题、栏目、封面、标签
-│   ├── image/                  # 站点级封面图
+├── <site-domain-1>/            # 站点目录 1，如 www.a.com
+│   ├── meta.yaml               # 站点元数据：网站附加信息，比如栏目介绍和栏目封面图
+│   ├── image/                  # 站点级封面图（模块封面等）
 │   ├── info/                   # 站点信息页（关于、帮助等）
-│   └── <module>/               # 栏目目录
-│       └── <一级分类>/          # 分类目录，支持序号前缀排序
+│   │   └── image/              # info 页内引用的图片（可选）
+│   └── <module>/               # 栏目目录，id 与 meta.yaml 中 module.id 对应
+│       └── <一级分类>/          # 分类目录，名称按字典序排列，可带序号前缀
 │           └── <二级分类>/
-│               └── <article>/   # 文章目录
-│                   ├── meta.md 或 page.md
-│                   ├── image/
-│                   └── data/
+│               └── <article-slug>/   # 文章目录，内部结构见「两种文档模式」
+└── <site-domain-2>/            # 站点目录 2，如 www.b.com
+    ├── meta.yaml
+    ├── image/
+    ├── info/
+    │   └── image/
+    └── <module>/
+        └── <一级分类>/
+            └── <二级分类>/
+                └── <article-slug>/
 ```
 
-文章内容本身也分三层：文章 → 章节 → 段落。段落支持文本、图片、图表、表格、时间线、分栏等元素。
 
 ### 内容格式：EXMD
 
@@ -70,6 +76,53 @@ EXMD（Extended Markdown）是 SiteHangar 的文章源格式，完全兼容标�
 | --- | ------------- | ------- | :------------------ |
 | 单文件 | `一个md文件和附件`   | 简短笔记、备忘 | 人工快速编辑              |
 | 多文件 | 每个章节一个md文件和附件 | 长文      | AI并行生成，局部修改快速省token |
+
+文章内容本身也分三层：文章 → 章节 → 段落。段落支持文本、图片、图表、表格、时间线、分栏等元素。
+
++ 总体分文章，章节，段落三个层级。
++ 一个文章可以包含多个章节，每个章节可以包含多个段落，每个段落可以包含文本、图片、图表、表格等元素。
++ 文章有包含文章标题、文章副标题、文章引言、文章标签等属性。章节包含章节标题、章节副标题等属性。段落包含文本、图片、图表、表格等属性。
+
+```
+Article（文章）
+  ├── Article Title（文章标题）← 来自 frontmatter，忽略正文 #
+  ├── Article Subtitle（文章副标题）
+  ├── Article Introduction（文章引言）
+  ├── Article Tags（文章标签）
+  └── Chapters（多个章节）
+        ├── Chapter 01
+        │     ├── Chapter Title（章节标题）← 来自章节 frontmatter，忽略正文 ##
+        │     ├── Chapter Subtitle（章节副标题）
+        │     └── Paragraphs（多个段落）
+        │           ├── Text / Images / Charts / Tables
+        │           ├── Sub-headings（###）
+        │           ├── Sub-sub-headings（####）
+        │           └── Columns（可选分栏）
+        ├── Chapter 02
+        └── ...
+```
+
+目前支持的扩展类型有：
+
+| 扩展类型 | 说明              | 引用数据                                                 | 内嵌数据                      |
+| ---- | --------------- | ---------------------------------------------------- | ------------------------- |
+| 统计卡片 | 展示关键数值          | `![stats](data/xxx.json)`                            | code 块 `stats`            |
+| 卡片列表 | 多卡片并列展示         | `![cards](data/xxx.json)`                            | code 块 `cards`            |
+| 时间线  | 时间序列事件          | `![timeline](data/xxx.json)`                         | code 块 `timeline`         |
+| 分支图  | 多阶段分支对比         | `![branches](data/xxx.json)`                         | code 块 `branches`         |
+| 标签芯片 | 标签云/关键词         | `![chips](data/xxx.json)`                            | code 块 `chips`            |
+| 树状图  | 层级结构展示          | `![tree](data/xxx.json)`                             | code 块 `tree`             |
+| 图标列表 | 列表项含图标/标题/副标题   | 含 `\|` 分隔符的 Markdown 列表                              | code 块 `list`             |
+| 图表   | 支持 bar/pie/line | `![bar](data/xxx.json)`、`![pie](...)`、`![line](...)` | code 块 `bar`/`pie`/`line` |
+
+示例：
+![image](docs/image/04-02.png)
+![image](docs/image/04-03.png)
+![image](docs/image/04-04.png)
+
+除此之外还支持分栏布局。
+![image](docs/image/04-06.png)
+
 
 ## 技术架构
 
