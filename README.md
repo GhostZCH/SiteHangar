@@ -33,6 +33,9 @@ AI 编程前请优先阅读 [docs/readme-for-ai.md](docs/readme-for-ai.md)。
 
 ## 数据组织方式
 
+**参考示例**：项目内置的示例站点数据位于`example/data/`目录，包含完整目录结构、`meta.yaml`、EXMD 源文件及图片资源。
+
+
 ### 目录结构
 
 网站数据按“站点 → 栏目 → 一级分类 → 二级分类 → 文章”五层组织：

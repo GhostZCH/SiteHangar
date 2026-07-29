@@ -1,0 +1,6 @@
+# 本地模拟线上环境配置
+# 站点数据目录挂载到 /app/site_data
+buildOutputDir: /app/site_data/build
+
+# ICP 备案号（渲染到页面底部）
+icp: ICP备20261111111号-1
