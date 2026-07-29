@@ -114,14 +114,17 @@ Article（文章）
 | 树状图  | 层级结构展示          | `![tree](data/xxx.json)`                             | code 块 `tree`             |
 | 图标列表 | 列表项含图标/标题/副标题   | 含 `\|` 分隔符的 Markdown 列表                              | code 块 `list`             |
 | 图表   | 支持 bar/pie/line | `![bar](data/xxx.json)`、`![pie](...)`、`![line](...)` | code 块 `bar`/`pie`/`line` |
+| 公式   | 展示数学公式          | - |$$\int\_{a}^{b} f(x) , dx = F(b) - F(a)$$|
 
 示例：
 ![image](docs/image/04-02.png)
 ![image](docs/image/04-03.png)
 ![image](docs/image/04-04.png)
+![image](docs/image/04-05.png)
+![image](docs/image/04-06.png)
 
 除此之外还支持分栏布局。
-![image](docs/image/04-06.png)
+![image](docs/image/04-07.png)
 
 
 ## 技术架构
